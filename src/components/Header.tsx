@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import zingLogo from "@/assets/zing-logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,8 +17,15 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Zing
+          <div className="flex items-center space-x-2">
+            <img 
+              src={zingLogo} 
+              alt="FocusZing Logo" 
+              className="w-8 h-8"
+            />
+            <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+              Zing
+            </div>
           </div>
           
           {/* Desktop Navigation */}
