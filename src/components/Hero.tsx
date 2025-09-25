@@ -28,7 +28,7 @@ const Hero = () => {
         <Button 
           variant="default" 
           size="lg" 
-          className="bg-primary hover:bg-primary/90 text-white px-8 py-3 text-lg font-semibold"
+          className="bg-gradient-orange hover:bg-orange-dark text-white px-8 py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
         >
           EXPLORE THE DEVICE
         </Button>

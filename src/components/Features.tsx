@@ -42,8 +42,10 @@ const Features = () => {
               key={index}
               className="bg-card p-8 rounded-lg shadow-card hover:shadow-elegant transition-smooth transform hover:-translate-y-2 border border-border/50"
             >
-              <div className="text-primary mb-4 flex justify-center">
-                {feature.icon}
+              <div className="text-orange mb-4 flex justify-center transform hover:scale-110 transition-smooth">
+                <div className="p-3 bg-gradient-orange rounded-full shadow-lg">
+                  {feature.icon}
+                </div>
               </div>
               <h3 className="text-xl font-semibold text-card-foreground mb-4 text-center">
                 {feature.title}

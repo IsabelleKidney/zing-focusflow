@@ -45,7 +45,7 @@ const Header = () => {
             <Button variant="ghost" className="font-medium">
               Login
             </Button>
-            <Button variant="hero" className="font-semibold">
+            <Button variant="hero" className="font-semibold bg-gradient-orange hover:bg-orange-dark hover:scale-105 transition-all duration-300">
               Order Now
             </Button>
           </div>
@@ -77,7 +77,7 @@ const Header = () => {
                 <Button variant="ghost" className="font-medium">
                   Login
                 </Button>
-                <Button variant="hero" className="font-semibold">
+                <Button variant="hero" className="font-semibold bg-gradient-orange hover:bg-orange-dark hover:scale-105 transition-all duration-300">
                   Order Now
                 </Button>
               </div>
