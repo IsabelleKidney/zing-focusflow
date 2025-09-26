@@ -7,24 +7,24 @@ const Support = () => {
 
   const faqs = [
     {
-      question: "How does Zing's taVNS technology work?",
-      answer: "Zing uses gentle electrical pulses delivered through your ear to stimulate the vagus nerve, activating your body's natural relaxation response and promoting stress relief."
+      question: "How does FocuZing's taVNS technology enhance performance?",
+      answer: "FocuZing uses precise electrical pulses delivered through your ear to stimulate the vagus nerve, activating neural pathways that enhance focus, attention, and cognitive performance for peak productivity."
     },
     {
-      question: "Is it safe to use daily?",
-      answer: "Yes, Zing is FDA-cleared and designed for daily use. The gentle microcurrents are completely safe and non-invasive."
+      question: "Can I use it during work or study sessions?",
+      answer: "Absolutely! FocuZing is designed for active use during productivity sessions. The premium audio integration lets you listen to focus music or podcasts while receiving cognitive enhancement."
     },
     {
-      question: "How long before I see results?",
-      answer: "Many users feel immediate relaxation effects within minutes of use. For optimal stress relief and sleep benefits, we recommend consistent daily use."
+      question: "How quickly will I see performance improvements?",
+      answer: "Most users experience immediate focus enhancement within minutes. For sustained cognitive benefits and peak performance, we recommend consistent daily use during your most important tasks."
     },
     {
-      question: "Can I use it with my existing headphones?",
-      answer: "Zing has built-in premium audio capabilities, but it's also compatible with most standard audio devices and streaming services."
+      question: "Is it compatible with my existing productivity setup?",
+      answer: "Yes! FocuZing integrates seamlessly with your current workflow. Use it with your favorite productivity apps, focus music, or while working on any cognitive task that requires enhanced concentration."
     },
     {
-      question: "What's included in the package?",
-      answer: "Your Zing package includes the device, charging cable, multiple ear tip sizes, user manual, and access to our wellness app with guided sessions."
+      question: "What's the optimal way to use FocuZing for maximum results?",
+      answer: "Use FocuZing during your most challenging work sessions - strategic planning, complex problem-solving, creative projects, or intensive study periods. Combine with productivity techniques for amplified results."
     }
   ];
 
@@ -32,13 +32,13 @@ const Support = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Support",
-      description: "support@zing.com",
+      description: "support@focuzing.com",
       action: "Send Email"
     },
     {
       icon: <Phone className="w-6 h-6" />,
-      title: "Phone Support",
-      description: "1-800-ZING-NOW",
+      title: "Phone Support", 
+      description: "1-800-FOCUZING",
       action: "Call Now"
     },
     {
@@ -57,7 +57,7 @@ const Support = () => {
             Support & FAQ
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Get the help you need to maximize your Zing wellness experience.
+            Get the help you need to maximize your FocuZing performance enhancement experience.
           </p>
         </div>
 
@@ -111,13 +111,13 @@ const Support = () => {
             </div>
             
             <div className="mt-8 p-6 bg-gradient-subtle rounded-xl border border-border/50">
-              <h4 className="font-semibold text-foreground mb-3">Need Immediate Help?</h4>
-              <p className="text-muted-foreground mb-4">
-                Access our comprehensive user guide and video tutorials for quick solutions.
-              </p>
-              <Button variant="default" className="bg-gradient-primary">
-                Access Help Center
-              </Button>
+            <h4 className="font-semibold text-foreground mb-3">Ready to Unlock Peak Performance?</h4>
+            <p className="text-muted-foreground mb-4">
+              Access our comprehensive performance guide and productivity tutorials for maximum results.
+            </p>
+            <Button variant="default" className="bg-gradient-primary">
+              Access Performance Center
+            </Button>
             </div>
           </div>
         </div>

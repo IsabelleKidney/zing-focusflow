@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import zingLogo from "@/assets/zing-logo.png";
+import focuzingLogo from "@/assets/focuzing-logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,38 +14,39 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
-      <nav className="container mx-auto px-6 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/98 backdrop-blur-xl border-b border-gradient-primary/20 shadow-lg shadow-orange/5">
+      <nav className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
-              src={zingLogo} 
-              alt="Zing Logo" 
-              className="w-10 h-10"
+              src={focuzingLogo} 
+              alt="FocuZing Logo" 
+              className="w-12 h-12"
             />
-            <div className="text-2xl font-bold text-foreground">
-              Zing
+            <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+              FocuZing
             </div>
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-10">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-orange transition-smooth font-medium"
+                className="text-foreground/80 hover:text-orange font-medium text-sm uppercase tracking-wider transition-all duration-300 hover:scale-105 relative group"
               >
                 {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </div>
           
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="secondary" className="font-medium">
-              Subscribe for Updates
+          <div className="hidden md:flex items-center space-x-3">
+            <Button variant="ghost" className="font-medium text-sm hover:bg-orange/10">
+              Subscribe
             </Button>
-            <Button variant="default" className="font-semibold bg-gradient-primary hover:bg-orange text-white px-6 hover:scale-105 transition-all duration-300">
+            <Button variant="default" className="font-bold bg-gradient-primary hover:bg-orange text-white px-8 py-2.5 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
               Order Now
             </Button>
           </div>
@@ -74,10 +75,10 @@ const Header = () => {
                 </a>
               ))}
               <div className="flex flex-col space-y-3 pt-4">
-                <Button variant="secondary" className="font-medium">
-                  Subscribe for Updates
+                <Button variant="ghost" className="font-medium">
+                  Subscribe
                 </Button>
-                <Button variant="default" className="font-semibold bg-gradient-primary hover:bg-orange text-white">
+                <Button variant="default" className="font-bold bg-gradient-primary hover:bg-orange text-white rounded-full">
                   Order Now
                 </Button>
               </div>

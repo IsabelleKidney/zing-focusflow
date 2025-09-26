@@ -38,10 +38,10 @@ const Subscribe = () => {
         <div className="max-w-2xl mx-auto">
           <Mail className="w-16 h-16 text-white mx-auto mb-6" />
           <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Stay Updated
+            Stay Ahead of the Game
           </h3>
           <p className="text-xl text-white/90 mb-8">
-            Be the first to know about exclusive offers, wellness tips, and Zing updates.
+            Be the first to access exclusive performance tips, productivity insights, and FocuZing updates.
           </p>
           
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">

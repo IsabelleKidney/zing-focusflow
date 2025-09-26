@@ -1,36 +1,36 @@
-import { Zap, Brain, Headphones, Heart, Moon, Smile } from "lucide-react";
+import { Zap, Brain, Headphones, Target, TrendingUp, Lightbulb } from "lucide-react";
 
 const Features = () => {
   const features = [
     {
       icon: <Brain className="w-8 h-8" />,
       title: "taVNS Technology",
-      description: "Clinically proven transcutaneous auricular vagus nerve stimulation for natural wellness enhancement."
+      description: "Clinically proven transcutaneous auricular vagus nerve stimulation for enhanced cognitive performance and focus."
     },
     {
       icon: <Headphones className="w-8 h-8" />,
-      title: "Audio Integration",
-      description: "Seamless audio experience with your favorite music, podcasts, or relaxation sounds while receiving therapy."
+      title: "Premium Audio Integration",
+      description: "High-fidelity audio experience with your favorite productivity music, focus soundscapes, or business podcasts."
     },
     {
-      icon: <Heart className="w-8 h-8" />,
-      title: "Stress Relief",
-      description: "Naturally activate your body's relaxation response and reduce daily stress through gentle nerve stimulation."
+      icon: <Target className="w-8 h-8" />,
+      title: "Laser Focus",
+      description: "Achieve unprecedented levels of concentration and mental clarity for peak performance in any task."
     },
     {
-      icon: <Moon className="w-8 h-8" />,
-      title: "Better Sleep",
-      description: "Improve sleep quality and fall asleep easier with calming vagus nerve activation before bedtime."
+      icon: <TrendingUp className="w-8 h-8" />,
+      title: "Enhanced Productivity",
+      description: "Maximize your output and efficiency with sustained attention spans and elevated cognitive function."
     },
     {
-      icon: <Smile className="w-8 h-8" />,
-      title: "Brighter Mood",
-      description: "Support natural mood regulation and emotional wellbeing through targeted nervous system activation."
+      icon: <Lightbulb className="w-8 h-8" />,
+      title: "Creative Breakthrough",
+      description: "Unlock your creative potential and innovative thinking for problem-solving and strategic planning."
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Instant Results",
-      description: "Feel the calming effects within minutes. Experience deep relaxation and mental clarity throughout your day."
+      description: "Feel the focus enhancement within minutes. Experience immediate cognitive boost and sustained performance."
     }
   ];
 
@@ -39,10 +39,10 @@ const Features = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Revolutionary Wellness Technology
+            Revolutionary Focus Technology
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Experience the perfect fusion of neuroscience and audio engineering designed for modern wellness and stress relief.
+            Experience the perfect fusion of neuroscience and audio engineering designed for peak performance and success.
           </p>
         </div>
         

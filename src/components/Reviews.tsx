@@ -7,21 +7,21 @@ const Reviews = () => {
       role: "Marketing Executive",
       image: "/src/assets/testimonial-1.jpg",
       rating: 5,
-      quote: "Zing has completely transformed my stress levels. I use it during my morning routine and feel so much more balanced throughout the day."
+      quote: "FocuZing has completely transformed my productivity. I use it during strategic planning sessions and my focus is razor-sharp for hours."
     },
     {
       name: "Michael Rodriguez",
       role: "Software Developer", 
       image: "/src/assets/testimonial-2.jpg",
       rating: 5,
-      quote: "The audio integration is genius - I can listen to focus music while getting the wellness benefits. My sleep quality has improved dramatically."
+      quote: "The audio integration is genius - I can code with focus music while getting cognitive enhancement. My performance reviews have never been better."
     },
     {
       name: "Emma Thompson",
       role: "Graduate Student",
       image: "/src/assets/testimonial-3.jpg", 
       rating: 5,
-      quote: "I was skeptical at first, but the stress relief is real. Perfect for managing exam anxiety and staying calm under pressure."
+      quote: "I was skeptical at first, but the focus improvement is incredible. Perfect for studying and achieving academic excellence."
     }
   ];
 
@@ -30,10 +30,10 @@ const Reviews = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            What Our Users Say
+            Success Stories
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join thousands who have transformed their wellness with Zing's innovative taVNS technology.
+            Join thousands who have unlocked their potential and achieved peak performance with FocuZing's revolutionary technology.
           </p>
         </div>
 

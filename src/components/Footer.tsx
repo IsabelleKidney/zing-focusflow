@@ -1,4 +1,4 @@
-import zingLogo from "@/assets/zing-logo.png";
+import focuzingLogo from "@/assets/focuzing-logo.png";
 
 const Footer = () => {
   const links = [
@@ -14,12 +14,12 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center space-x-3 mb-6 md:mb-0">
             <img 
-              src={zingLogo} 
-              alt="Zing Logo" 
+              src={focuzingLogo} 
+              alt="FocuZing Logo" 
               className="w-8 h-8"
             />
-            <div className="text-xl font-bold text-foreground">
-              Zing
+            <div className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+              FocuZing
             </div>
           </div>
           
@@ -38,7 +38,7 @@ const Footer = () => {
         
         <div className="border-t border-border/50 pt-6 mt-6 text-center">
           <p className="text-muted-foreground text-sm">
-            © 2024 Zing. All rights reserved. | Relieve Stress. Elevate Life.
+            © 2024 FocuZing. All rights reserved. | Unlock Your Potential. Achieve Success.
           </p>
         </div>
       </div>

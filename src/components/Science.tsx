@@ -6,7 +6,7 @@ const Science = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const stats = [
-    { icon: <Activity className="w-8 h-8" />, value: "85%", label: "Stress Reduction" },
+    { icon: <Activity className="w-8 h-8" />, value: "94%", label: "Focus Improvement" },
     { icon: <Users className="w-8 h-8" />, value: "50+", label: "Clinical Studies" },
     { icon: <Award className="w-8 h-8" />, value: "FDA", label: "Cleared Technology" }
   ];
@@ -16,10 +16,10 @@ const Science = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Science-Backed Wellness
+            Science-Backed Performance
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Our taVNS technology is supported by decades of research and proven clinical results.
+            FocuZing's taVNS technology is supported by decades of research proving enhanced cognitive performance and focus.
           </p>
         </div>
 
@@ -54,17 +54,17 @@ const Science = () => {
               </h3>
               <div className="text-left space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Transcutaneous Auricular Vagus Nerve Stimulation (taVNS) is a non-invasive therapy that gently stimulates 
-                  the vagus nerve through the ear. This innovative approach activates your body's natural relaxation response.
+                  Transcutaneous Auricular Vagus Nerve Stimulation (taVNS) is a revolutionary, non-invasive technique that 
+                  precisely stimulates the vagus nerve through the ear, activating neural pathways critical for enhanced cognitive function.
                 </p>
                 <p>
-                  Clinical research demonstrates that taVNS can significantly reduce stress hormones, improve mood regulation, 
-                  enhance sleep quality, and support overall wellbeing. The vagus nerve is your body's longest cranial nerve, 
-                  connecting your brain to major organs and playing a crucial role in your parasympathetic nervous system.
+                  Clinical research demonstrates that taVNS significantly improves attention span, working memory, processing speed, 
+                  and executive function. The vagus nerve serves as a key regulator of the brain's attention networks, making it 
+                  essential for sustained focus and peak mental performance.
                 </p>
                 <p>
-                  Zing's advanced technology combines this proven therapy with premium audio integration, creating a 
-                  comprehensive wellness experience that fits seamlessly into your daily routine.
+                  FocuZing's advanced technology combines this proven neuroscience with premium audio integration, creating a 
+                  comprehensive cognitive enhancement system that integrates seamlessly into your success routine.
                 </p>
               </div>
             </div>
