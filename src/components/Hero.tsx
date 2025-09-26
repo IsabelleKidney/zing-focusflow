@@ -26,8 +26,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl lg:text-3xl mb-8 font-light max-w-3xl mx-auto leading-relaxed">
-          Revolutionary FocuZing taVNS technology with premium audio integration. 
-          <span className="font-medium text-yellow"> Enhanced focus, peak performance, limitless productivity.</span>
+          <span className="font-medium text-yellow">Sharper focus, deeper calm, peak performance.</span>
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -36,7 +35,7 @@ const Hero = () => {
             size="xl" 
             className="bg-gradient-primary hover:bg-orange text-white px-12 py-4 text-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
-            Get FocuZing Now
+            Get FocusZing Now
           </Button>
           <Button 
             variant="secondary" 

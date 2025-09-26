@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import focuzingLogo from "@/assets/focuzing-logo.png";
+import focuszingLogo from "@/assets/focuszing-logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,17 +14,17 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/98 backdrop-blur-xl border-b border-gradient-primary/20 shadow-lg shadow-orange/5">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-2xl border-b-2 border-gradient-primary/30 shadow-xl shadow-black/20">
       <nav className="container mx-auto px-6 py-3">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
-              src={focuzingLogo} 
-              alt="FocuZing Logo" 
+              src={focuszingLogo} 
+              alt="FocusZing Logo" 
               className="w-12 h-12"
             />
             <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              FocuZing
+              FocusZing
             </div>
           </div>
           

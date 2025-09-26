@@ -7,12 +7,12 @@ const Support = () => {
 
   const faqs = [
     {
-      question: "How does FocuZing's taVNS technology enhance performance?",
-      answer: "FocuZing uses precise electrical pulses delivered through your ear to stimulate the vagus nerve, activating neural pathways that enhance focus, attention, and cognitive performance for peak productivity."
+      question: "How does FocusZing's taVNS technology enhance performance?",
+      answer: "FocusZing uses precise electrical pulses delivered through your ear to stimulate the vagus nerve, activating neural pathways that enhance focus, attention, and cognitive performance for peak productivity."
     },
     {
       question: "Can I use it during work or study sessions?",
-      answer: "Absolutely! FocuZing is designed for active use during productivity sessions. The premium audio integration lets you listen to focus music or podcasts while receiving cognitive enhancement."
+      answer: "Absolutely! FocusZing is designed for active use during productivity sessions. The premium audio integration lets you listen to focus music or podcasts while receiving cognitive enhancement."
     },
     {
       question: "How quickly will I see performance improvements?",
@@ -20,11 +20,11 @@ const Support = () => {
     },
     {
       question: "Is it compatible with my existing productivity setup?",
-      answer: "Yes! FocuZing integrates seamlessly with your current workflow. Use it with your favorite productivity apps, focus music, or while working on any cognitive task that requires enhanced concentration."
+      answer: "Yes! FocusZing integrates seamlessly with your current workflow. Use it with your favorite productivity apps, focus music, or while working on any cognitive task that requires enhanced concentration."
     },
     {
-      question: "What's the optimal way to use FocuZing for maximum results?",
-      answer: "Use FocuZing during your most challenging work sessions - strategic planning, complex problem-solving, creative projects, or intensive study periods. Combine with productivity techniques for amplified results."
+      question: "What's the optimal way to use FocusZing for maximum results?",
+      answer: "Use FocusZing during your most challenging work sessions - strategic planning, complex problem-solving, creative projects, or intensive study periods. Combine with productivity techniques for amplified results."
     }
   ];
 
@@ -32,13 +32,13 @@ const Support = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Support",
-      description: "support@focuzing.com",
+      description: "support@focuszing.com",
       action: "Send Email"
     },
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Phone Support", 
-      description: "1-800-FOCUZING",
+      description: "1-800-FOCUSZING",
       action: "Call Now"
     },
     {
@@ -57,7 +57,7 @@ const Support = () => {
             Support & FAQ
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Get the help you need to maximize your FocuZing performance enhancement experience.
+            Get the help you need to maximize your FocusZing performance enhancement experience.
           </p>
         </div>
 

@@ -41,7 +41,7 @@ const Subscribe = () => {
             Stay Ahead of the Game
           </h3>
           <p className="text-xl text-white/90 mb-8">
-            Be the first to access exclusive performance tips, productivity insights, and FocuZing updates.
+            Be the first to access exclusive performance tips, productivity insights, and FocusZing updates.
           </p>
           
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">

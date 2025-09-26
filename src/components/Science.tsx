@@ -19,7 +19,7 @@ const Science = () => {
             Science-Backed Performance
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            FocuZing's taVNS technology is supported by decades of research proving enhanced cognitive performance and focus.
+            FocusZing's taVNS technology is supported by decades of research proving enhanced cognitive performance and focus.
           </p>
         </div>
 
@@ -63,7 +63,7 @@ const Science = () => {
                   essential for sustained focus and peak mental performance.
                 </p>
                 <p>
-                  FocuZing's advanced technology combines this proven neuroscience with premium audio integration, creating a 
+                  FocusZing's advanced technology combines this proven neuroscience with premium audio integration, creating a 
                   comprehensive cognitive enhancement system that integrates seamlessly into your success routine.
                 </p>
               </div>

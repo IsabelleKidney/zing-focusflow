@@ -7,7 +7,7 @@ const Reviews = () => {
       role: "Marketing Executive",
       image: "/src/assets/testimonial-1.jpg",
       rating: 5,
-      quote: "FocuZing has completely transformed my productivity. I use it during strategic planning sessions and my focus is razor-sharp for hours."
+      quote: "FocusZing has completely transformed my productivity. I use it during strategic planning sessions and my focus is razor-sharp for hours."
     },
     {
       name: "Michael Rodriguez",
@@ -33,7 +33,7 @@ const Reviews = () => {
             Success Stories
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Join thousands who have unlocked their potential and achieved peak performance with FocuZing's revolutionary technology.
+            Join thousands who have unlocked their potential and achieved peak performance with FocusZing's revolutionary technology.
           </p>
         </div>
 
