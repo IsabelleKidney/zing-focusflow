@@ -9,21 +9,21 @@ const Header = () => {
   const navItems = [
     { name: "Features", href: "#features" },
     { name: "Science", href: "#science" },
-    { name: "Reviews", href: "#testimonials" },
+    { name: "Reviews", href: "#reviews" },
     { name: "Support", href: "#support" }
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-3">
             <img 
               src={zingLogo} 
-              alt="FocusZing Logo" 
-              className="w-8 h-8"
+              alt="Zing Logo" 
+              className="w-10 h-10"
             />
-            <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <div className="text-2xl font-bold text-foreground">
               Zing
             </div>
           </div>
@@ -34,7 +34,7 @@ const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-smooth font-medium"
+                className="text-foreground hover:text-orange transition-smooth font-medium"
               >
                 {item.name}
               </a>
@@ -42,10 +42,10 @@ const Header = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="font-medium">
-              Login
+            <Button variant="secondary" className="font-medium">
+              Subscribe for Updates
             </Button>
-            <Button variant="hero" className="font-semibold bg-gradient-orange hover:bg-orange-dark hover:scale-105 transition-all duration-300">
+            <Button variant="default" className="font-semibold bg-gradient-primary hover:bg-orange text-white px-6 hover:scale-105 transition-all duration-300">
               Order Now
             </Button>
           </div>
@@ -67,17 +67,17 @@ const Header = () => {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-primary transition-smooth font-medium py-2"
+                  className="text-foreground hover:text-orange transition-smooth font-medium py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="ghost" className="font-medium">
-                  Login
+              <div className="flex flex-col space-y-3 pt-4">
+                <Button variant="secondary" className="font-medium">
+                  Subscribe for Updates
                 </Button>
-                <Button variant="hero" className="font-semibold bg-gradient-orange hover:bg-orange-dark hover:scale-105 transition-all duration-300">
+                <Button variant="default" className="font-semibold bg-gradient-primary hover:bg-orange text-white">
                   Order Now
                 </Button>
               </div>
