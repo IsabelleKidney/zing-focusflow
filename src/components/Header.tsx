@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import focuszingLogo from "@/assets/focuszing-logo.png";
+import focuszingLogo from "@/assets/focuszing-logo-clean.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
