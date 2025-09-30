@@ -13,34 +13,30 @@ const Hero = () => {
       />
       
       {/* Subtle Dark Overlay */}
-      <div className="absolute inset-0 bg-black/30"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/30 to-black/40"></div>
       
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+      <div className="relative z-10 text-center text-white px-8 max-w-5xl mx-auto pt-20">
+        <h1 className="text-6xl md:text-7xl lg:text-8xl font-light mb-8 leading-[1.1] tracking-tight">
           Unlock Your Potential.
           <br />
-          <span className="bg-gradient-primary bg-clip-text text-transparent">
-            Achieve Success.
-          </span>
+          <span className="font-normal">Achieve Success.</span>
         </h1>
         
-        <p className="text-xl md:text-2xl lg:text-3xl mb-8 font-light max-w-3xl mx-auto leading-relaxed">
-          <span className="font-medium text-yellow">Sharper focus, deeper calm, peak performance.</span>
+        <p className="text-lg md:text-xl lg:text-2xl mb-12 font-light max-w-2xl mx-auto leading-relaxed opacity-90">
+          Sharper focus, deeper calm, peak performance.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             variant="default" 
-            size="xl" 
-            className="bg-gradient-primary hover:bg-orange text-white px-12 py-4 text-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+            className="bg-white text-foreground hover:bg-white/90 px-10 py-6 text-base font-normal rounded-full shadow-elegant transition-all duration-300 hover:shadow-glow"
           >
             Get FocusZing Now
           </Button>
           <Button 
-            variant="secondary" 
-            size="xl" 
-            className="bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20 px-8 py-4 text-lg font-semibold transition-all duration-300"
+            variant="ghost" 
+            className="text-white border-white/30 hover:bg-white/10 px-10 py-6 text-base font-light rounded-full transition-all duration-300"
           >
             Learn More
           </Button>
