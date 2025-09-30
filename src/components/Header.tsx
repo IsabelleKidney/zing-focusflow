@@ -19,11 +19,7 @@ const Header = () => {
       <nav className="container mx-auto px-8 py-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <img 
-              src={focuszingLogo} 
-              alt="FocusZing Logo" 
-              className="w-12 h-12 object-contain opacity-90"
-            />
+            {/* Logo removed */}
           </div>
           
           <button
