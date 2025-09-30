@@ -31,7 +31,7 @@ const Hero = () => {
         <div className="flex items-center">
           <Button 
             variant="default" 
-            className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-10 py-6 text-base font-normal transition-all duration-300"
+            className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-12 py-7 text-lg font-medium transition-all duration-300"
           >
             Get FocusZing Now
           </Button>
