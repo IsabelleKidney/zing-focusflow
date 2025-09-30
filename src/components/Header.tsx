@@ -22,7 +22,7 @@ const Header = () => {
             <img 
               src={focuszingLogo} 
               alt="FocusZing Logo" 
-              className="w-12 h-12 object-contain"
+              className="w-12 h-12 object-contain opacity-90"
             />
           </div>
           
