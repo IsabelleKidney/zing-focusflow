@@ -50,33 +50,36 @@ const Support = () => {
   ];
 
   return (
-    <section id="support" className="py-24 bg-background">
+    <section id="support" className="py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-light text-foreground mb-6">
-            Questions? <span className="italic">We're here</span>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            Support & FAQ
           </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Get the help you need to maximize your FocusZing performance enhancement experience.
+          </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-16 max-w-6xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-12">
           {/* FAQ Section */}
           <div>
-            <h3 className="text-2xl font-light text-foreground mb-8">Common Questions</h3>
-            <div className="space-y-3">
+            <h3 className="text-2xl font-semibold text-foreground mb-8">Frequently Asked Questions</h3>
+            <div className="space-y-4">
               {faqs.map((faq, index) => (
-                <div key={index} className="border-b border-border/50">
+                <div key={index} className="bg-card rounded-xl border border-border/50">
                   <button
-                    className="w-full py-5 text-left flex justify-between items-center"
+                    className="w-full p-6 text-left flex justify-between items-center hover:bg-muted/50 transition-smooth rounded-xl"
                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
                   >
-                    <span className="font-medium text-card-foreground text-sm">{faq.question}</span>
+                    <span className="font-semibold text-card-foreground">{faq.question}</span>
                     {openFaq === index ? 
-                      <ChevronUp className="w-4 h-4 text-muted-foreground flex-shrink-0 ml-4" /> : 
-                      <ChevronDown className="w-4 h-4 text-muted-foreground flex-shrink-0 ml-4" />
+                      <ChevronUp className="w-5 h-5 text-muted-foreground" /> : 
+                      <ChevronDown className="w-5 h-5 text-muted-foreground" />
                     }
                   </button>
                   {openFaq === index && (
-                    <div className="pb-5 text-muted-foreground leading-relaxed text-sm font-light">
+                    <div className="px-6 pb-6 text-muted-foreground leading-relaxed">
                       {faq.answer}
                     </div>
                   )}
@@ -87,21 +90,34 @@ const Support = () => {
 
           {/* Contact Section */}
           <div>
-            <h3 className="text-2xl font-light text-foreground mb-8">Get in Touch</h3>
-            <div className="space-y-4">
+            <h3 className="text-2xl font-semibold text-foreground mb-8">Get in Touch</h3>
+            <div className="space-y-6">
               {contactOptions.map((option, index) => (
-                <div key={index} className="p-6 border-b border-border/50 last:border-b-0">
+                <div key={index} className="bg-card p-6 rounded-xl border border-border/50 hover:shadow-card transition-smooth">
                   <div className="flex items-start space-x-4">
-                    <div className="text-white p-2 bg-gradient-primary rounded-full">
+                    <div className="text-orange p-3 bg-gradient-primary rounded-lg">
                       {option.icon}
                     </div>
                     <div className="flex-1">
-                      <h4 className="font-medium text-card-foreground mb-1 text-sm">{option.title}</h4>
-                      <p className="text-muted-foreground text-sm font-light">{option.description}</p>
+                      <h4 className="font-semibold text-card-foreground mb-2">{option.title}</h4>
+                      <p className="text-muted-foreground mb-4">{option.description}</p>
+                      <Button variant="outline" size="sm">
+                        {option.action}
+                      </Button>
                     </div>
                   </div>
                 </div>
               ))}
+            </div>
+            
+            <div className="mt-8 p-6 bg-gradient-subtle rounded-xl border border-border/50">
+            <h4 className="font-semibold text-foreground mb-3">Ready to Unlock Peak Performance?</h4>
+            <p className="text-muted-foreground mb-4">
+              Access our comprehensive performance guide and productivity tutorials for maximum results.
+            </p>
+            <Button variant="default" className="bg-gradient-primary">
+              Access Performance Center
+            </Button>
             </div>
           </div>
         </div>

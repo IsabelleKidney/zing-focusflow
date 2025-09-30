@@ -16,28 +16,34 @@ const Hero = () => {
       <div className="absolute inset-0 bg-black/30"></div>
       
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-6 max-w-5xl mx-auto">
-        <h1 className="text-6xl md:text-7xl lg:text-8xl font-light mb-8 leading-tight tracking-tight">
-          Sharper focus.
+      <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+          Unlock Your Potential.
           <br />
-          Deeper calm.
-          <br />
-          <span className="italic font-light">Peak performance.</span>
+          <span className="bg-gradient-primary bg-clip-text text-transparent">
+            Achieve Success.
+          </span>
         </h1>
         
-        <p className="text-lg md:text-xl mb-12 font-light max-w-2xl mx-auto">
-          FDA-cleared taVNS technology meets premium audio. Experience next-level cognitive enhancement.
+        <p className="text-xl md:text-2xl lg:text-3xl mb-8 font-light max-w-3xl mx-auto leading-relaxed">
+          <span className="font-medium text-yellow">Sharper focus, deeper calm, peak performance.</span>
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button 
             variant="default" 
-            size="lg" 
-            className="bg-gradient-primary hover:bg-orange text-white px-10 py-6 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+            size="xl" 
+            className="bg-gradient-primary hover:bg-orange text-white px-12 py-4 text-xl font-bold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
           >
-            Discover FocusZing
+            Get FocusZing Now
           </Button>
-          <p className="text-sm text-white/80">HSA/FSA eligible</p>
+          <Button 
+            variant="secondary" 
+            size="xl" 
+            className="bg-white/10 backdrop-blur-sm text-white border border-white/20 hover:bg-white/20 px-8 py-4 text-lg font-semibold transition-all duration-300"
+          >
+            Learn More
+          </Button>
         </div>
       </div>
     </section>
