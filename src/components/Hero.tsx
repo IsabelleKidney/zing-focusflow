@@ -31,9 +31,9 @@ const Hero = () => {
         <div className="flex items-center">
           <Button 
             variant="default" 
-            className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-8 py-7 text-lg font-bold transition-all duration-300"
+            className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-8 py-7 text-lg font-bold tracking-tighter transition-all duration-300"
           >
-            FocusZing
+            <span className="scale-y-110 inline-block">FocusZing</span>
           </Button>
         </div>
       </div>
