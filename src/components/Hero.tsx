@@ -18,9 +18,9 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-8 max-w-5xl mx-auto pt-20">
         <h1 className="text-6xl md:text-7xl lg:text-8xl font-light mb-8 leading-[1.1] tracking-tight">
-          Unlock Your Potential.
+          Your Ambition.
           <br />
-          <span className="font-normal">Achieve Success.</span>
+          <span className="font-normal">Amplified.</span>
         </h1>
         
         <p className="text-lg md:text-xl lg:text-2xl mb-12 font-light max-w-2xl mx-auto leading-relaxed opacity-90">
@@ -30,7 +30,7 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             variant="default" 
-            className="bg-white text-foreground hover:bg-white/90 px-10 py-6 text-base font-normal rounded-full shadow-elegant transition-all duration-300 hover:shadow-glow"
+            className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-10 py-6 text-base font-normal transition-all duration-300"
           >
             Get FocusZing Now
           </Button>
