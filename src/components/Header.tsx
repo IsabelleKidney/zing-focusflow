@@ -14,39 +14,38 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-2xl border-b-2 border-gradient-primary/30 shadow-xl shadow-black/20">
-      <nav className="container mx-auto px-6 py-3">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/40">
+      <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
+          <div className="flex items-center space-x-2">
             <img 
               src={focuszingLogo} 
               alt="FocusZing Logo" 
-              className="w-12 h-12"
+              className="w-8 h-8"
             />
-            <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+            <div className="text-lg font-semibold text-foreground">
               FocusZing
             </div>
           </div>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-10">
+          <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground/80 hover:text-orange font-medium text-sm uppercase tracking-wider transition-all duration-300 hover:scale-105 relative group"
+                className="text-foreground/60 hover:text-foreground font-normal text-sm transition-colors duration-200"
               >
                 {item.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-primary transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </div>
           
-          <div className="hidden md:flex items-center space-x-3">
-            <Button variant="ghost" className="font-medium text-sm hover:bg-orange/10">
+          <div className="hidden md:flex items-center space-x-4">
+            <Button variant="ghost" className="font-normal text-sm text-foreground/60 hover:text-foreground hover:bg-transparent">
               Subscribe
             </Button>
-            <Button variant="default" className="font-bold bg-gradient-primary hover:bg-orange text-white px-8 py-2.5 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl">
+            <Button variant="default" className="font-medium bg-gradient-primary text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity">
               Order Now
             </Button>
           </div>
@@ -62,23 +61,23 @@ const Header = () => {
         
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-border/50">
+          <div className="md:hidden mt-4 py-4 border-t border-border/40">
             <div className="flex flex-col space-y-4">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-orange transition-smooth font-medium py-2"
+                  className="text-foreground/60 hover:text-foreground transition-colors py-2"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
               <div className="flex flex-col space-y-3 pt-4">
-                <Button variant="ghost" className="font-medium">
+                <Button variant="ghost" className="font-normal text-foreground/60 hover:text-foreground">
                   Subscribe
                 </Button>
-                <Button variant="default" className="font-bold bg-gradient-primary hover:bg-orange text-white rounded-full">
+                <Button variant="default" className="font-medium bg-gradient-primary text-white rounded-full hover:opacity-90">
                   Order Now
                 </Button>
               </div>
