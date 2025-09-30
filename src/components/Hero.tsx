@@ -6,14 +6,15 @@ const Hero = () => {
     <section className="min-h-screen relative flex items-center overflow-hidden">
       {/* Background Image - Right Side */}
       <div 
-        className="absolute inset-0 bg-cover bg-right bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url(${heroImage})`
+          backgroundImage: `url(${heroImage})`,
+          backgroundPosition: '70% center'
         }}
       />
       
-      {/* Gradient Overlay - Darker on Left */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/20"></div>
+      {/* Gradient Overlay - Lighter */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
       
       {/* Content - Left Aligned */}
       <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 max-w-3xl pt-32 pb-20">
