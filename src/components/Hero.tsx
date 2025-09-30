@@ -20,11 +20,11 @@ const Hero = () => {
         <h1 className="text-6xl md:text-7xl lg:text-8xl font-light mb-8 leading-[1.1] tracking-tight">
           Your Ambition.
           <br />
-          <span className="font-normal">Amplified.</span>
+          <span className="font-normal text-orange">Amplified.</span>
         </h1>
         
         <p className="text-lg md:text-xl lg:text-2xl mb-12 font-light max-w-2xl mx-auto leading-relaxed opacity-90">
-          Sharper focus, deeper calm, peak performance.
+          Laser focus, deeper calm, peak performance.
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
