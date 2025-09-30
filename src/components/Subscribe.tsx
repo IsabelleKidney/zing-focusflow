@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Mail, CheckCircle } from "lucide-react";
+import { Mail, Send } from "lucide-react";
 
 const Subscribe = () => {
   const [email, setEmail] = useState("");
@@ -16,55 +16,55 @@ const Subscribe = () => {
     }
   };
 
-  if (isSubscribed) {
-    return (
-      <section className="py-16 bg-gradient-primary">
-        <div className="container mx-auto px-6 text-center">
-          <div className="max-w-md mx-auto bg-white/10 backdrop-blur-sm p-8 rounded-xl">
-            <CheckCircle className="w-16 h-16 text-white mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-white mb-2">Thank You!</h3>
-            <p className="text-white/90">
-              You're subscribed! Watch for exclusive offers and updates.
-            </p>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
   return (
-    <section className="py-16 bg-gradient-primary">
-      <div className="container mx-auto px-6 text-center">
+    <section id="subscribe" className="py-24 bg-muted">
+      <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto">
-          <Mail className="w-16 h-16 text-white mx-auto mb-6" />
-          <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Stay Ahead of the Game
-          </h3>
-          <p className="text-xl text-white/90 mb-8">
-            Be the first to access exclusive performance tips, productivity insights, and FocusZing updates.
-          </p>
-          
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-            <Input
-              type="email"
-              placeholder="Enter your email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 bg-white/10 backdrop-blur-sm border-white/20 text-white placeholder:text-white/60 focus:border-white/40"
-              required
-            />
-            <Button 
-              type="submit"
-              variant="secondary"
-              className="bg-white text-orange hover:bg-white/90 font-semibold px-8"
-            >
-              Subscribe
-            </Button>
-          </form>
-          
-          <p className="text-white/70 text-sm mt-4">
-            No spam. Unsubscribe anytime.
-          </p>
+          {isSubscribed ? (
+            <div className="text-center animate-fade-in">
+              <div className="bg-gradient-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Mail className="w-8 h-8 text-white" />
+              </div>
+              <h2 className="text-4xl font-light text-foreground mb-4">
+                You're in
+              </h2>
+              <p className="text-lg text-muted-foreground font-light">
+                Welcome to the FocusZing community.
+              </p>
+            </div>
+          ) : (
+            <div className="text-center">
+              <h2 className="text-5xl md:text-6xl font-light text-foreground mb-6">
+                Stay <span className="italic">informed</span>
+              </h2>
+              <p className="text-lg text-muted-foreground mb-10 font-light">
+                Exclusive offers and insights delivered to your inbox.
+              </p>
+              
+              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+                <Input
+                  type="email"
+                  placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                  className="flex-1 px-6 py-6 text-base bg-card border-border/50 font-light"
+                />
+                <Button 
+                  type="submit"
+                  size="lg"
+                  className="bg-gradient-primary hover:bg-orange text-white px-8 py-6 text-base font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                >
+                  Subscribe
+                  <Send className="ml-2 h-5 w-5" />
+                </Button>
+              </form>
+              
+              <p className="text-xs text-muted-foreground mt-6 font-light">
+                Unsubscribe anytime.
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </section>
