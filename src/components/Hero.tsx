@@ -18,7 +18,7 @@ const Hero = () => {
       
       {/* Content - Left Aligned */}
       <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 max-w-3xl pt-12 pb-20">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium mb-40 leading-[1.1] tracking-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium mb-48 leading-[1.1] tracking-tight">
           Your Ambition
           <br />
           <span className="font-semibold text-orange">Amplified</span>
