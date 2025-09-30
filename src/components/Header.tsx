@@ -22,7 +22,7 @@ const Header = () => {
             <img 
               src={focuszingLogo} 
               alt="FocusZing Logo" 
-              className="w-12 h-12 object-contain opacity-75 mix-blend-lighten"
+              className="w-12 h-12 object-contain mix-blend-screen brightness-110"
             />
           </div>
           
