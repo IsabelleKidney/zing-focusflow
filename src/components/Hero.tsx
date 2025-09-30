@@ -17,14 +17,14 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
       
       {/* Content - Left Aligned */}
-      <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 max-w-3xl pt-20 pb-20">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium mb-16 leading-[1.1] tracking-tight">
+      <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 max-w-3xl pt-12 pb-20">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-medium mb-24 leading-[1.1] tracking-tight">
           Your Ambition.
           <br />
           <span className="font-semibold text-orange">Amplified.</span>
         </h1>
         
-        <p className="text-lg md:text-xl lg:text-2xl mb-12 font-light leading-relaxed opacity-90">
+        <p className="text-lg md:text-xl lg:text-2xl mb-14 font-light leading-relaxed opacity-90">
           Laser Focus. Deep Calm. Peak Performance.
         </p>
         
