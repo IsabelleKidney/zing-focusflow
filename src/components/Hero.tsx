@@ -9,12 +9,12 @@ const Hero = () => {
         className="absolute inset-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url(${heroImage})`,
-          backgroundPosition: '100% center'
+          backgroundPosition: 'center center'
         }}
       />
       
-      {/* Gradient Overlay - Lighter */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
+      {/* Gradient Overlay - Lighter, stronger on mobile */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent md:from-black/70 md:via-black/40 md:to-transparent"></div>
       
       {/* Content - Left Aligned */}
       <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 max-w-3xl pt-12 pb-20">
