@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import focuszingLogo from "@/assets/zing-logo.png";
+import focuszingLogo from "@/assets/focuszing-logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,7 +22,7 @@ const Header = () => {
             <img 
               src={focuszingLogo} 
               alt="FocusZing Logo" 
-              className="w-12 h-12 object-contain"
+              className="w-12 h-12 object-contain opacity-80 mix-blend-multiply"
             />
           </div>
           
