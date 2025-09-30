@@ -27,18 +27,12 @@ const Hero = () => {
           Laser focus, deeper calm, peak performance.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex justify-center items-center">
           <Button 
             variant="default" 
             className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-10 py-6 text-base font-normal transition-all duration-300"
           >
             Get FocusZing Now
-          </Button>
-          <Button 
-            variant="ghost" 
-            className="text-white border-white/30 hover:bg-white/10 px-10 py-6 text-base font-light rounded-full transition-all duration-300"
-          >
-            Learn More
           </Button>
         </div>
       </div>
