@@ -10,7 +10,8 @@ const Header = () => {
     { name: "Features", href: "#features" },
     { name: "Science", href: "#science" },
     { name: "Reviews", href: "#reviews" },
-    { name: "Support", href: "#support" }
+    { name: "Support", href: "#support" },
+    { name: "Subscribe", href: "#subscribe" }
   ];
 
   return (
@@ -21,7 +22,7 @@ const Header = () => {
             <img 
               src={focuszingLogo} 
               alt="FocusZing Logo" 
-              className="w-12 h-12 object-contain"
+              className="w-12 h-12 object-contain opacity-90"
             />
           </div>
           
@@ -36,23 +37,20 @@ const Header = () => {
         
         {/* Hamburger Menu */}
         {isOpen && (
-          <div className="absolute right-8 top-full mt-4 py-6 px-6 bg-background/95 backdrop-blur-xl border border-border/50 rounded-2xl shadow-elegant min-w-[200px]">
+          <div className="absolute right-8 top-full mt-4 py-6 px-6 bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl shadow-elegant min-w-[200px]">
             <div className="flex flex-col space-y-6">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-foreground/60 hover:text-foreground transition-colors text-sm tracking-wide text-right"
+                  className="text-white/80 hover:text-white transition-colors text-sm tracking-wide text-right"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <div className="flex flex-col space-y-4 pt-4 border-t border-border/30">
-                <Button variant="ghost" className="font-normal text-sm text-foreground/60 hover:text-foreground">
-                  Subscribe
-                </Button>
-                <Button variant="default" className="font-medium text-sm bg-foreground text-background rounded-full hover:bg-foreground/90 transition-colors px-6 py-5">
+              <div className="pt-4 border-t border-white/10">
+                <Button variant="default" className="w-full font-medium text-sm bg-gradient-primary text-white rounded-full hover:opacity-90 transition-all px-6 py-5">
                   Order Now
                 </Button>
               </div>
