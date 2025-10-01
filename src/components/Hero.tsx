@@ -21,7 +21,9 @@ const Hero = () => {
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-extrabold mb-56 leading-[1.1] tracking-tight">
           Power Your Productivity
           <br />
-          <span className="text-orange">Elevate Vitality</span>
+          <span className="text-orange">Elevate
+          <br />
+          Vitality</span>
         </h1>
         
         <p className="text-lg md:text-xl lg:text-2xl mb-16 font-light leading-relaxed opacity-90">
