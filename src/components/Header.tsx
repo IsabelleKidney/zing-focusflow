@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import focuszingLogo from "@/assets/focuszing-logo-clean.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,68 +9,44 @@ const Header = () => {
   const navItems = [
     { name: "Features", href: "#features" },
     { name: "Science", href: "#science" },
-    { name: "Reviews", href: "#testimonials" },
-    { name: "Support", href: "#support" }
+    { name: "Reviews", href: "#reviews" },
+    { name: "Support", href: "#support" },
+    { name: "Subscribe", href: "#subscribe" }
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
-      <nav className="container mx-auto px-6 py-4">
+    <header className="fixed top-0 left-0 right-0 z-50">
+      <nav className="container mx-auto px-8 py-6">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-            Zing
+          <div className="flex items-center">
+            {/* Logo removed */}
           </div>
           
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-foreground hover:text-primary transition-smooth font-medium"
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
-          
-          <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="font-medium">
-              Login
-            </Button>
-            <Button variant="hero" className="font-semibold">
-              Order Now
-            </Button>
-          </div>
-          
-          {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2"
+            className="p-2 text-white hover:text-white/80 transition-colors"
             onClick={() => setIsOpen(!isOpen)}
+            aria-label="Toggle menu"
           >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
         
-        {/* Mobile Navigation */}
+        {/* Hamburger Menu */}
         {isOpen && (
-          <div className="md:hidden mt-4 py-4 border-t border-border/50">
-            <div className="flex flex-col space-y-4">
+          <div className="absolute right-8 top-full mt-4 py-6 px-6 bg-black/40 backdrop-blur-xl border border-white/10 rounded-2xl shadow-elegant min-w-[200px]">
+            <div className="flex flex-col space-y-6">
               {navItems.map((item) => (
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-foreground hover:text-primary transition-smooth font-medium py-2"
+                  className="text-white/80 hover:text-white transition-colors text-sm tracking-wide text-right"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </a>
               ))}
-              <div className="flex flex-col space-y-2 pt-4">
-                <Button variant="ghost" className="font-medium">
-                  Login
-                </Button>
-                <Button variant="hero" className="font-semibold">
+              <div className="pt-4 border-t border-white/10">
+                <Button variant="default" className="w-full font-medium text-sm bg-gradient-primary text-white rounded-full hover:opacity-90 transition-all px-6 py-5">
                   Order Now
                 </Button>
               </div>
