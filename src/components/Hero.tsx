@@ -19,9 +19,9 @@ const Hero = () => {
       {/* Content - Left Aligned */}
       <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 max-w-3xl pt-12 pb-20" style={{ paddingLeft: 'calc(2rem + 1cm)' }}>
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-extrabold mb-56 leading-[1.1] tracking-tight">
-          Your Ambition
+          Power Your Productivity
           <br />
-          <span className="text-orange">Amplified</span>
+          <span className="text-orange">Elevate Vitality</span>
         </h1>
         
         <p className="text-lg md:text-xl lg:text-2xl mb-16 font-light leading-relaxed opacity-90">
