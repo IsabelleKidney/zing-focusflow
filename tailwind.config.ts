@@ -39,18 +39,6 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
-        orange: {
-          DEFAULT: "hsl(var(--orange))",
-          foreground: "hsl(var(--orange-foreground))",
-          light: "hsl(var(--orange-light))",
-          dark: "hsl(var(--orange-dark))",
-        },
-        yellow: {
-          DEFAULT: "hsl(var(--yellow))",
-          foreground: "hsl(var(--yellow-foreground))",
-          light: "hsl(var(--yellow-light))",
-          dark: "hsl(var(--yellow-dark))",
-        },
         popover: {
           DEFAULT: "hsl(var(--popover))",
           foreground: "hsl(var(--popover-foreground))",
@@ -72,8 +60,6 @@ export default {
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
-        'gradient-orange': 'var(--gradient-orange)',
-        'gradient-yellow': 'var(--gradient-yellow)',
         'gradient-hero': 'var(--gradient-hero)', 
         'gradient-subtle': 'var(--gradient-subtle)',
       },

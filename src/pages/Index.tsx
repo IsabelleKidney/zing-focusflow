@@ -2,10 +2,8 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Features from "@/components/Features";
 import Science from "@/components/Science";
-import Reviews from "@/components/Reviews";
-import Support from "@/components/Support";
-import Subscribe from "@/components/Subscribe";
-import Footer from "@/components/Footer";
+import Testimonials from "@/components/Testimonials";
+import CTA from "@/components/CTA";
 
 const Index = () => {
   return (
@@ -13,13 +11,17 @@ const Index = () => {
       <Header />
       <main>
         <Hero />
-        <Features />
-        <Science />
-        <Reviews />
-        <Support />
-        <Subscribe />
+        <div id="features">
+          <Features />
+        </div>
+        <div id="science">
+          <Science />
+        </div>
+        <div id="testimonials">
+          <Testimonials />
+        </div>
+        <CTA />
       </main>
-      <Footer />
     </div>
   );
 };
