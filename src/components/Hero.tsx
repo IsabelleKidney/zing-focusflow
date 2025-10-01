@@ -14,7 +14,7 @@ const Hero = () => {
       />
       
       {/* Gradient Overlay - Lighter, stronger on mobile */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent md:from-black/70 md:via-black/40 md:to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent md:from-black/55 md:via-black/30 md:to-transparent"></div>
       
       {/* Content - Left Aligned */}
       <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 max-w-3xl pt-12 pb-20" style={{ paddingLeft: 'calc(2rem + 1cm)' }}>
