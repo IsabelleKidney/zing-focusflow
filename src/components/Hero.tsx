@@ -27,7 +27,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-lg md:text-xl lg:text-2xl mb-16 font-light leading-relaxed opacity-90">
-          Laser Focus. Deep Calm. Peak Performance.
+          Laser Focus. Deep Calm. <br className="md:hidden" />Peak Performance.
         </p>
         
         <div className="flex items-center">
