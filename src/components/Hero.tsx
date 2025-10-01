@@ -26,17 +26,16 @@ const Hero = () => {
           Vitality</span>
         </h1>
         
-        <p className="text-lg md:text-xl lg:text-2xl mb-16 font-light leading-relaxed opacity-90">
+        <p className="text-lg md:text-xl lg:text-2xl mb-16 font-light leading-relaxed text-[hsl(30,95%,65%)]">
           Laser Focus. Deep Calm. <br className="md:hidden" />Peak Performance.
         </p>
         
         <div className="flex items-center">
           <Button 
             variant="default" 
-            className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-8 py-7 text-lg font-semibold tracking-tighter transition-all duration-300 shadow-lg"
-            style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}
+            className="bg-gradient-orange text-white rounded-lg hover:opacity-90 px-8 py-6 text-base font-semibold transition-all duration-300 shadow-lg"
           >
-            <span className="scale-y-110 inline-block">FocusZing</span>
+            Get FocusZing Now
           </Button>
         </div>
       </div>
