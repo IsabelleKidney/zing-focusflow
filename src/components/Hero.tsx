@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-woman-earpiece.jpg";
+import heroImage from "@/assets/hero-woman-earpiece-young.jpg";
 
 const Hero = () => {
   return (
@@ -17,21 +17,22 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent md:from-black/55 md:via-black/30 md:to-transparent"></div>
       
       {/* Content - Left Aligned */}
-      <div className="relative z-10 text-white px-6 md:px-16 lg:px-24 max-w-4xl pt-16 md:pt-12 pb-20 md:pl-[calc(2rem+1cm)]">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-extrabold mb-36 leading-[1.1] tracking-tight">
-          <span className="text-orange">Fuel Your Focus</span>
+      <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 max-w-3xl pt-12 pb-20" style={{ paddingLeft: 'calc(2rem + 1cm)' }}>
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-extrabold mb-56 leading-[1.1] tracking-tight">
+          Power Your Productivity
           <br />
-          Power Your Potential
+          <span className="text-orange">Elevate Vitality</span>
         </h1>
         
-        <p className="text-lg md:text-xl lg:text-2xl mb-8 font-normal leading-relaxed opacity-95">
-          Laser Focus. Deep Calm. <br className="md:hidden" />Peak Performance.
+        <p className="text-lg md:text-xl lg:text-2xl mb-16 font-light leading-relaxed opacity-90">
+          Laser Focus. Deep Calm. Peak Performance.
         </p>
         
         <div className="flex items-center">
           <Button 
             variant="default" 
-            className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-8 py-7 text-lg font-bold tracking-tight transition-all duration-300"
+            className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-8 py-7 text-lg font-semibold tracking-tighter transition-all duration-300 shadow-lg"
+            style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}
           >
             <span className="scale-y-110 inline-block">Get FocusZing Now</span>
           </Button>
