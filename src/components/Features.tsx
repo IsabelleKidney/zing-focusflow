@@ -5,32 +5,32 @@ const Features = () => {
     {
       icon: <Brain className="w-8 h-8" />,
       title: "taVNS Technology",
-      description: "Clinically proven transcutaneous auricular vagus nerve stimulation for enhanced cognitive performance and focus."
+      description: "Gentle neurostimulation through your ear that's clinically proven to improve focus and attentional improvements."
     },
     {
       icon: <Headphones className="w-8 h-8" />,
       title: "Premium Audio Integration",
-      description: "High-fidelity audio experience with your favorite productivity music, focus soundscapes, or business podcasts."
+      description: "Listen to your favorite music, podcasts, or focus sounds while you boost your brain performance."
     },
     {
       icon: <Target className="w-8 h-8" />,
       title: "Laser Focus",
-      description: "Achieve unprecedented levels of concentration and mental clarity for peak performance in any task."
+      description: "Stay locked in on what matters most with enhanced concentration and mental clarity."
     },
     {
       icon: <TrendingUp className="w-8 h-8" />,
       title: "Enhanced Productivity",
-      description: "Maximize your output and efficiency with sustained attention spans and elevated cognitive function."
+      description: "Get more done with better attention spans and improved cognitive function throughout your day."
     },
     {
       icon: <Lightbulb className="w-8 h-8" />,
       title: "Creative Breakthrough",
-      description: "Unlock your creative potential and innovative thinking for problem-solving and strategic planning."
+      description: "Solve problems faster and think more creatively when it matters most."
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Instant Results",
-      description: "Feel the focus enhancement within minutes. Experience immediate cognitive boost and sustained performance."
+      description: "Feel sharper and more focused within minutes of putting them on."
     }
   ];
 
