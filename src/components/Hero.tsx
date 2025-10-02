@@ -34,7 +34,7 @@ const Hero = () => {
             className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-8 py-7 text-lg font-semibold tracking-tighter transition-all duration-300 shadow-lg"
             style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}
           >
-            <span className="scale-y-110 inline-block">FocusZing</span>
+            <span className="scale-y-110 inline-block">Get FocusZing Now</span>
           </Button>
         </div>
       </div>
