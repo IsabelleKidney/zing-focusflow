@@ -24,7 +24,7 @@ const Hero = () => {
           <span className="text-orange">Elevate Vitality</span>
         </h1>
         
-        <p className="text-lg md:text-xl lg:text-2xl mb-16 font-light leading-relaxed opacity-90">
+        <p className="text-lg md:text-xl lg:text-2xl mb-16 font-light leading-relaxed text-orange">
           Laser Focus. Deep Calm. Peak Performance.
         </p>
         
