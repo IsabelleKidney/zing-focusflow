@@ -18,13 +18,13 @@ const Hero = () => {
       
       {/* Content - Left Aligned */}
       <div className="relative z-10 text-white px-6 md:px-16 lg:px-24 max-w-3xl pt-20 md:pt-12 pb-20 md:pl-[calc(2rem+1cm)]">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-extrabold mb-56 leading-[1.1] tracking-tight">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-extrabold mb-8 leading-[1.1] tracking-tight">
           <span className="text-orange">Fuel Your Focus</span>
           <br />
           Power Your Potential
         </h1>
         
-        <p className="text-lg md:text-xl lg:text-2xl mb-16 font-normal leading-relaxed opacity-95">
+        <p className="text-lg md:text-xl lg:text-2xl mb-8 font-normal leading-relaxed opacity-95">
           Laser Focus. Deep Calm. <br className="md:hidden" />Peak Performance.
         </p>
         
