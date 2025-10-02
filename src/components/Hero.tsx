@@ -17,15 +17,15 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent md:from-black/55 md:via-black/30 md:to-transparent"></div>
       
       {/* Content - Left Aligned */}
-      <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 max-w-3xl pt-24 md:pt-12 pb-20" style={{ paddingLeft: 'calc(2rem + 1cm)' }}>
+      <div className="relative z-10 text-white px-8 md:px-16 lg:px-24 max-w-3xl pt-12 pb-20" style={{ paddingLeft: 'calc(2rem + 1cm)' }}>
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-extrabold mb-56 leading-[1.1] tracking-tight">
           <span className="text-orange">Fuel Your Focus</span>
           <br />
           Power Your Potential
         </h1>
         
-        <p className="text-lg md:text-xl lg:text-2xl mb-16 font-normal leading-relaxed opacity-95 max-w-xs md:max-w-none">
-          Laser Focus. Deep Calm. <br className="md:hidden" />Peak Performance.
+        <p className="text-lg md:text-xl lg:text-2xl mb-16 font-normal leading-relaxed opacity-95">
+          Laser Focus. Deep Calm. Peak Performance.
         </p>
         
         <div className="flex items-center">
