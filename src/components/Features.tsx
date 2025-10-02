@@ -5,7 +5,7 @@ const Features = () => {
     {
       icon: <Brain className="w-8 h-8" />,
       title: "taVNS Technology",
-      description: "Gentle neurostimulation through your ear that's clinically proven to improve focus and attentional improvements."
+      description: "Gentle cranial nerve stimulation that's clinically proven to improve focus and attentional improvements."
     },
     {
       icon: <Headphones className="w-8 h-8" />,
