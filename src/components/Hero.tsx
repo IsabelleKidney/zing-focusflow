@@ -17,7 +17,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent md:from-black/55 md:via-black/30 md:to-transparent"></div>
       
       {/* Content - Left Aligned */}
-      <div className="relative z-10 text-white px-6 md:px-16 lg:px-24 max-w-3xl pt-20 md:pt-12 pb-20 md:pl-[calc(2rem+1cm)]">
+      <div className="relative z-10 text-white px-6 md:px-16 lg:px-24 max-w-3xl pt-16 md:pt-12 pb-20 md:pl-[calc(2rem+1cm)]">
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-extrabold mb-36 leading-[1.1] tracking-tight">
           <span className="text-orange">Fuel Your Focus</span>
           <br />
