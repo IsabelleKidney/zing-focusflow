@@ -21,7 +21,7 @@ const Hero = () => {
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-extrabold mb-56 leading-[1.1] tracking-tight">
           <span className="text-orange">Fuel Your Focus</span>
           <br />
-          Power Your Performance
+          Power Your Potential
         </h1>
         
         <p className="text-lg md:text-xl lg:text-2xl mb-16 font-normal leading-relaxed opacity-95">
