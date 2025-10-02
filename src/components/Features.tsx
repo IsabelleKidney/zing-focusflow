@@ -10,7 +10,7 @@ const Features = () => {
     {
       icon: <Headphones className="w-8 h-8" />,
       title: "Premium Audio Integration",
-      description: "Listen to your favorite music, podcasts, or focus sounds while you boost your brain performance."
+      description: "Listen to your favourite music, sound baths, podcasts or focus sounds to help boost your brain performance."
     },
     {
       icon: <Target className="w-8 h-8" />,
