@@ -1,4 +1,4 @@
-import { Zap, Brain, Headphones, Target, TrendingUp, Lightbulb } from "lucide-react";
+import { Zap, Brain, Headphones, Target, TrendingUp, Sparkles } from "lucide-react";
 
 const Features = () => {
   const features = [
@@ -23,7 +23,7 @@ const Features = () => {
       description: "Get more done with better attention spans and improved cognitive function throughout your day."
     },
     {
-      icon: <Lightbulb className="w-8 h-8" />,
+      icon: <Sparkles className="w-8 h-8" />,
       title: "Charge Your Vitality",
       description: "Use daily for 45 minutes while meditating or working to unlock amazing energy, emotional resilience, and an elevated mood."
     },
