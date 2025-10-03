@@ -20,7 +20,7 @@ const Features = () => {
     {
       icon: <TrendingUp className="w-8 h-8" />,
       title: "Enhanced Productivity",
-      description: "Accomplish more in less time with laser focus, freeing up hours to live your life and do what truly matters to you."
+      description: "Accomplish more in less time with laser focus, freeing up hours to live your life and do more of what matters to you."
     },
     {
       icon: <Sun className="w-8 h-8" />,
