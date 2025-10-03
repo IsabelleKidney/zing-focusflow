@@ -42,7 +42,7 @@ const Features = () => {
             Where Neuroscience Meets Performance
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
-            Experience peak productivity, powered by neuroscience and immersive sound.
+            Experience peak productivity powered by neuroscience and immersive sound.
           </p>
         </div>
         
