@@ -5,7 +5,7 @@ const Features = () => {
     {
       icon: <Brain className="w-8 h-8" />,
       title: "Neurostimulation",
-      description: "Precision-engineered earpiece delivering gentle microcurrent to your vagus nerve—the cranial nerve managing calm—to enhance attentional performance."
+      description: "Enhance your attentional performance with a precision engineered earpiece delivering a gentle microcurrent that stimulates your vagus nerve, the cranial nerve for instilling calm."
     },
     {
       icon: <Headphones className="w-8 h-8" />,
