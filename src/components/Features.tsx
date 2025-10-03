@@ -1,4 +1,4 @@
-import { Zap, Brain, Headphones, Target, TrendingUp, Sun } from "lucide-react";
+import { Zap, Brain, Headphones, Target, Trophy, Sun } from "lucide-react";
 
 const Features = () => {
   const features = [
@@ -18,9 +18,9 @@ const Features = () => {
       description: "Stay locked in on what matters most with enhanced concentration and calm."
     },
     {
-      icon: <TrendingUp className="w-8 h-8" />,
-      title: "Enhanced Productivity",
-      description: "Accomplish more in less time with laser focus, freeing up hours to live your life and do more of what matters to you."
+      icon: <Trophy className="w-8 h-8" />,
+      title: "Own It",
+      description: "Finish tasks that drive your ambition, and free up time for more of what really matters."
     },
     {
       icon: <Sun className="w-8 h-8" />,
