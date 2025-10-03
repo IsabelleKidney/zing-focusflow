@@ -24,8 +24,8 @@ const Features = () => {
     },
     {
       icon: <Lightbulb className="w-8 h-8" />,
-      title: "Creative Breakthrough",
-      description: "Solve problems faster and think more creatively when it matters most."
+      title: "Enhanced Vitality",
+      description: "Use daily for 45 minutes while meditating or working to unlock amazing energy, emotional resilience, and an elevated mood."
     },
     {
       icon: <Zap className="w-8 h-8" />,
