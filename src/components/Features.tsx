@@ -25,7 +25,7 @@ const Features = () => {
     {
       icon: <Sun className="w-8 h-8" />,
       title: "Charge Your Vitality",
-      description: "Use daily for 45 minutes while meditating or working to unlock amazing energy, emotional resilience, and an elevated mood."
+      description: "Use daily for 45 minutes with vocal meditation or humming (like 'ommm') - even during work - to unlock amazing energy, emotional resilience, and elevated mood. The combined microcurrent, music and vocal humming is an unprecedented triple decker of vagus nerve stimulation."
     },
     {
       icon: <Zap className="w-8 h-8" />,
