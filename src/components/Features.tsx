@@ -39,7 +39,7 @@ const Features = () => {
       <div className="container mx-auto px-8 max-w-7xl">
         <div className="text-center mb-24">
           <h2 className="text-5xl md:text-6xl font-light text-foreground mb-6 tracking-tight">
-            Revolutionary Focus Technology
+            Where Neuroscience Meets Performance
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
             Experience the perfect fusion of neuroscience and audio engineering designed for peak performance.
