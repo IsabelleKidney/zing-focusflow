@@ -25,7 +25,7 @@ const Features = () => {
     {
       icon: <Sun className="w-8 h-8" />,
       title: "Charge Your Vitality",
-      description: "Use daily for 45 minutes with vocal meditation or humming (like 'ommm') - even while working - to unlock amazing energy, emotional resilience, and elevated mood."
+      description: "To unlock amazing energy, emotional resilience, and elevated mood, use daily for 45 minutes with vocal meditation or humming (like 'ommm') - even while working!"
     },
     {
       icon: <Zap className="w-8 h-8" />,
