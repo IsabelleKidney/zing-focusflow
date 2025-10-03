@@ -24,7 +24,7 @@ const Features = () => {
     },
     {
       icon: <Lightbulb className="w-8 h-8" />,
-      title: "Enhanced Vitality",
+      title: "Charge Your Vitality",
       description: "Use daily for 45 minutes while meditating or working to unlock amazing energy, emotional resilience, and an elevated mood."
     },
     {
