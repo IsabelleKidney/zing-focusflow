@@ -30,7 +30,7 @@ const Features = () => {
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Instant Results",
-      description: "Feel sharper and more focused within minutes of putting them on."
+      description: "Feel more focused within minutes of putting them on."
     }
   ];
 
