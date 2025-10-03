@@ -15,7 +15,7 @@ const Features = () => {
     {
       icon: <Target className="w-8 h-8" />,
       title: "Laser Focus",
-      description: "Stay locked in on what matters most with enhanced concentration and calm."
+      description: "Stay locked in on what matters most with enhanced concentration and serenity."
     },
     {
       icon: <Trophy className="w-8 h-8" />,
