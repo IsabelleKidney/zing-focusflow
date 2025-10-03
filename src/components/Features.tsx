@@ -30,7 +30,7 @@ const Features = () => {
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Instant Results",
-      description: "Notice your attention improve within minutes of putting FocusZing on"
+      description: "Feel more focused within minutes of putting them on."
     }
   ];
 
