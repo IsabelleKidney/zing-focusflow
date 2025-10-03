@@ -5,7 +5,7 @@ const Features = () => {
     {
       icon: <Brain className="w-8 h-8" />,
       title: "Neurostimulation",
-      description: "Precision-engineered microcurrent stimulates your vagus nerve—the cranial nerve of serenity—for enhanced attentional performance."
+      description: "Precision-engineered microcurrent stimulates your vagus nerve—the cranial nerve of calm—for enhanced attentional performance."
     },
     {
       icon: <Headphones className="w-8 h-8" />,
@@ -15,7 +15,7 @@ const Features = () => {
     {
       icon: <Target className="w-8 h-8" />,
       title: "Laser Focus",
-      description: "Stay locked in on what matters most with enhanced concentration and serenity."
+      description: "Stay locked in on what matters most with enhanced concentration and calm."
     },
     {
       icon: <Trophy className="w-8 h-8" />,
