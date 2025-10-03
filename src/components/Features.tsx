@@ -4,7 +4,7 @@ const Features = () => {
   const features = [
     {
       icon: <Brain className="w-8 h-8" />,
-      title: "taVNS Technology",
+      title: "Neurostimulation",
       description: "Neurostimulation through an earpiece delivering a gentle microcurrent to your vagus nerve which can improve attentional performance."
     },
     {
