@@ -16,7 +16,7 @@ const Support = () => {
     },
     {
       question: "How quickly will I see performance improvements?",
-      answer: "Most users experience immediate focus enhancement within minutes. For sustained cognitive benefits and peak performance, we recommend consistent daily use during your most important tasks."
+      answer: "Most users experience immediate focus enhancement within minutes. For sustained cognitive benefits and peak performance, we recommend that you use it when you are doing tasks that you don't particularly want to do or are finding that you are being distracted from what you should be doing."
     },
     {
       question: "Is it compatible with my existing productivity setup?",
