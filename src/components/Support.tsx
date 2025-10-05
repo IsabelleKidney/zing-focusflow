@@ -24,7 +24,7 @@ const Support = () => {
     },
     {
       question: "What's the optimal way to use FocusZing for maximum results?",
-      answer: "Use FocusZing during your most challenging work sessions - strategic planning, complex problem-solving, creative projects, or intensive study periods. Combine with productivity techniques for amplified results."
+      answer: "Use FocusZing when you are finding it hard to focus optimally or during your most challenging work sessions - strategic planning, complex problem-solving, creative projects, or intensive study periods."
     }
   ];
 
