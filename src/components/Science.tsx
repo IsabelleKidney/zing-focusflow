@@ -8,7 +8,7 @@ const Science = () => {
 
   const stats = [
     { icon: <Activity className="w-8 h-8" />, value: "Faster Performance", label: "Increased Consistency*" },
-    { icon: <Users className="w-8 h-8" />, value: "20+", label: "Clinical Studies" },
+    { icon: <Users className="w-8 h-8" />, value: <span className="text-5xl font-bold">20+</span>, label: "Clinical Studies" },
     { icon: <Award className="w-8 h-8" />, value: <img src={ceMark} alt="CE Mark" className="h-16 mx-auto" />, label: "Certified Device" }
   ];
 
