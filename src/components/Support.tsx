@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, ChevronUp, Mail, Phone, MessageCircle } from "lucide-react";
+import { ChevronDown, ChevronUp, Mail, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Support = () => {
@@ -34,12 +34,6 @@ const Support = () => {
       title: "Email Support",
       description: "support@focuszing.com",
       action: "Send Email"
-    },
-    {
-      icon: <Phone className="w-6 h-6" />,
-      title: "Phone Support", 
-      description: "1-800-FOCUSZING",
-      action: "Call Now"
     },
     {
       icon: <MessageCircle className="w-6 h-6" />,
