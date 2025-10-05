@@ -69,7 +69,7 @@ const Science = () => {
                 </p>
               </div>
               <p className="text-sm text-muted-foreground mt-4 italic">
-                *Based on Chen et al. (2023) randomized study, 20 minutes of taVNS helped people respond faster and more consistently on an attention task — and their brain signals showed stronger attention-related responses. In other words: stimulation made the brain more 'ready to pay attention', and performance improved measurably.
+                *Based on Chen et al. (2023) randomized study, 20 minutes of taVNS helped people respond faster and more consistently on an attention task — and their brain signals showed stronger attention-related responses. In other words: stimulation made the brain more 'ready to pay attention', and performance improved measurably. Published in General Psychiatry.
               </p>
             </div>
           )}
