@@ -14,7 +14,7 @@ const Reviews = () => {
       role: "PhD Student", 
       image: "/src/assets/testimonial-2.jpg",
       rating: 5,
-      quote: "I was able to do a really big piece of work — I am better able to do tasks without getting distracted."
+      quote: "I was able to do a really big piece of work — I am better able to do tasks without getting distracted with the help of FocusZing."
     },
     {
       name: "Kevin",
