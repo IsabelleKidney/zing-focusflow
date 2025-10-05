@@ -21,7 +21,7 @@ const Reviews = () => {
       role: "IT Expert",
       image: "/src/assets/testimonial-3.jpg", 
       rating: 5,
-      quote: "Using Zing with meditation and soothing music daily for a month transformed my anxiety — far more effective for me than antidepressants."
+      quote: "Using FocusZing with meditation and soothing music daily for a month transformed my anxiety — far more effective for me than antidepressants."
     }
   ];
 
