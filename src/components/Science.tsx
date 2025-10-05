@@ -6,7 +6,7 @@ const Science = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const stats = [
-    { icon: <Activity className="w-8 h-8" />, value: "Faster Performance", label: "Increased Consistency Enhanced Neural Markers*" },
+    { icon: <Activity className="w-8 h-8" />, value: "Faster Performance", label: "Increased Consistency*" },
     { icon: <Users className="w-8 h-8" />, value: "50+", label: "Clinical Studies" },
     { icon: <Award className="w-8 h-8" />, value: "FDA", label: "Cleared Technology" }
   ];
