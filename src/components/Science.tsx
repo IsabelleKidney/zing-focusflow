@@ -8,7 +8,7 @@ const Science = () => {
   const stats = [
     { icon: <Activity className="w-8 h-8" />, value: "Faster Performance", label: "Increased Consistency*" },
     { icon: <Users className="w-8 h-8" />, value: "20+", label: "Clinical Studies" },
-    { icon: <Award className="w-8 h-8" />, value: <span className="font-black text-4xl tracking-wide" style={{ fontFamily: 'Arial, sans-serif', letterSpacing: '0.15em' }}>CE</span>, label: "Certified Device" }
+    { icon: <Award className="w-8 h-8" />, value: <span className="text-4xl" style={{ fontFamily: 'Arial Black, Arial Bold, Gadget, sans-serif', fontWeight: 900, letterSpacing: '0.2em' }}>CE</span>, label: "Certified Device" }
   ];
 
   return (
