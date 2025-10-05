@@ -26,8 +26,8 @@ const Science = () => {
         <div className="grid md:grid-cols-3 gap-8 mb-12">
           {stats.map((stat, index) => (
             <div key={index} className="text-center p-8 bg-card rounded-xl shadow-card border border-border/50">
-              <div className="text-orange mb-4 flex justify-center">
-                <div className="p-4 bg-gradient-primary rounded-full">
+              <div className="mb-4 flex justify-center">
+                <div className="p-4 bg-gradient-primary rounded-full text-white">
                   {stat.icon}
                 </div>
               </div>
