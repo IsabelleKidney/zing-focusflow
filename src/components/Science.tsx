@@ -31,7 +31,7 @@ const Science = () => {
                   {stat.icon}
                 </div>
               </div>
-              <div className="text-4xl font-bold text-foreground mb-2">{stat.value}</div>
+              <div className="text-4xl font-bold text-foreground mb-2 min-h-[4.5rem] flex items-center justify-center">{stat.value}</div>
               <div className="text-muted-foreground font-medium">{stat.label}</div>
             </div>
           ))}
