@@ -7,7 +7,7 @@ const Reviews = () => {
       role: "CEO",
       image: "/src/assets/testimonial-1.jpg",
       rating: 5,
-      quote: "I'm turbocharged this week! What a joy! I'm resolving lots of stuff I usually put on the long finger."
+      quote: "FocusZing has been terrific - I'm turbocharged this week! What a joy! I'm resolving lots of stuff I usually put on the long finger."
     },
     {
       name: "Elena",
