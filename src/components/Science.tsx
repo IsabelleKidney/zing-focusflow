@@ -9,7 +9,7 @@ const Science = () => {
   const stats = [
     { icon: <Activity className="w-8 h-8" />, value: "Faster Performance", label: "Increased Consistency*" },
     { icon: <Users className="w-8 h-8" />, value: <span className="text-5xl font-bold">20+</span>, label: "Clinical Studies", link: "/Enhanced_Attention_Clinical_Studies.pdf" },
-    { icon: <Award className="w-8 h-8" />, value: <img src={ceMark} alt="CE Mark" className="h-14 mx-auto" />, label: "Certified Device" }
+    { icon: <Award className="w-8 h-8" />, value: <img src={ceMark} alt="CE Mark" className="h-14 mx-auto scale-110" />, label: "Certified Device" }
   ];
 
   return (
@@ -38,7 +38,7 @@ const Science = () => {
                   href={stat.link} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="text-muted-foreground font-medium hover:text-foreground transition-colors underline"
+                  className="text-muted-foreground font-medium hover:text-foreground transition-colors underline decoration-muted-foreground/30 hover:decoration-muted-foreground/50"
                 >
                   {stat.label}
                 </a>
