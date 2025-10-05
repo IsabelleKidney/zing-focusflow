@@ -69,8 +69,7 @@ const Science = () => {
                 </p>
               </div>
               <p className="text-sm text-muted-foreground mt-4 italic">
-                *Based on Chen et al. (2023) study showing 6.2% improvement in reaction time and attention stability in 
-                healthy adults following 20-minute taVNS intervention. Published in General Psychiatry.
+                *Based on Chen et al. (2023) randomized study, 20 minutes of taVNS helped people respond faster and more consistently on an attention task — and their brain signals showed stronger attention-related responses. In other words: stimulation made the brain more 'ready to pay attention', and performance improved measurably.
               </p>
             </div>
           )}
