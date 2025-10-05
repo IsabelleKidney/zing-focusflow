@@ -28,7 +28,7 @@ const Science = () => {
           {stats.map((stat, index) => (
             <div key={index} className="text-center p-8 bg-card rounded-xl shadow-card border border-border/50">
               <div className="mb-4 flex justify-center">
-                <div className="p-4 bg-gradient-primary rounded-full text-white">
+                <div className="p-4 bg-gradient-primary rounded-full text-white/70">
                   {stat.icon}
                 </div>
               </div>
