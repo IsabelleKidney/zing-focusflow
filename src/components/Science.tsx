@@ -8,7 +8,7 @@ const Science = () => {
 
   const stats = [
     { icon: <Activity className="w-8 h-8" />, value: "Faster Performance", label: "Increased Consistency*" },
-    { icon: <Users className="w-8 h-8" />, value: <span className="text-5xl font-bold">20+</span>, label: "Clinical Studies" },
+    { icon: <Users className="w-8 h-8" />, value: <span className="text-5xl font-bold">20+</span>, label: "Clinical Studies", link: "/Enhanced_Attention_Clinical_Studies.pdf" },
     { icon: <Award className="w-8 h-8" />, value: <img src={ceMark} alt="CE Mark" className="h-14 mx-auto" />, label: "Certified Device" }
   ];
 
@@ -33,7 +33,18 @@ const Science = () => {
                 </div>
               </div>
               <div className="text-4xl font-bold text-foreground mb-2 min-h-[4.5rem] flex items-center justify-center">{stat.value}</div>
-              <div className="text-muted-foreground font-medium">{stat.label}</div>
+              {stat.link ? (
+                <a 
+                  href={stat.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground font-medium hover:text-foreground transition-colors underline"
+                >
+                  {stat.label}
+                </a>
+              ) : (
+                <div className="text-muted-foreground font-medium">{stat.label}</div>
+              )}
             </div>
           ))}
         </div>
