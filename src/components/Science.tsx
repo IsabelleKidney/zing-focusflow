@@ -35,10 +35,9 @@ const Science = () => {
               <div className="text-4xl font-bold text-foreground mb-2 min-h-[4.5rem] flex items-center justify-center">{stat.value}</div>
               {stat.link ? (
                 <a 
-                  href={stat.link} 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-muted-foreground font-medium hover:text-foreground transition-colors underline decoration-muted-foreground/30 hover:decoration-muted-foreground/50"
+                  href={stat.link}
+                  download="FocusZing_Clinical_Studies.pdf"
+                  className="text-muted-foreground font-medium hover:text-foreground transition-colors underline decoration-muted-foreground/30 hover:decoration-muted-foreground/50 cursor-pointer"
                 >
                   {stat.label}
                 </a>
