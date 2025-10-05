@@ -59,8 +59,8 @@ const Science = () => {
                 </p>
                 <p>
                   Clinical research demonstrates that taVNS can improve attention span, working memory, processing speed, 
-                  and executive function. The vagus nerve serves as a key regulator of the brain's attention networks, making it 
-                  essential for sustained focus and peak mental performance.
+                  and executive function. The vagus nerve serves as a regulator of the brain's attention networks, making it 
+                  essential for sustained focus and peak mental performance. Further, VNS by amplifying the vagus nerve's performance can boost activity in parts of the brain associated with mood enhancement and therapeutic effect.
                 </p>
                 <p>
                   FocusZing's advanced technology combines this proven neuroscience with premium audio integration, creating a 
