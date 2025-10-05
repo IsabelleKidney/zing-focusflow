@@ -36,7 +36,6 @@ const Science = () => {
               {stat.link ? (
                 <a 
                   href={stat.link} 
-                  target="_blank" 
                   rel="noopener noreferrer"
                   className="text-muted-foreground font-medium hover:text-foreground transition-colors underline decoration-muted-foreground/30 hover:decoration-muted-foreground/50"
                 >
