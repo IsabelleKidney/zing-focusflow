@@ -32,7 +32,7 @@ const Support = () => {
     {
       icon: <Mail className="w-6 h-6" />,
       title: "Email Support",
-      description: "support@focuszing.com",
+      description: "support@zingenergy.ie",
       action: "Send Email"
     },
     {
