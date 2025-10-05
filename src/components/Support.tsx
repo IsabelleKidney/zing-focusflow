@@ -12,7 +12,7 @@ const Support = () => {
     },
     {
       question: "Can I use it during work or study sessions?",
-      answer: "Absolutely! FocusZing is designed for active use during productivity sessions. The premium audio integration lets you listen to focus music or podcasts while receiving cognitive enhancement."
+      answer: "Absolutely! FocusZing is designed for active use during productivity sessions. The premium audio integration lets you listen to focus music or podcasts while benefiting from vagus nerve stimulation."
     },
     {
       question: "How quickly will I see performance improvements?",
