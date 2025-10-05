@@ -19,7 +19,7 @@ const Science = () => {
             Science-Backed Performance
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            FocusZing's taVNS technology is supported by decades of research proving enhanced cognitive performance and focus.
+            FocusZing's transcutaneous auricular Vagus Nerve Stimulation technology is supported by decades of research proving enhanced cognitive performance and focus.
           </p>
         </div>
 
