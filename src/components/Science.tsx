@@ -6,7 +6,7 @@ const Science = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const stats = [
-    { icon: <Activity className="w-8 h-8" />, value: "94%", label: "Focus Improvement" },
+    { icon: <Activity className="w-8 h-8" />, value: "6.2%", label: "Attention Performance Boost*" },
     { icon: <Users className="w-8 h-8" />, value: "50+", label: "Clinical Studies" },
     { icon: <Award className="w-8 h-8" />, value: "FDA", label: "Cleared Technology" }
   ];
@@ -67,6 +67,10 @@ const Science = () => {
                   comprehensive cognitive enhancement system that integrates seamlessly into your success routine.
                 </p>
               </div>
+              <p className="text-sm text-muted-foreground mt-4 italic">
+                *Based on Chen et al. (2023) study showing 6.2% improvement in reaction time and attention stability in 
+                healthy adults following 20-minute taVNS intervention. Published in General Psychiatry.
+              </p>
             </div>
           )}
         </div>
