@@ -55,7 +55,7 @@ const Science = () => {
               <div className="text-left space-y-4 text-muted-foreground leading-relaxed">
                 <p>
                   Transcutaneous Auricular Vagus Nerve Stimulation (taVNS) is a revolutionary, non-invasive technique that 
-                  precisely stimulates the vagus nerve through the ear, activating neural pathways critical for enhanced cognitive function.
+                  precisely stimulates the vagus nerve through the ear, activating neural pathways implicated in enhanced attentional performance and cognitive function.
                 </p>
                 <p>
                   Clinical research demonstrates that taVNS significantly improves attention span, working memory, processing speed, 
