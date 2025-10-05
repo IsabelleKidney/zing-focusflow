@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Activity, Users, BadgeCheck, ChevronDown, ChevronUp } from "lucide-react";
+import { Activity, Users, Award, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Science = () => {
@@ -8,7 +8,7 @@ const Science = () => {
   const stats = [
     { icon: <Activity className="w-8 h-8" />, value: "Faster Performance", label: "Increased Consistency*" },
     { icon: <Users className="w-8 h-8" />, value: "20+", label: "Clinical Studies" },
-    { icon: <div className="text-2xl font-black tracking-tighter">CE</div>, value: "Mark", label: "Certified Device" }
+    { icon: <Award className="w-8 h-8" />, value: "CE", label: "Certified Device" }
   ];
 
   return (
