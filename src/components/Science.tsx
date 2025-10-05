@@ -58,7 +58,7 @@ const Science = () => {
                   precisely stimulates the vagus nerve through the ear, activating neural pathways implicated in enhanced attentional performance and cognitive function.
                 </p>
                 <p>
-                  Clinical research demonstrates that taVNS significantly improves attention span, working memory, processing speed, 
+                  Clinical research demonstrates that taVNS can improve attention span, working memory, processing speed, 
                   and executive function. The vagus nerve serves as a key regulator of the brain's attention networks, making it 
                   essential for sustained focus and peak mental performance.
                 </p>
