@@ -3,25 +3,25 @@ import { Star } from "lucide-react";
 const Reviews = () => {
   const testimonials = [
     {
-      name: "Sarah Chen",
-      role: "Marketing Executive",
+      name: "Paul",
+      role: "CEO",
       image: "/src/assets/testimonial-1.jpg",
       rating: 5,
-      quote: "FocusZing has completely transformed my productivity. I use it during strategic planning sessions and my focus is razor-sharp for hours."
+      quote: "I'm turbocharged this week! What a joy! I'm resolving lots of stuff I usually put on the long finger."
     },
     {
-      name: "Michael Rodriguez",
-      role: "Software Developer", 
+      name: "Elena",
+      role: "PhD Student", 
       image: "/src/assets/testimonial-2.jpg",
       rating: 5,
-      quote: "The audio integration is genius - I can code with focus music while getting cognitive enhancement. My performance reviews have never been better."
+      quote: "I was able to do a really big piece of work — I am better able to do tasks without getting distracted."
     },
     {
-      name: "Emma Thompson",
-      role: "Graduate Student",
+      name: "Kevin",
+      role: "IT Expert",
       image: "/src/assets/testimonial-3.jpg", 
       rating: 5,
-      quote: "I was skeptical at first, but the focus improvement is incredible. Perfect for studying and achieving academic excellence."
+      quote: "Using Zing with meditation and soothing music daily for a month transformed my anxiety — far more effective for me than antidepressants."
     }
   ];
 
