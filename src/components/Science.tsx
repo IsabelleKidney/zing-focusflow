@@ -64,7 +64,7 @@ const Science = () => {
                 </p>
                 <p>
                   FocusZing's advanced technology combines this proven neuroscience with premium audio integration, creating a 
-                  comprehensive attentional enhancement system that integrates seamlessly into your daily success routine.
+                  comprehensive attentional enhancement system that integrates seamlessly into your routine.
                 </p>
               </div>
               <p className="text-sm text-muted-foreground mt-4 italic">
