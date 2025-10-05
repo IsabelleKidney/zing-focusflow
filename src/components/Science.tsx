@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Activity, Users, Award, ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ceMark from "@/assets/ce-mark.png";
 
 const Science = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -8,7 +9,7 @@ const Science = () => {
   const stats = [
     { icon: <Activity className="w-8 h-8" />, value: "Faster Performance", label: "Increased Consistency*" },
     { icon: <Users className="w-8 h-8" />, value: "20+", label: "Clinical Studies" },
-    { icon: <Award className="w-8 h-8" />, value: <span className="text-4xl" style={{ fontFamily: 'Arial Black, Arial Bold, Gadget, sans-serif', fontWeight: 900, letterSpacing: '0.2em' }}>CE</span>, label: "Certified Device" }
+    { icon: <Award className="w-8 h-8" />, value: <img src={ceMark} alt="CE Mark" className="h-16 mx-auto" />, label: "Certified Device" }
   ];
 
   return (
