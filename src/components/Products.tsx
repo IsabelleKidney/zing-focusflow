@@ -90,13 +90,13 @@ const Products = () => {
           <div className={products.length === 1 ? "w-full max-w-md" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl"}>
             {products.map((product) => (
             <Card key={product.node.id} className="overflow-hidden hover:shadow-elegant transition-shadow">
-              <Link to={`/product/${product.node.handle}`}>
+              <Link to={`/product/${product.node.handle}`} className="flex justify-center pt-6">
                 {product.node.images.edges.length > 0 && (
-                  <div className="aspect-square overflow-hidden bg-secondary/20">
+                  <div className="w-1/3 aspect-square overflow-hidden bg-secondary/20 rounded-lg">
                     <img
                       src={product.node.images.edges[0].node.url}
                       alt={product.node.images.edges[0].node.altText || product.node.title}
-                      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                      className="w-full h-full object-contain hover:scale-105 transition-transform duration-300"
                     />
                   </div>
                 )}
