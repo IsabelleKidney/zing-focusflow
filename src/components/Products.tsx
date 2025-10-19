@@ -86,8 +86,9 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl">
+            {products.map((product) => (
             <Card key={product.node.id} className="overflow-hidden hover:shadow-elegant transition-shadow">
               <Link to={`/product/${product.node.handle}`}>
                 {product.node.images.edges.length > 0 && (
@@ -129,7 +130,8 @@ const Products = () => {
                 </Button>
               </CardFooter>
             </Card>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>
