@@ -6,6 +6,8 @@ import { storefrontApiRequest, STOREFRONT_PRODUCTS_QUERY, ShopifyProduct } from 
 import { useCartStore } from "@/stores/cartStore";
 import { toast } from "sonner";
 import { Link } from "react-router-dom";
+import handheldDevice from "@/assets/handheld-device.png";
+import earpiece from "@/assets/earpiece.png";
 
 const Products = () => {
   const [products, setProducts] = useState<ShopifyProduct[]>([]);
@@ -86,7 +88,9 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center gap-8">
+          <img src={handheldDevice} alt="Handheld device" className="w-64 h-auto object-contain hidden lg:block" />
+          
           <div className={products.length === 1 ? "w-full max-w-md" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl"}>
             {products.map((product) => (
             <Card key={product.node.id} className="overflow-hidden hover:shadow-elegant transition-shadow">
@@ -115,7 +119,7 @@ const Products = () => {
               
               <CardContent>
                 <p className="text-2xl font-bold">
-                  {product.node.priceRange.minVariantPrice.currencyCode} ${parseFloat(product.node.priceRange.minVariantPrice.amount).toFixed(2)}
+                  €{parseFloat(product.node.priceRange.minVariantPrice.amount).toFixed(2)}
                 </p>
               </CardContent>
               
@@ -132,6 +136,8 @@ const Products = () => {
             </Card>
             ))}
           </div>
+          
+          <img src={earpiece} alt="Earpiece" className="w-64 h-auto object-contain hidden lg:block" />
         </div>
       </div>
     </section>
