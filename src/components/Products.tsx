@@ -121,12 +121,12 @@ const Products = () => {
               </CardHeader>
               
               <CardContent className="flex-1 flex flex-col">
-                <CardDescription className="text-base leading-relaxed mb-auto">
+                <CardDescription className="text-base leading-relaxed line-clamp-2">
                   {product.node.description}
                 </CardDescription>
               </CardContent>
               
-              <CardContent className="pt-0 flex-shrink-0">
+              <CardContent className="pt-4 flex-shrink-0">
                 <p className="text-3xl font-bold text-center mb-4">
                   €{parseFloat(product.node.priceRange.minVariantPrice.amount).toFixed(2)}
                 </p>
