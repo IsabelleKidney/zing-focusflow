@@ -111,25 +111,28 @@ const Products = () => {
 
             {/* Middle card - Shopify Product */}
             {products.map((product) => (
-            <Card key={product.node.id} className="overflow-hidden hover:shadow-elegant transition-shadow">
-              <CardHeader className="pt-6">
+            <Card key={product.node.id} className="overflow-hidden hover:shadow-elegant transition-shadow flex flex-col">
+              <CardHeader className="pt-6 flex-shrink-0">
                 <Link to={`/product/${product.node.handle}`}>
-                  <CardTitle className="hover:text-primary transition-colors">
+                  <CardTitle className="hover:text-primary transition-colors text-center">
                     {product.node.title}
                   </CardTitle>
                 </Link>
-                <CardDescription className="line-clamp-2">
-                  {product.node.description}
-                </CardDescription>
               </CardHeader>
               
-              <CardContent>
-                <p className="text-2xl font-bold">
+              <CardContent className="flex-1 flex flex-col">
+                <CardDescription className="text-base leading-relaxed mb-auto">
+                  {product.node.description}
+                </CardDescription>
+              </CardContent>
+              
+              <CardContent className="pt-0 flex-shrink-0">
+                <p className="text-3xl font-bold text-center mb-4">
                   €{parseFloat(product.node.priceRange.minVariantPrice.amount).toFixed(2)}
                 </p>
               </CardContent>
               
-              <CardFooter>
+              <CardFooter className="flex-shrink-0">
                 <Button 
                   className="w-full"
                   onClick={() => handleAddToCart(product)}
