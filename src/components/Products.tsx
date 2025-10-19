@@ -62,7 +62,7 @@ const Products = () => {
       <section id="products" className="py-24 bg-background">
         <div className="container mx-auto px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+            <h2 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight pb-2">
               Shop FocusZing
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -78,7 +78,7 @@ const Products = () => {
     <section id="products" className="py-24 bg-background">
       <div className="container mx-auto px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-6xl font-extrabold mb-6 bg-gradient-primary bg-clip-text text-transparent leading-tight pb-2">
             Shop FocusZing
           </h2>
           <p className="text-lg text-muted-foreground">
