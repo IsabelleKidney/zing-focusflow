@@ -88,10 +88,28 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="flex justify-center items-center gap-8">
-          <img src={handheldDevice} alt="Handheld device" className="w-64 h-auto object-contain hidden lg:block" />
-          
-          <div className={products.length === 1 ? "w-full max-w-md" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl"}>
+        <div className="flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl w-full">
+            {/* Left card - Handheld Device */}
+            <Card className="overflow-hidden">
+              <div className="flex justify-center pt-6 pb-6">
+                <div className="w-full aspect-square overflow-hidden bg-secondary/20 rounded-lg flex items-center justify-center p-8">
+                  <img
+                    src={handheldDevice}
+                    alt="Handheld Control Device"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle>Handheld Control</CardTitle>
+                <CardDescription className="line-clamp-2">
+                  Intuitive control device with multiple modes
+                </CardDescription>
+              </CardHeader>
+            </Card>
+
+            {/* Middle card - Shopify Product */}
             {products.map((product) => (
             <Card key={product.node.id} className="overflow-hidden hover:shadow-elegant transition-shadow">
               <Link to={`/product/${product.node.handle}`} className="flex justify-center pt-6">
@@ -135,9 +153,26 @@ const Products = () => {
               </CardFooter>
             </Card>
             ))}
+
+            {/* Right card - Earpiece */}
+            <Card className="overflow-hidden">
+              <div className="flex justify-center pt-6 pb-6">
+                <div className="w-full aspect-square overflow-hidden bg-secondary/20 rounded-lg flex items-center justify-center p-8">
+                  <img
+                    src={earpiece}
+                    alt="Earpiece Device"
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              </div>
+              <CardHeader>
+                <CardTitle>Premium Earpiece</CardTitle>
+                <CardDescription className="line-clamp-2">
+                  Comfortable in-ear design for extended use
+                </CardDescription>
+              </CardHeader>
+            </Card>
           </div>
-          
-          <img src={earpiece} alt="Earpiece" className="w-64 h-auto object-contain hidden lg:block" />
         </div>
       </div>
     </section>
