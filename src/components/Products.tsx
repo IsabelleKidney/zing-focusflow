@@ -87,7 +87,7 @@ const Products = () => {
         </div>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {products.map((product) => (
             <Card key={product.node.id} className="overflow-hidden hover:shadow-elegant transition-shadow">
               <Link to={`/product/${product.node.handle}`}>
