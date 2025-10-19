@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import focuszingLogo from "@/assets/focuszing-logo-clean.png";
+import { CartDrawer } from "./CartDrawer";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,6 +11,7 @@ const Header = () => {
     { name: "Features", href: "#features" },
     { name: "Science", href: "#science" },
     { name: "Reviews", href: "#reviews" },
+    { name: "Products", href: "#products" },
     { name: "Support", href: "#support" },
     { name: "Subscribe", href: "#subscribe" }
   ];
@@ -22,13 +24,16 @@ const Header = () => {
             {/* Logo removed */}
           </div>
           
-          <button
-            className="p-2 text-white hover:text-white/80 transition-colors"
-            onClick={() => setIsOpen(!isOpen)}
-            aria-label="Toggle menu"
-          >
-            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
+          <div className="flex items-center gap-2">
+            <CartDrawer />
+            <button
+              className="p-2 text-white hover:text-white/80 transition-colors"
+              onClick={() => setIsOpen(!isOpen)}
+              aria-label="Toggle menu"
+            >
+              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
+          </div>
         </div>
         
         {/* Hamburger Menu */}
