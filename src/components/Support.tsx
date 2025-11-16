@@ -5,6 +5,16 @@ import { Button } from "@/components/ui/button";
 const Support = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
+  const handleChatClick = () => {
+    if (typeof window !== 'undefined' && (window as any).Tawk_API) {
+      (window as any).Tawk_API.maximize();
+    }
+  };
+
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:support@zingenergy.ie';
+  };
+
   const faqs = [
     {
       question: "How does FocusZing's taVNS technology enhance performance?",
@@ -95,7 +105,11 @@ const Support = () => {
                     <div className="flex-1">
                       <h4 className="font-semibold text-card-foreground mb-2">{option.title}</h4>
                       <p className="text-muted-foreground mb-4">{option.description}</p>
-                      <Button variant="outline" size="sm">
+                      <Button 
+                        variant="outline" 
+                        size="sm"
+                        onClick={option.action === "Start Chat" ? handleChatClick : handleEmailClick}
+                      >
                         {option.action}
                       </Button>
                     </div>
