@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
 import SiteLogin from "./pages/SiteLogin";
+import ChatTest from "./pages/ChatTest";
 import ProtectedRoute from "./components/ProtectedRoute";
 
 const queryClient = new QueryClient();
@@ -19,6 +20,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/site-login" element={<SiteLogin />} />
+          <Route path="/chat-test" element={<ProtectedRoute><ChatTest /></ProtectedRoute>} />
           <Route path="/" element={<ProtectedRoute><Index /></ProtectedRoute>} />
           <Route path="/product/:handle" element={<ProtectedRoute><ProductDetail /></ProtectedRoute>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

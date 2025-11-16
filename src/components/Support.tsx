@@ -5,12 +5,6 @@ import { Button } from "@/components/ui/button";
 const Support = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
-  const handleChatClick = () => {
-    if (typeof window !== 'undefined' && (window as any).Tawk_API) {
-      (window as any).Tawk_API.maximize();
-    }
-  };
-
   const handleEmailClick = () => {
     window.location.href = 'mailto:support@zingenergy.ie';
   };
@@ -44,12 +38,6 @@ const Support = () => {
       title: "Email Support",
       description: "support@zingenergy.ie",
       action: "Send Email"
-    },
-    {
-      icon: <MessageCircle className="w-6 h-6" />,
-      title: "Live Chat",
-      description: "Available 24/7",
-      action: "Start Chat"
     }
   ];
 
@@ -108,7 +96,7 @@ const Support = () => {
                       <Button 
                         variant="outline" 
                         size="sm"
-                        onClick={option.action === "Start Chat" ? handleChatClick : handleEmailClick}
+                        onClick={handleEmailClick}
                       >
                         {option.action}
                       </Button>
