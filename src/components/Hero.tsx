@@ -24,8 +24,10 @@ const Hero = () => {
         </p>
         
         <div className="flex items-center">
-          <Button variant="default" className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-8 py-7 text-lg font-bold tracking-tight transition-all duration-300">
-            <span className="scale-y-110 inline-block">Buy FocusZing Now</span>
+          <Button asChild variant="default" className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-8 py-7 text-lg font-bold tracking-tight transition-all duration-300">
+            <a href="#products">
+              <span className="scale-y-110 inline-block">Buy Focuzing Now</span>
+            </a>
           </Button>
         </div>
       </div>
