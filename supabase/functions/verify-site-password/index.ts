@@ -15,7 +15,13 @@ serve(async (req) => {
     const sitePassword = Deno.env.get('SITE_PASSWORD');
 
     if (!sitePassword) {
-      throw new Error('Site password not configured');
+      return new Response(
+        JSON.stringify({ valid: false, error: 'Site password not configured' }),
+        {
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+          status: 200,
+        },
+      );
     }
 
     const isValid = password === sitePassword;
