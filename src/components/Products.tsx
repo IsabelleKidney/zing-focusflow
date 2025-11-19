@@ -128,7 +128,7 @@ const Products = () => {
               
               <CardContent className="py-2 flex-shrink-0">
                 <p className="text-3xl font-bold text-center mb-2">
-                  €{parseFloat(product.node.priceRange.minVariantPrice.amount).toFixed(2)}
+                  NOT FOR SALE YET
                 </p>
               </CardContent>
               
