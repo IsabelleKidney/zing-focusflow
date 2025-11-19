@@ -12,24 +12,22 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent md:from-black/55 md:via-black/30 md:to-transparent"></div>
       
       {/* Content - Left Aligned */}
-      <div className="relative z-10 text-white px-6 md:px-16 lg:px-24 max-w-4xl pt-16 md:pt-12 pb-20 md:pl-[calc(2rem+1cm)]">
-        <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-extrabold mb-36 leading-[1.1] tracking-tight">
+      <div className="relative z-10 text-white px-6 md:px-12 lg:px-20 max-w-3xl pt-32 md:pt-40 pb-20">
+        <h1 className="text-5xl md:text-6xl lg:text-7xl font-montserrat font-extrabold mb-6 leading-[1.05] tracking-tight">
           <span className="text-orange">Fuel Your Focus</span>
           <br />
           Power Your Potential
         </h1>
         
-        <p className="text-lg md:text-xl lg:text-2xl mb-8 leading-relaxed opacity-95 font-medium">
-          Laser Focus. Deep Calm. <br className="md:hidden" />Peak Performance.
+        <p className="text-base md:text-lg mb-8 leading-relaxed opacity-90 font-normal">
+          Laser Focus. Deep Calm. Peak Performance.
         </p>
         
-        <div className="flex items-center">
-          <Button asChild variant="default" className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-8 py-7 text-lg font-bold tracking-tight transition-all duration-300">
-            <a href="#products">
-              <span className="scale-y-110 inline-block">Buy Focuzing Now</span>
-            </a>
-          </Button>
-        </div>
+        <Button asChild variant="default" className="bg-gradient-primary text-white rounded-full hover:opacity-90 px-8 py-3.5 text-base font-semibold tracking-normal transition-all duration-300">
+          <a href="#products">
+            Buy Focuzing Now
+          </a>
+        </Button>
       </div>
     </section>;
 };
