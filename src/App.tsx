@@ -6,9 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
-import SiteLogin from "./pages/SiteLogin";
 import ChatTest from "./pages/ChatTest";
-import ProtectedRoute from "./components/ProtectedRoute";
 
 const queryClient = new QueryClient();
 
@@ -19,12 +17,11 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/site-login" element={<SiteLogin />} />
-          <Route path="/chat-test" element={<ProtectedRoute><ChatTest /></ProtectedRoute>} />
-          <Route path="/" element={<ProtectedRoute><Index /></ProtectedRoute>} />
-          <Route path="/product/:handle" element={<ProtectedRoute><ProductDetail /></ProtectedRoute>} />
+          <Route path="/chat-test" element={<ChatTest />} />
+          <Route path="/" element={<Index />} />
+          <Route path="/product/:handle" element={<ProductDetail />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<ProtectedRoute><NotFound /></ProtectedRoute>} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>
