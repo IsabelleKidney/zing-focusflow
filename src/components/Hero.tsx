@@ -23,7 +23,7 @@ const Hero = () => {
           Laser Focus. Deep Calm. Peak Performance.
         </p>
         
-        <Button asChild variant="default" className="bg-gradient-to-r from-orange via-orange-light to-orange bg-[length:150%_100%] text-white rounded-full hover:opacity-90 px-8 py-3.5 text-base font-semibold tracking-normal transition-all duration-300 animate-gradient-wave">
+        <Button asChild variant="default" className="bg-gradient-to-r from-orange via-orange-light to-orange bg-[length:120%_100%] text-white rounded-full hover:opacity-90 px-8 py-3.5 text-base font-semibold tracking-normal transition-all duration-300 animate-gradient-wave">
           <a href="#products">
             Buy Focuzing Now
           </a>
