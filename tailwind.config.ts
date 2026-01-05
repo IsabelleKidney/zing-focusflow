@@ -116,7 +116,7 @@ export default {
             backgroundPosition: "0% 50%",
           },
           "50%": {
-            backgroundPosition: "100% 50%",
+            backgroundPosition: "50% 50%",
           },
         },
       },
