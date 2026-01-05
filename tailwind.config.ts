@@ -111,21 +111,19 @@ export default {
             height: "0",
           },
         },
-        "subtle-pulse": {
+        "gradient-wave": {
           "0%, 100%": {
-            opacity: "1",
-            transform: "scale(1)",
+            backgroundPosition: "0% 50%",
           },
           "50%": {
-            opacity: "0.85",
-            transform: "scale(1.02)",
+            backgroundPosition: "100% 50%",
           },
         },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "subtle-pulse": "subtle-pulse 3s ease-in-out infinite",
+        "gradient-wave": "gradient-wave 4s ease-in-out infinite",
       },
     },
   },
