@@ -24,7 +24,7 @@ const Header = () => {
             {/* Logo removed */}
           </div>
           
-          <div className="flex items-center gap-2 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full px-3 py-2">
+          <div className="flex items-center gap-0 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full px-3 py-2">
             <button
               className="p-2 text-white hover:text-white/80 transition-colors"
               onClick={() => setIsOpen(!isOpen)}
