@@ -24,13 +24,13 @@ const Hero = () => {
           <a href="#how-it-works" className="underline decoration-white/50 hover:decoration-white transition-colors cursor-pointer">Wearable Neurostimulation</a> Device for<br />Laser Focus, Deep Calm & Turbocharged Vitality.
         </p>
         
-        <div className="flex items-center gap-4 flex-wrap">
-          <Button asChild variant="default" className="bg-gradient-to-r from-orange via-orange-light to-orange bg-[length:120%_100%] text-white rounded-full hover:opacity-90 px-8 py-3.5 text-base font-semibold tracking-normal transition-all duration-300 animate-gradient-wave">
+        <div className="flex flex-col gap-3">
+          <Button asChild variant="default" className="bg-gradient-to-r from-orange via-orange-light to-orange bg-[length:120%_100%] text-white rounded-full hover:opacity-90 px-8 py-3.5 text-base font-semibold tracking-normal transition-all duration-300 animate-gradient-wave w-fit">
             <a href="/product/focuszing-device">
               Buy Yours from €1
             </a>
           </Button>
-          <a href="#products" className="text-lg font-semibold hover:underline decoration-orange/50 hover:decoration-orange transition-all cursor-pointer">Learn More about FocuZing</a>
+          <a href="#products" className="text-lg font-semibold hover:underline decoration-orange/50 hover:decoration-orange transition-all cursor-pointer w-fit">Learn More about Focuzing</a>
         </div>
         
         <div className="flex items-center gap-2 mt-4 text-sm opacity-80">
