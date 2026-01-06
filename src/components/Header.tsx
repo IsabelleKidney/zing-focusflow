@@ -17,8 +17,8 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50">
-      <nav className="container mx-auto px-8 py-6">
+    <header className="fixed top-0 left-0 right-0 z-50 px-4 pt-4">
+      <nav className="container mx-auto px-8 py-4 bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl shadow-lg">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             {/* Logo removed */}
