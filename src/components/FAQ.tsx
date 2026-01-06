@@ -32,7 +32,7 @@ const FAQ = () => {
     },
     {
       question: "How long does shipping take?",
-      answer: "UK & Ireland: 2–3 business days. Europe: 5–7 business days. International: 7–14 business days. Express options available at checkout."
+      answer: "Ireland: 2–3 business days. UK & Europe: 5–7 business days. International: 7–14 business days. Express options available at checkout."
     },
     {
       question: "What's the return policy?",
