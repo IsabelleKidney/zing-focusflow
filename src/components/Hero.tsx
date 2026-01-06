@@ -30,7 +30,7 @@ const Hero = () => {
               Buy Focuzing Now
             </a>
           </Button>
-          <span className="text-lg font-semibold">From <span className="text-orange">€1</span></span>
+          <a href="#products" className="text-lg font-semibold hover:underline decoration-orange/50 hover:decoration-orange transition-all cursor-pointer">From <span className="text-orange">€1</span></a>
         </div>
         
         <div className="flex items-center gap-2 mt-4 text-sm opacity-80">
