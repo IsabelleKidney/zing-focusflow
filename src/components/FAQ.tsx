@@ -9,7 +9,7 @@ const FAQ = () => {
   const leftColumn = [
     {
       question: "How do I use FocusZing?",
-      answer: "Place the earpiece in your ear and it will begin gentle neurostimulation automatically. Use for 45 minutes daily while listening to music, podcasts, or working."
+      answer: "Clip the earpiece onto the small flap at the front of your ear canal (the tragus). The earbud should sit in your ear canal, with the stimulation pad resting on the outside surface. Turn on the handheld device and gentle neurostimulation will start automatically. Use daily while working, meditating, doing yoga, or simply while listening to music or podcasts."
     },
     {
       question: "Is it safe to use?",
