@@ -25,7 +25,6 @@ const Header = () => {
           </div>
           
           <div className="flex items-center gap-2 bg-white/10 backdrop-blur-xl border border-white/20 rounded-full px-3 py-2">
-            <CartDrawer />
             <button
               className="p-2 text-white hover:text-white/80 transition-colors"
               onClick={() => setIsOpen(!isOpen)}
@@ -33,6 +32,7 @@ const Header = () => {
             >
               {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
+            <CartDrawer />
           </div>
         </div>
         
