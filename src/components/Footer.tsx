@@ -1,4 +1,3 @@
-import focuszingLogo from "@/assets/focuszing-logo.png";
 import zingoTrademark from "@/assets/zingo-trademark-branded.png";
 
 const Footer = () => {
@@ -13,15 +12,13 @@ const Footer = () => {
     <footer className="bg-muted py-12">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="flex items-center space-x-3 mb-6 md:mb-0">
+          <div className="flex items-center space-x-2 mb-6 md:mb-0">
             <img 
-              src={focuszingLogo} 
-              alt="FocusZing Logo" 
-              className="w-8 h-8"
+              src={zingoTrademark} 
+              alt="Zingo™" 
+              className="h-10 w-auto"
             />
-            <div className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              FocusZing
-            </div>
+            <span className="text-xs text-muted-foreground align-super">™</span>
           </div>
           
           <nav className="flex flex-wrap justify-center md:justify-end space-x-6 mb-6 md:mb-0">
@@ -37,15 +34,7 @@ const Footer = () => {
           </nav>
         </div>
         
-        <div className="border-t border-border/50 pt-6 mt-6 flex flex-col items-center space-y-4">
-          <div className="flex items-center space-x-2">
-            <img 
-              src={zingoTrademark} 
-              alt="Zingo Trademark" 
-              className="h-6 w-auto"
-            />
-            <span className="text-xs text-muted-foreground">™</span>
-          </div>
+        <div className="border-t border-border/50 pt-6 mt-6 text-center">
           <p className="text-muted-foreground text-sm">
             © 2024 FocusZing. All rights reserved. | Unlock Your Potential. Achieve Success.
           </p>
