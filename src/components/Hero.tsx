@@ -20,7 +20,7 @@ const Hero = () => {
           Power Your Potential
         </h1>
         
-        <p className="text-base md:text-lg mb-8 leading-relaxed opacity-90 font-normal">
+        <p className="text-base md:text-lg mb-8 leading-relaxed opacity-90 font-montserrat font-semibold">
           <a href="#how-it-works" className="underline decoration-white/50 hover:decoration-white transition-colors cursor-pointer">Wearable Neurostimulation</a> Device for<br />Laser Focus, Deep Calm & Turbocharged Vitality.
         </p>
         
@@ -30,7 +30,7 @@ const Hero = () => {
               Buy Yours from €1
             </a>
           </Button>
-          <a href="#products" className="text-lg font-semibold hover:underline decoration-orange/50 hover:decoration-orange transition-all cursor-pointer w-fit">Learn More about Focuzing</a>
+          <a href="#products" className="text-lg font-normal hover:underline decoration-orange/50 hover:decoration-orange transition-all cursor-pointer w-fit">Learn More about Focuzing</a>
         </div>
         
         <div className="flex items-center gap-2 mt-4 text-sm opacity-80">
