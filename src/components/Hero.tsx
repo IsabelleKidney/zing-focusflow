@@ -29,6 +29,13 @@ const Hero = () => {
             Buy Focuzing Now
           </a>
         </Button>
+        
+        <div className="flex items-center gap-2 mt-4 text-sm opacity-80">
+          <div className="flex text-orange">
+            <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+          </div>
+          <span>4.9/5 from 500+ reviews</span>
+        </div>
       </div>
     </section>;
 };
