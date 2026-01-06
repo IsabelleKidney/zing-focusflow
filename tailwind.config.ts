@@ -14,8 +14,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        inter: ['Inter', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -43,17 +42,17 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
-        volt: {
-          DEFAULT: "hsl(var(--volt))",
-          foreground: "hsl(var(--volt-foreground))",
-          light: "hsl(var(--volt-light))",
-          dark: "hsl(var(--volt-dark))",
+        orange: {
+          DEFAULT: "hsl(var(--orange))",
+          foreground: "hsl(var(--orange-foreground))",
+          light: "hsl(var(--orange-light))",
+          dark: "hsl(var(--orange-dark))",
         },
-        energy: {
-          DEFAULT: "hsl(var(--energy))",
-          foreground: "hsl(var(--energy-foreground))",
-          light: "hsl(var(--energy-light))",
-          dark: "hsl(var(--energy-dark))",
+        yellow: {
+          DEFAULT: "hsl(var(--yellow))",
+          foreground: "hsl(var(--yellow-foreground))",
+          light: "hsl(var(--yellow-light))",
+          dark: "hsl(var(--yellow-dark))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -76,8 +75,8 @@ export default {
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
-        'gradient-volt': 'var(--gradient-volt)',
-        'gradient-energy': 'var(--gradient-energy)',
+        'gradient-orange': 'var(--gradient-orange)',
+        'gradient-yellow': 'var(--gradient-yellow)',
         'gradient-hero': 'var(--gradient-hero)', 
         'gradient-subtle': 'var(--gradient-subtle)',
       },
