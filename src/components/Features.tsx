@@ -63,7 +63,8 @@ const Features = () => {
                   {feature.title}
                 </h3>
               </div>
-              <p className="text-muted-foreground leading-relaxed font-light text-sm ml-[52px]">
+              <p className="text-muted-foreground leading-relaxed font-light text-sm ml-[52px] max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out group-hover:max-h-40 group-hover:opacity-100 group-hover:mt-2">
+                {feature.description}
               </p>
             </div>
           ))}
