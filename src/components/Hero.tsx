@@ -9,8 +9,8 @@ const Hero = () => {
       backgroundPosition: 'center center'
     }} />
       
-      {/* Gradient Overlay - Darker */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/30 md:from-black/75 md:via-black/50 md:to-black/20"></div>
+      {/* Gradient Overlay - Lighter, stronger on mobile */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent md:from-black/55 md:via-black/30 md:to-transparent"></div>
       
       {/* Content - Left Aligned */}
       <div className="relative z-10 text-white px-6 md:px-12 lg:px-20 max-w-3xl pt-32 md:pt-40 pb-20">
@@ -20,7 +20,7 @@ const Hero = () => {
           Power Your Potential
         </h1>
         
-        <p className="text-lg md:text-xl mb-8 leading-relaxed font-semibold tracking-wide">
+        <p className="text-base md:text-lg mb-8 leading-relaxed opacity-90 font-normal">
           Laser Focus. Deep Calm. Peak Performance.
         </p>
         
