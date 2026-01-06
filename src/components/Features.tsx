@@ -53,16 +53,17 @@ const Features = () => {
               className="group transition-transform duration-300 ease-out hover:[transform:rotateX(-5deg)_rotateY(5deg)_translateZ(10px)]"
               style={{ transformStyle: "preserve-3d" }}
             >
-              <div className="text-orange mb-6">
-                <div className="w-12 h-12 rounded-full bg-gradient-subtle flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                  {feature.icon}
+              <div className="flex items-center gap-3 mb-3">
+                <div className="text-orange">
+                  <div className="w-10 h-10 rounded-full bg-gradient-subtle flex items-center justify-center transition-all duration-300 group-hover:scale-110">
+                    {feature.icon}
+                  </div>
                 </div>
+                <h3 className="text-xl font-normal text-foreground">
+                  {feature.title}
+                </h3>
               </div>
-              <h3 className="text-xl font-normal text-foreground mb-3">
-                {feature.title}
-              </h3>
-              <p className="text-muted-foreground leading-relaxed font-light text-sm">
-                {feature.description}
+              <p className="text-muted-foreground leading-relaxed font-light text-sm ml-[52px]">
               </p>
             </div>
           ))}
