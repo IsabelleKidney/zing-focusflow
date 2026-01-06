@@ -1,4 +1,5 @@
 import zingoTrademark from "@/assets/zingo-trademark-transparent-f77c1e.png";
+import { ColorKeyedLogo } from "@/components/ColorKeyedLogo";
 
 const Footer = () => {
   const links = [
@@ -13,10 +14,11 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center mb-6 md:mb-0">
-            <img 
-              src={zingoTrademark} 
-              alt="Zingo" 
-              className="h-20 md:h-24 w-auto mix-blend-multiply"
+            <ColorKeyedLogo
+              src={zingoTrademark}
+              alt="Zingo"
+              className="h-20 md:h-24 w-auto"
+              tolerance={12}
             />
           </div>
           
