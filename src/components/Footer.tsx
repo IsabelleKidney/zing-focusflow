@@ -16,7 +16,7 @@ const Footer = () => {
             <img 
               src={zingoTrademark} 
               alt="Zingo™" 
-              className="h-14 w-auto"
+              className="h-16 md:h-20 w-auto"
             />
             <span className="text-sm text-muted-foreground align-super">™</span>
           </div>
