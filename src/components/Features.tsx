@@ -3,24 +3,9 @@ import { Zap, Brain, Headphones, Target, Trophy, Sun } from "lucide-react";
 const Features = () => {
   const features = [
     {
-      icon: <Brain className="w-8 h-8" />,
-      title: "Neurostimulation",
-      description: "Precision-engineered microcurrent stimulates your vagus nerve—the cranial nerve of calm—for enhanced attentional performance."
-    },
-    {
-      icon: <Headphones className="w-8 h-8" />,
-      title: "Premium Audio Integration",
-      description: "Listen to your favourite music, sound bath, podcast or focus tracks to boost your brain performance."
-    },
-    {
       icon: <Target className="w-8 h-8" />,
       title: "Laser Focus",
       description: "Stay locked in on what matters most with enhanced concentration and serenity."
-    },
-    {
-      icon: <Trophy className="w-8 h-8" />,
-      title: "Own It",
-      description: "Finish tasks that drive your ambition, and free up time for more of what really matters."
     },
     {
       icon: <Sun className="w-8 h-8" />,
@@ -31,6 +16,21 @@ const Features = () => {
       icon: <Zap className="w-8 h-8" />,
       title: "Instant Results",
       description: "Notice your attention improve within minutes of putting FocusZing on."
+    },
+    {
+      icon: <Brain className="w-8 h-8" />,
+      title: "Neurostimulation",
+      description: "Precision-engineered microcurrent stimulates your vagus nerve—the cranial nerve of calm—for enhanced attentional performance."
+    },
+    {
+      icon: <Headphones className="w-8 h-8" />,
+      title: "Premium Audio Integration",
+      description: "Listen to your favourite music, sound bath, podcast or focus tracks to boost your brain performance."
+    },
+    {
+      icon: <Trophy className="w-8 h-8" />,
+      title: "Own It",
+      description: "Finish tasks that drive your ambition, and free up time for more of what really matters."
     }
   ];
 
@@ -46,11 +46,12 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16" style={{ perspective: "1000px" }}>
           {features.map((feature, index) => (
             <div 
               key={index}
-              className="group"
+              className="group transition-transform duration-300 ease-out hover:[transform:rotateX(-5deg)_rotateY(5deg)_translateZ(10px)]"
+              style={{ transformStyle: "preserve-3d" }}
             >
               <div className="text-orange mb-6">
                 <div className="w-12 h-12 rounded-full bg-gradient-subtle flex items-center justify-center transition-all duration-300 group-hover:scale-110">
