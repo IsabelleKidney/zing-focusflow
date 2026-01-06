@@ -12,13 +12,13 @@ const Footer = () => {
     <footer className="bg-muted py-12">
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="flex items-center space-x-2 mb-6 md:mb-0">
+          <div className="flex items-center space-x-1 mb-6 md:mb-0">
             <img 
               src={zingoTrademark} 
               alt="Zingo™" 
-              className="h-10 w-auto"
+              className="h-14 w-auto"
             />
-            <span className="text-xs text-muted-foreground align-super">™</span>
+            <span className="text-sm text-muted-foreground align-super">™</span>
           </div>
           
           <nav className="flex flex-wrap justify-center md:justify-end space-x-6 mb-6 md:mb-0">
