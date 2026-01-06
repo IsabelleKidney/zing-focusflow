@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import heroImage from "@/assets/hero-woman-earpiece-young.jpg";
+import ceMark from "@/assets/ce-mark.png";
+import { Shield, RotateCcw } from "lucide-react";
 
 const Hero = () => {
   return <section className="min-h-screen relative flex items-center overflow-hidden">
@@ -31,6 +33,22 @@ const Hero = () => {
             </a>
           </Button>
           <a href="#products" className="text-base font-normal hover:underline decoration-orange/50 hover:decoration-orange transition-all cursor-pointer w-fit">Learn More about Focuzing</a>
+        </div>
+        
+        {/* Trust Badges */}
+        <div className="flex items-center gap-6 mt-6 flex-wrap">
+          <div className="flex items-center gap-2 text-sm opacity-90">
+            <RotateCcw className="w-4 h-4 text-orange" />
+            <span>30-Day Money-Back Guarantee</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm opacity-90">
+            <img src={ceMark} alt="CE Certified" className="w-5 h-5 brightness-0 invert" />
+            <span>CE Certified</span>
+          </div>
+          <div className="flex items-center gap-2 text-sm opacity-90">
+            <Shield className="w-4 h-4 text-orange" />
+            <span>1-Year Warranty</span>
+          </div>
         </div>
         
         <div className="flex items-center gap-2 mt-4 text-sm opacity-80">
