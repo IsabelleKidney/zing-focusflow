@@ -17,7 +17,7 @@ const FAQ = () => {
     },
     {
       question: "How quickly will I notice results?",
-      answer: "Many users feel improved focus within minutes. For sustained benefits like enhanced mood and resilience, use consistently for 2-3 weeks."
+      answer: "Many users notice improved focus within minutes. For relaxation, you may feel a calming effect during—and after—your first session, especially when using it with a soundbath or relaxing music. For longer-term benefits like enhanced vitality, mood and resilience, integrate with a daily 45 minute meditation routine and use consistently for 4–6 weeks."
     },
     {
       question: "Can I use it while working?",
