@@ -8,14 +8,14 @@ const Features = () => {
       description: "Stay locked in on what matters most with enhanced concentration and serenity."
     },
     {
-      icon: <Sun className="w-8 h-8" />,
-      title: "Charge Your Vitality",
-      description: "To generate amazing energy, emotional resilience, and elevated mood, use daily for 45 minutes with vocal meditation or 'ommm' humming - even while working!"
-    },
-    {
       icon: <Zap className="w-8 h-8" />,
       title: "Instant Results",
       description: "Notice your attention improve within minutes of putting FocusZing on."
+    },
+    {
+      icon: <Sun className="w-8 h-8" />,
+      title: "Charge Your Vitality",
+      description: "To generate amazing energy, emotional resilience, and elevated mood, use daily for 45 minutes with vocal meditation or 'ommm' humming - even while working!"
     },
     {
       icon: <Brain className="w-8 h-8" />,
