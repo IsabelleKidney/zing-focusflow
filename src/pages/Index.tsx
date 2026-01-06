@@ -4,6 +4,8 @@ import Features from "@/components/Features";
 import Science from "@/components/Science";
 import Reviews from "@/components/Reviews";
 import Products from "@/components/Products";
+import WhatsInTheBox from "@/components/WhatsInTheBox";
+import PressLogos from "@/components/PressLogos";
 import FAQ from "@/components/FAQ";
 import Support from "@/components/Support";
 import Subscribe from "@/components/Subscribe";
@@ -17,7 +19,9 @@ const Index = () => {
         <Hero />
         <Features />
         <Products />
+        <WhatsInTheBox />
         <Science />
+        <PressLogos />
         <Reviews />
         <FAQ />
         <Support />
