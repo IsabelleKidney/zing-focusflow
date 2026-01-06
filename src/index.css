@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,8 +19,9 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
 
-    --primary: 0 0% 10%;
-    --primary-foreground: 0 0% 100%;
+    /* Electric Volt Green/Yellow - Energy Theme */
+    --primary: 75 100% 50%;
+    --primary-foreground: 0 0% 5%;
 
     --secondary: 0 0% 98%;
     --secondary-foreground: 0 0% 10%;
@@ -26,35 +29,35 @@ All colors MUST be HSL.
     --muted: 0 0% 96%;
     --muted-foreground: 0 0% 45%;
 
-    --accent: 30 95% 65%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 75 100% 50%;
+    --accent-foreground: 0 0% 5%;
 
-    /* Premium Warm Accent Colors */
-    --orange: 30 95% 65%;
-    --orange-foreground: 0 0% 100%;
-    --orange-light: 35 100% 75%;
-    --orange-dark: 25 90% 55%;
-    --yellow: 45 100% 70%;
-    --yellow-foreground: 0 0% 10%;
-    --yellow-light: 50 100% 80%;
-    --yellow-dark: 40 95% 60%;
+    /* Electric Volt Energy Colors */
+    --volt: 75 100% 50%;
+    --volt-foreground: 0 0% 5%;
+    --volt-light: 80 100% 60%;
+    --volt-dark: 70 100% 40%;
+    --energy: 65 100% 55%;
+    --energy-foreground: 0 0% 5%;
+    --energy-light: 70 100% 65%;
+    --energy-dark: 60 100% 45%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 0 0% 92%;
     --input: 0 0% 92%;
-    --ring: 0 0% 10%;
+    --ring: 75 100% 50%;
 
     /* Premium Design Tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(28, 98%, 62%) 0%, hsl(40, 100%, 68%) 100%);
-    --gradient-orange: linear-gradient(135deg, hsl(30, 95%, 65%) 0%, hsl(35, 100%, 75%) 100%);
-    --gradient-yellow: linear-gradient(135deg, hsl(45, 100%, 70%) 0%, hsl(50, 100%, 80%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(75, 100%, 50%) 0%, hsl(65, 100%, 55%) 100%);
+    --gradient-volt: linear-gradient(135deg, hsl(75, 100%, 50%) 0%, hsl(80, 100%, 60%) 100%);
+    --gradient-energy: linear-gradient(135deg, hsl(65, 100%, 55%) 0%, hsl(70, 100%, 65%) 100%);
     --gradient-hero: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 98%) 100%);
     --gradient-subtle: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 99%) 100%);
     
     --shadow-elegant: 0 20px 60px -15px rgba(0, 0, 0, 0.08);
-    --shadow-glow: 0 0 60px rgba(255, 150, 50, 0.15);
+    --shadow-glow: 0 0 60px rgba(180, 255, 50, 0.25);
     --shadow-card: 0 2px 16px rgba(0, 0, 0, 0.04);
     
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -63,20 +66,13 @@ All colors MUST be HSL.
     --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
+    --sidebar-primary: 75 100% 50%;
+    --sidebar-primary-foreground: 0 0% 5%;
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-ring: 75 100% 50%;
   }
 
   .dark {
