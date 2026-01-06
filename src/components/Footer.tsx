@@ -1,4 +1,5 @@
 import focuszingLogo from "@/assets/focuszing-logo.png";
+import zingoTrademark from "@/assets/zingo-trademark-branded.png";
 
 const Footer = () => {
   const links = [
@@ -36,7 +37,15 @@ const Footer = () => {
           </nav>
         </div>
         
-        <div className="border-t border-border/50 pt-6 mt-6 text-center">
+        <div className="border-t border-border/50 pt-6 mt-6 flex flex-col items-center space-y-4">
+          <div className="flex items-center space-x-2">
+            <img 
+              src={zingoTrademark} 
+              alt="Zingo Trademark" 
+              className="h-6 w-auto"
+            />
+            <span className="text-xs text-muted-foreground">™</span>
+          </div>
           <p className="text-muted-foreground text-sm">
             © 2024 FocusZing. All rights reserved. | Unlock Your Potential. Achieve Success.
           </p>
