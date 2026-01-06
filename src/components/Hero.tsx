@@ -21,7 +21,7 @@ const Hero = () => {
         </h1>
         
         <p className="text-base md:text-lg mb-8 leading-relaxed opacity-90 font-normal">
-          <a href="#how-it-works" className="underline decoration-white/50 hover:decoration-white transition-colors cursor-pointer">Wearable Neurostimulation Device</a> for<br />Laser Focus, Deep Calm & Turbocharged Vitality.
+          <a href="#how-it-works" className="underline decoration-white/50 hover:decoration-white transition-colors cursor-pointer">Wearable Neurostimulation</a> Device for<br />Laser Focus, Deep Calm & Turbocharged Vitality.
         </p>
         
         <Button asChild variant="default" className="bg-gradient-to-r from-orange via-orange-light to-orange bg-[length:120%_100%] text-white rounded-full hover:opacity-90 px-8 py-3.5 text-base font-semibold tracking-normal transition-all duration-300 animate-gradient-wave">
