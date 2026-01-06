@@ -1,4 +1,4 @@
-import zingoTrademark from "@/assets/zingo-trademark-branded.png";
+import zingoTrademark from "@/assets/zingo-trademark-transparent.png";
 
 const Footer = () => {
   const links = [
