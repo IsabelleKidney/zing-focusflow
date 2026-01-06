@@ -30,7 +30,7 @@ const Hero = () => {
               Buy Yours from €1
             </a>
           </Button>
-          <a href="#products" className="text-lg font-normal hover:underline decoration-orange/50 hover:decoration-orange transition-all cursor-pointer w-fit">Learn More about Focuzing</a>
+          <a href="#products" className="text-base font-normal hover:underline decoration-orange/50 hover:decoration-orange transition-all cursor-pointer w-fit">Learn More about Focuzing</a>
         </div>
         
         <div className="flex items-center gap-2 mt-4 text-sm opacity-80">
