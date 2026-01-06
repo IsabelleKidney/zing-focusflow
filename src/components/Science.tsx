@@ -13,11 +13,11 @@ const Science = () => {
   ];
 
   return (
-    <section id="science" className="py-20 bg-background">
+    <section id="how-it-works" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Science-Backed Performance
+            How It Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Experience the power of transcutaneous auricular Vagus Nerve Stimulation (taVNS) technology supported by decades of research showing positive effects on cognitive performance, mood and focus.
