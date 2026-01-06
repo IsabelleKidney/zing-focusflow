@@ -1,17 +1,15 @@
 import { Button } from "@/components/ui/button";
-import FloatingShapes from "./FloatingShapes";
-
+import heroImage from "@/assets/hero-woman-earpiece-young.jpg";
 const Hero = () => {
-  return (
-    <section className="min-h-screen relative flex items-center overflow-hidden">
-      {/* Dark Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950" />
+  return <section className="min-h-screen relative flex items-center overflow-hidden">
+      {/* Background Image - Right Side */}
+      <div className="absolute inset-0 bg-cover bg-no-repeat" style={{
+      backgroundImage: `url(${heroImage})`,
+      backgroundPosition: 'center center'
+    }} />
       
-      {/* Subtle gradient overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/30" />
-      
-      {/* Floating 3D Shapes */}
-      <FloatingShapes />
+      {/* Gradient Overlay - Lighter, stronger on mobile */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/55 via-black/30 to-transparent md:from-black/55 md:via-black/30 md:to-transparent"></div>
       
       {/* Content - Left Aligned */}
       <div className="relative z-10 text-white px-6 md:px-12 lg:px-20 max-w-3xl pt-32 md:pt-40 pb-20">
@@ -31,8 +29,6 @@ const Hero = () => {
           </a>
         </Button>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
