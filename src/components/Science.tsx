@@ -19,8 +19,11 @@ const Science = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
             How It Works
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-4">
             Experience the power of transcutaneous auricular Vagus Nerve Stimulation (taVNS) technology supported by decades of research showing positive effects on cognitive performance, mood and focus.
+          </p>
+          <p className="text-base text-muted-foreground/80 max-w-2xl mx-auto italic">
+            What does it feel like? A gentle, barely perceptible tingle on your ear — completely safe and surprisingly relaxing.
           </p>
         </div>
 
