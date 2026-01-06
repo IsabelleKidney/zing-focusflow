@@ -20,7 +20,7 @@ const Science = () => {
             Science-Backed Performance
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            FocusZing's transcutaneous auricular Vagus Nerve Stimulation (taVNS) technology is supported by decades of research proving enhanced cognitive performance and focus.
+            Experience the power of transcutaneous auricular Vagus Nerve Stimulation (taVNS) technology supported by decades of research proving enhanced cognitive performance, elevated mood and focus.
           </p>
         </div>
 
