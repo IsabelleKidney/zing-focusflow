@@ -29,7 +29,7 @@ const Hero = () => {
         <div className="flex flex-col gap-3">
           <Button asChild variant="default" className="bg-gradient-to-r from-orange via-orange-light to-orange bg-[length:120%_100%] text-white rounded-full hover:opacity-90 px-8 py-3.5 text-base font-semibold tracking-normal transition-all duration-300 animate-gradient-wave w-fit">
             <a href="/product/focuszing-device">
-              Buy Yours from €1
+              Buy Yours from €199
             </a>
           </Button>
           <a href="#products" className="text-base font-normal hover:underline decoration-orange/50 hover:decoration-orange transition-all cursor-pointer w-fit">Learn More about Focuzing</a>
