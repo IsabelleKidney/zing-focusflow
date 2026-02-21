@@ -3,8 +3,7 @@ import { Button } from "@/components/ui/button";
 import heroImage1 from "@/assets/hero-woman-earpiece-young.jpg";
 import heroImage2 from "@/assets/hero-woman-testimonial.jpg";
 import heroImage3 from "@/assets/hero-male-workzone.jpg";
-import ceMark from "@/assets/ce-mark.png";
-import { Shield, RotateCcw } from "lucide-react";
+
 
 const slides = [
   { image: heroImage1 },
@@ -60,7 +59,7 @@ const Hero = () => {
         </h1>
 
         <p className="text-base md:text-lg mb-8 leading-relaxed opacity-90 font-montserrat font-light tracking-tight">
-          <a href="#how-it-works" className="underline decoration-white/50 hover:decoration-white transition-colors cursor-pointer">Wearable Neurostimulation</a> Device for<br />Laser Focus, Deep Calm & Turbocharged Vitality.
+          Neurostimulation Device for<br />Laser Focus, Deep Calm & Turbocharged Vitality.
         </p>
 
         <div className="flex flex-col gap-3">
@@ -72,21 +71,6 @@ const Hero = () => {
           <a href="#products" className="text-base font-normal hover:underline decoration-orange/50 hover:decoration-orange transition-all cursor-pointer w-fit">Learn More about Focuzing</a>
         </div>
 
-        {/* Trust Badges */}
-        <div className="flex items-center gap-6 mt-6 flex-wrap">
-          <div className="flex items-center gap-2 text-sm opacity-90">
-            <RotateCcw className="w-4 h-4 text-orange" />
-            <span>30-Day Money-Back Guarantee</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm opacity-90">
-            <img src={ceMark} alt="CE Certified" className="w-5 h-5 brightness-0 invert" />
-            <span>CE Certified</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm opacity-90">
-            <Shield className="w-4 h-4 text-orange" />
-            <span>1-Year Warranty</span>
-          </div>
-        </div>
 
         <div className="flex items-center gap-2 mt-4 text-sm opacity-80">
           <span className="text-orange font-semibold">83%</span>
