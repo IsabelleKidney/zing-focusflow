@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       {/* Scrolling Trust Banner */}
-      <div className="bg-black/80 backdrop-blur-sm border-b border-white/10 overflow-hidden">
+      <div className="bg-transparent overflow-hidden">
         <div className="animate-marquee flex items-center gap-8 py-1.5 whitespace-nowrap w-max">
           {marqueeItems.map((item, i) => (
             <span key={i} className="flex items-center gap-2 text-xs text-white/80">

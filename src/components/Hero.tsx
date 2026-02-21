@@ -58,8 +58,8 @@ const Hero = () => {
           Power Your Potential
         </h1>
 
-        <p className="text-base md:text-lg mb-8 leading-relaxed opacity-90 font-montserrat font-light tracking-tight">
-          Neurostimulation Device for<br />Laser Focus, Deep Calm & Turbocharged Vitality.
+        <p className="text-base md:text-lg mb-8 leading-relaxed opacity-90 font-montserrat tracking-tight">
+          <span className="font-medium">Laser Focus, Deep Calm & Turbocharged Vitality.</span>
         </p>
 
         <div className="flex flex-col gap-3">
