@@ -39,7 +39,7 @@ const Hero = () => {
           className="absolute inset-0 bg-cover bg-no-repeat transition-opacity duration-[1.2s] ease-in-out"
           style={{
             backgroundImage: `url(${slide.image})`,
-            backgroundPosition: i === 2 ? "center 20%" : "center center",
+            backgroundPosition: "center center",
             opacity: i === current ? 1 : 0,
             zIndex: i === current ? 1 : 0,
             transform: i === current ? "scale(1.05)" : "scale(1)",
