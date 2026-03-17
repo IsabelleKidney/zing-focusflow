@@ -1,51 +1,63 @@
-import { Cable, BookOpen } from "lucide-react";
+import { Package, Zap, BookOpen, Cable } from "lucide-react";
 import handheldDevice from "@/assets/handheld-device.png";
 import earpiece from "@/assets/earpiece.png";
 
 const WhatsInTheBox = () => {
+  const boxContents = [
+    {
+      icon: <img src={handheldDevice} alt="Controller" className="w-12 h-12 object-contain" />,
+      title: "Handheld Controller",
+      description: "Intuitive control with multiple stimulation modes"
+    },
+    {
+      icon: <img src={earpiece} alt="Earpiece" className="w-12 h-12 object-contain" />,
+      title: "Premium Earpiece",
+      description: "Comfortable ear clip with audio integration"
+    },
+    {
+      icon: <Cable className="w-12 h-12 text-orange" />,
+      title: "USB-C Charging Cable",
+      description: "Fast charging for all-day use"
+    },
+    {
+      icon: <BookOpen className="w-12 h-12 text-orange" />,
+      title: "Quick Start Guide",
+      description: "Easy setup instructions & tips"
+    }
+  ];
+
   return (
-    <section className="py-28 bg-background">
-      <div className="container mx-auto px-8 max-w-6xl">
-        <div className="text-center mb-16">
-          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-orange mb-4">
-            Included
-          </p>
-          <h2 className="text-4xl md:text-5xl font-light text-foreground tracking-tight mb-4">
-            What's in the Box
-          </h2>
-          <p className="text-sm text-muted-foreground font-light">
+    <section className="py-16 bg-muted/30">
+      <div className="container mx-auto px-8 max-w-5xl">
+        <div className="text-center mb-12">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Package className="w-6 h-6 text-orange" />
+            <h2 className="text-2xl md:text-3xl font-light text-foreground tracking-tight">
+              What's in the Box
+            </h2>
+          </div>
+          <p className="text-muted-foreground font-light">
             Everything you need to start your focus journey
           </p>
         </div>
 
-        {/* Product images row */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-secondary rounded-2xl p-10 flex flex-col items-center">
-            <img src={handheldDevice} alt="Handheld Controller" className="w-40 h-40 object-contain mb-6" />
-            <h3 className="text-sm font-semibold text-foreground mb-1">Handheld Controller</h3>
-            <p className="text-xs text-muted-foreground font-light text-center max-w-xs">
-              Intuitive control with multiple stimulation modes
-            </p>
-          </div>
-          <div className="bg-secondary rounded-2xl p-10 flex flex-col items-center">
-            <img src={earpiece} alt="Premium Earpiece" className="w-40 h-40 object-contain mb-6" />
-            <h3 className="text-sm font-semibold text-foreground mb-1">Premium Earpiece</h3>
-            <p className="text-xs text-muted-foreground font-light text-center max-w-xs">
-              Comfortable ear clip with audio integration
-            </p>
-          </div>
-        </div>
-
-        {/* Accessories */}
-        <div className="grid grid-cols-2 gap-6 max-w-md mx-auto">
-          <div className="flex items-center gap-3 py-3">
-            <Cable className="w-5 h-5 text-orange" strokeWidth={1.2} />
-            <span className="text-sm text-foreground font-light">USB-C Charging Cable</span>
-          </div>
-          <div className="flex items-center gap-3 py-3">
-            <BookOpen className="w-5 h-5 text-orange" strokeWidth={1.2} />
-            <span className="text-sm text-foreground font-light">Quick Start Guide</span>
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {boxContents.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center text-center p-4 rounded-xl bg-background border border-border/30 hover:shadow-card transition-shadow"
+            >
+              <div className="mb-3 p-2 rounded-full bg-muted/50">
+                {item.icon}
+              </div>
+              <h3 className="font-medium text-foreground text-sm mb-1">
+                {item.title}
+              </h3>
+              <p className="text-xs text-muted-foreground font-light">
+                {item.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

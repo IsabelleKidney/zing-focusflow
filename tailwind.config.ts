@@ -49,10 +49,6 @@ export default {
           light: "hsl(var(--orange-light))",
           dark: "hsl(var(--orange-dark))",
         },
-        gold: {
-          DEFAULT: "hsl(var(--gold))",
-          foreground: "hsl(var(--gold-foreground))",
-        },
         yellow: {
           DEFAULT: "hsl(var(--yellow))",
           foreground: "hsl(var(--yellow-foreground))",
@@ -89,7 +85,6 @@ export default {
         'elegant': 'var(--shadow-elegant)',
         'glow': 'var(--shadow-glow)',
         'card': 'var(--shadow-card)',
-        'hover': 'var(--shadow-hover)',
       },
       transitionTimingFunction: {
         'smooth': 'var(--transition-smooth)',

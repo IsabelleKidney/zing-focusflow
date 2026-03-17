@@ -1,33 +1,43 @@
-import focuszingLogo from "@/assets/focuszing-logo-clean.png";
+import zingoTrademark from "@/assets/zingo-trademark-transparent-f77c1e.png";
+import { ColorKeyedLogo } from "@/components/ColorKeyedLogo";
 
 const Footer = () => {
   const links = [
     { name: "Privacy Policy", href: "#" },
     { name: "Terms of Service", href: "#" },
     { name: "Contact", href: "#" },
-    { name: "Support", href: "#support" },
+    { name: "Support", href: "#support" }
   ];
 
   return (
-    <footer className="bg-background border-t border-border/50 py-12">
-      <div className="container mx-auto px-8 max-w-6xl">
-        <div className="flex flex-col md:flex-row items-center justify-between mb-8">
-          <img src={focuszingLogo} alt="FocusZing" className="h-7 w-auto mb-6 md:mb-0" />
-          <nav className="flex flex-wrap justify-center gap-8">
+    <footer className="bg-muted py-12">
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col md:flex-row items-center justify-between">
+          <div className="flex items-center mb-6 md:mb-0">
+            <ColorKeyedLogo
+              src={zingoTrademark}
+              alt="Zingo"
+              className="h-20 md:h-24 w-auto"
+              tolerance={12}
+            />
+          </div>
+          
+          <nav className="flex flex-wrap justify-center md:justify-end space-x-6 mb-6 md:mb-0">
             {links.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
+                className="text-muted-foreground hover:text-foreground transition-smooth text-sm"
               >
                 {link.name}
               </a>
             ))}
           </nav>
         </div>
-        <div className="border-t border-border/40 pt-6 text-center">
-          <p className="text-xs text-muted-foreground font-light">
-            © 2024 FocusZing. All rights reserved.
+        
+        <div className="border-t border-border/50 pt-6 mt-6 text-center">
+          <p className="text-muted-foreground text-sm">
+            © 2024 FocusZing. All rights reserved. | Unlock Your Potential. Achieve Success.
           </p>
         </div>
       </div>

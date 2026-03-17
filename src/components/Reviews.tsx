@@ -7,65 +7,61 @@ const Reviews = () => {
       role: "CEO",
       image: "/src/assets/testimonial-1.jpg",
       rating: 5,
-      quote: "FocusZing has been terrific — I'm turbocharged this week! What a joy! I'm resolving lots of stuff I usually put on the long finger.",
+      quote: "FocusZing has been terrific - I'm turbocharged this week! What a joy! I'm resolving lots of stuff I usually put on the long finger."
     },
     {
       name: "Elena",
-      role: "PhD Student",
+      role: "PhD Student", 
       image: "/src/assets/testimonial-2.jpg",
       rating: 5,
-      quote: "I was able to do a really big piece of work — I am better able to do tasks without getting distracted with the help of FocusZing.",
+      quote: "I was able to do a really big piece of work — I am better able to do tasks without getting distracted with the help of FocusZing."
     },
     {
       name: "Kevin",
       role: "IT Expert",
-      image: "/src/assets/testimonial-3.jpg",
+      image: "/src/assets/testimonial-3.jpg", 
       rating: 5,
-      quote: "Using FocusZing with meditation and soothing music daily for a month transformed my anxiety — far more effective for me than antidepressants.",
-    },
+      quote: "Using FocusZing with meditation and soothing music daily for a month transformed my anxiety — far more effective for me than antidepressants."
+    }
   ];
 
   return (
-    <section id="reviews" className="py-28 bg-background">
-      <div className="container mx-auto px-8 max-w-6xl">
-        <div className="text-center mb-20">
-          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-orange mb-4">
-            Testimonials
-          </p>
-          <h2 className="text-4xl md:text-5xl font-light text-foreground tracking-tight mb-4">
+    <section id="reviews" className="py-32 bg-muted/30">
+      <div className="container mx-auto px-8 max-w-7xl">
+        <div className="text-center mb-24">
+          <h2 className="text-5xl md:text-6xl font-light text-foreground mb-6 tracking-tight">
             Success Stories
           </h2>
-          <p className="text-base text-muted-foreground max-w-lg mx-auto font-light">
-            Join thousands who have unlocked their potential.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
+            Join thousands who have unlocked their potential and achieved peak performance.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
-          {testimonials.map((t, index) => (
-            <div
-              key={index}
-              className="bg-background p-8 rounded-2xl transition-shadow duration-300 hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]"
+          {testimonials.map((testimonial, index) => (
+            <div 
+              key={index} 
+              className="bg-card p-10 rounded-2xl shadow-card hover:shadow-elegant transition-smooth border border-border/30"
             >
-              {/* Gold stars */}
-              <div className="flex gap-0.5 mb-6">
-                {[...Array(t.rating)].map((_, i) => (
-                  <Star key={i} className="w-4 h-4 fill-[hsl(43,96%,56%)] text-[hsl(43,96%,56%)]" />
+              <div className="flex gap-1 mb-6">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <Star key={i} className="w-4 h-4 fill-orange text-orange" />
                 ))}
               </div>
-
-              <blockquote className="text-foreground/75 mb-8 leading-relaxed font-light text-sm text-left">
-                "{t.quote}"
+              
+              <blockquote className="text-foreground/80 mb-8 leading-relaxed font-light text-sm">
+                "{testimonial.quote}"
               </blockquote>
-
+              
               <div className="flex items-center">
-                <img
-                  src={t.image}
-                  alt={t.name}
-                  className="w-10 h-10 rounded-full object-cover mr-3"
+                <img 
+                  src={testimonial.image} 
+                  alt={testimonial.name}
+                  className="w-12 h-12 rounded-full object-cover mr-4"
                 />
                 <div>
-                  <p className="text-sm font-medium text-foreground">{t.name}</p>
-                  <p className="text-xs text-muted-foreground font-light">{t.role}</p>
+                  <div className="font-normal text-foreground text-sm">{testimonial.name}</div>
+                  <div className="text-muted-foreground text-xs font-light">{testimonial.role}</div>
                 </div>
               </div>
             </div>
