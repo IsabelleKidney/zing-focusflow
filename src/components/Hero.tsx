@@ -18,7 +18,7 @@ const slides = [
     image: heroImage2,
     eyebrow: "Clinically Validated",
     headline: "Feel the Calm.\nFind the Flow.",
-    subline: "Vagus nerve stimulation that helps you think clearer, feel calmer, and perform at your peak — effortlessly.",
+    subline: "The new happily ever after. Elevate your mood with a 45-minute daily Zingo practice.",
   },
   {
     image: heroImage3,
