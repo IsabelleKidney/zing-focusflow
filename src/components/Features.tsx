@@ -1,72 +1,75 @@
 import { Zap, Brain, Headphones, Target, Trophy, Sun } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Features = () => {
   const features = [
     {
-      icon: <Target className="w-8 h-8" />,
+      icon: <Target className="w-6 h-6" />,
       title: "Laser Focus",
       description: "Stay locked in on what matters most with enhanced concentration and serenity."
     },
     {
-      icon: <Zap className="w-8 h-8" />,
+      icon: <Zap className="w-6 h-6" />,
       title: "Instant Results",
       description: "Notice your attention improve within minutes of putting FocusZing on."
     },
     {
-      icon: <Sun className="w-8 h-8" />,
+      icon: <Sun className="w-6 h-6" />,
       title: "Charge Your Vitality",
-      description: "To generate amazing energy, emotional resilience, and elevated mood, use daily for 45 minutes with vocal meditation or 'ommm' humming - even while working!"
+      description: "Generate amazing energy, emotional resilience, and elevated mood with daily 45-minute sessions — even while working."
     },
     {
-      icon: <Brain className="w-8 h-8" />,
+      icon: <Brain className="w-6 h-6" />,
       title: "Neurostimulation",
-      description: "Precision-engineered microcurrent stimulates your vagus nerve—the cranial nerve of calm—for enhanced attentional performance."
+      description: "Precision-engineered microcurrent stimulates your vagus nerve — the cranial nerve of calm — for enhanced performance."
     },
     {
-      icon: <Headphones className="w-8 h-8" />,
-      title: "Premium Audio Integration",
-      description: "Listen to your favourite music, sound bath, podcast or focus tracks to boost your brain performance."
+      icon: <Headphones className="w-6 h-6" />,
+      title: "Premium Audio",
+      description: "Listen to music, soundbaths, podcasts, or focus tracks to amplify your brain performance."
     },
     {
-      icon: <Trophy className="w-8 h-8" />,
-      title: "Own It",
+      icon: <Trophy className="w-6 h-6" />,
+      title: "Own Your Day",
       description: "Finish tasks that drive your ambition, and free up time for more of what really matters."
     }
   ];
 
   return (
-    <section id="features" className="py-32 bg-background">
-      <div className="container mx-auto px-8 max-w-7xl">
-        <div className="text-center mb-24">
-          <h2 className="text-5xl md:text-6xl font-light text-foreground mb-6 tracking-tight">
+    <section id="features" className="py-24 md:py-32 bg-background">
+      <div className="container mx-auto px-6 md:px-8 max-w-6xl">
+        <div className="text-center mb-16 md:mb-20">
+          <span className="text-orange text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">
+            Why FocusZing
+          </span>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 tracking-tight text-balance">
             Where Neuroscience Meets Performance
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto font-light">
-            Experience peak productivity powered by neuroscience and immersive sound.
+          <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto font-light leading-relaxed">
+            Six powerful ways FocusZing transforms your daily performance.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16" style={{ perspective: "1000px" }}>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((feature, index) => (
-            <div 
+            <motion.div
               key={index}
-              className="group transition-transform duration-300 ease-out hover:[transform:rotateX(-5deg)_rotateY(5deg)_translateZ(10px)]"
-              style={{ transformStyle: "preserve-3d" }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.08 }}
+              className="group p-6 md:p-8 rounded-2xl bg-card border border-border/50 hover:border-orange/20 hover:shadow-card-hover transition-all duration-300"
             >
-              <div className="flex items-center gap-3 mb-3">
-                <div className="text-orange">
-                  <div className="w-10 h-10 rounded-full bg-gradient-subtle flex items-center justify-center transition-all duration-300 group-hover:scale-110">
-                    {feature.icon}
-                  </div>
-                </div>
-                <h3 className="text-xl font-normal text-foreground">
-                  {feature.title}
-                </h3>
+              <div className="w-12 h-12 rounded-xl bg-orange/10 flex items-center justify-center text-orange mb-5 group-hover:bg-orange group-hover:text-white transition-all duration-300">
+                {feature.icon}
               </div>
-              <p className="text-muted-foreground leading-relaxed font-light text-sm ml-[52px] max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out group-hover:max-h-40 group-hover:opacity-100 group-hover:mt-2">
+              <h3 className="text-lg font-semibold text-foreground mb-2">
+                {feature.title}
+              </h3>
+              <p className="text-sm text-muted-foreground leading-relaxed font-light">
                 {feature.description}
               </p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

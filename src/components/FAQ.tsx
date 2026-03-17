@@ -17,7 +17,7 @@ const FAQ = () => {
     },
     {
       question: "How quickly will I notice results?",
-      answer: "Many users notice improved focus within minutes. For relaxation, you may feel a calming effect during—and after—your first session, especially when using it with a soundbath or relaxing music. For longer-term benefits like enhanced vitality, mood and resilience, integrate with a daily 45 minute meditation routine and use consistently for 4–6 weeks."
+      answer: "Many users notice improved focus within minutes. For relaxation, you may feel a calming effect during — and after — your first session. For longer-term benefits like enhanced vitality and mood, use consistently for 4–6 weeks."
     },
     {
       question: "Can I use it while working?",
@@ -36,7 +36,7 @@ const FAQ = () => {
     },
     {
       question: "What's the return policy?",
-      answer: "30-day money-back guarantee. Return in original packaging for a full refund—no questions asked."
+      answer: "30-day money-back guarantee. Return in original packaging for a full refund — no questions asked."
     },
     {
       question: "How long does the battery last?",
@@ -45,29 +45,32 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-8 max-w-6xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-light text-foreground mb-4 tracking-tight">
-            Frequently Asked Questions
+    <section id="faq" className="py-24 md:py-28 bg-secondary">
+      <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+        <div className="text-center mb-14">
+          <span className="text-orange text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">
+            FAQ
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight">
+            Questions & Answers
           </h2>
-          <p className="text-muted-foreground font-light">
-            Everything you need to know about FocusZing
+          <p className="text-muted-foreground font-light text-sm">
+            Everything you need to know about FocusZing.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-6">
           <Accordion type="single" collapsible className="space-y-3">
             {leftColumn.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`left-${index}`}
-                className="bg-background border border-border/50 rounded-lg px-4 data-[state=open]:shadow-md transition-shadow duration-200"
+                className="bg-card border border-border/40 rounded-xl px-5 data-[state=open]:shadow-card data-[state=open]:border-orange/15 transition-all duration-200"
               >
-                <AccordionTrigger className="text-left text-sm font-medium hover:no-underline py-3">
+                <AccordionTrigger className="text-left text-sm font-medium hover:no-underline py-4 hover:text-orange transition-colors">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-3">
+                <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-4 font-light">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -79,12 +82,12 @@ const FAQ = () => {
               <AccordionItem 
                 key={index} 
                 value={`right-${index}`}
-                className="bg-background border border-border/50 rounded-lg px-4 data-[state=open]:shadow-md transition-shadow duration-200"
+                className="bg-card border border-border/40 rounded-xl px-5 data-[state=open]:shadow-card data-[state=open]:border-orange/15 transition-all duration-200"
               >
-                <AccordionTrigger className="text-left text-sm font-medium hover:no-underline py-3">
+                <AccordionTrigger className="text-left text-sm font-medium hover:no-underline py-4 hover:text-orange transition-colors">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-3">
+                <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-4 font-light">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

@@ -1,4 +1,4 @@
-import { Mail } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Support = () => {
@@ -7,44 +7,51 @@ const Support = () => {
   };
 
   return (
-    <section id="support" className="py-20 bg-background">
-      <div className="container mx-auto px-8 max-w-4xl">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-light text-foreground mb-4 tracking-tight">
-            Get in Touch
+    <section id="support" className="py-24 md:py-28 bg-background">
+      <div className="container mx-auto px-6 md:px-8 max-w-4xl">
+        <div className="text-center mb-14">
+          <span className="text-orange text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">
+            Support
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight">
+            We're Here to Help
           </h2>
-          <p className="text-muted-foreground font-light">
-            We're here to help you maximize your FocusZing experience
+          <p className="text-muted-foreground font-light text-sm max-w-md mx-auto">
+            Maximize your FocusZing experience with our dedicated support team.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-card p-6 rounded-xl border border-border/50 hover:shadow-lg transition-shadow duration-300">
-            <div className="flex items-start space-x-4">
-              <div className="text-orange p-3 bg-gradient-subtle rounded-lg">
-                <Mail className="w-6 h-6" />
-              </div>
-              <div className="flex-1">
-                <h4 className="font-medium text-card-foreground mb-2">Email Support</h4>
-                <p className="text-muted-foreground text-sm mb-4">support@zingenergy.ie</p>
-                <Button 
-                  variant="outline" 
-                  size="sm"
-                  onClick={handleEmailClick}
-                >
-                  Send Email
-                </Button>
-              </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div className="bg-card p-8 rounded-2xl border border-border/50 hover:shadow-card-hover transition-all duration-300">
+            <div className="w-12 h-12 rounded-xl bg-orange/10 flex items-center justify-center text-orange mb-5">
+              <Mail className="w-5 h-5" />
             </div>
+            <h4 className="font-semibold text-foreground mb-2">Email Support</h4>
+            <p className="text-sm text-muted-foreground font-light mb-5">
+              support@zingenergy.ie
+            </p>
+            <Button 
+              variant="outline"
+              size="sm"
+              onClick={handleEmailClick}
+              className="rounded-full text-xs font-medium gap-1.5"
+            >
+              Send Email
+              <ArrowRight className="w-3 h-3" />
+            </Button>
           </div>
           
-          <div className="p-6 bg-gradient-subtle rounded-xl border border-border/50">
-            <h4 className="font-medium text-foreground mb-3">Ready to Unlock Peak Performance?</h4>
-            <p className="text-muted-foreground text-sm mb-4">
-              Access our comprehensive performance guide and productivity tutorials.
+          <div className="p-8 bg-card rounded-2xl border border-border/50 hover:shadow-card-hover transition-all duration-300">
+            <div className="w-12 h-12 rounded-xl bg-orange/10 flex items-center justify-center text-orange mb-5">
+              <ArrowRight className="w-5 h-5" />
+            </div>
+            <h4 className="font-semibold text-foreground mb-2">Performance Center</h4>
+            <p className="text-sm text-muted-foreground font-light mb-5">
+              Access guides, tutorials, and tips for peak performance.
             </p>
-            <Button variant="default" className="bg-gradient-primary">
-              Access Performance Center
+            <Button className="bg-orange hover:bg-orange-dark text-white rounded-full text-xs font-medium gap-1.5">
+              Explore Resources
+              <ArrowRight className="w-3 h-3" />
             </Button>
           </div>
         </div>

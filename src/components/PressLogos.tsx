@@ -1,34 +1,29 @@
 import { Newspaper } from "lucide-react";
 
 const PressLogos = () => {
-  // Placeholder press mentions - replace with actual logos when available
   const pressLogos = [
-    { name: "TechCrunch", placeholder: true },
-    { name: "Wired", placeholder: true },
-    { name: "Forbes Health", placeholder: true },
-    { name: "Healthline", placeholder: true },
+    { name: "TechCrunch" },
+    { name: "Wired" },
+    { name: "Forbes Health" },
+    { name: "Healthline" },
   ];
 
   return (
-    <section className="py-12 bg-muted/20 border-y border-border/30">
-      <div className="container mx-auto px-8 max-w-7xl">
-        <p className="text-center text-sm text-muted-foreground mb-6 font-light tracking-wide uppercase">
+    <section className="py-10 bg-background border-y border-border/40">
+      <div className="container mx-auto px-6 md:px-8 max-w-5xl">
+        <p className="text-center text-[10px] text-muted-foreground/60 mb-5 font-medium tracking-[0.25em] uppercase">
           As Featured In
         </p>
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+        <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
           {pressLogos.map((logo, index) => (
-            <div
+            <span
               key={index}
-              className="flex items-center gap-2 text-muted-foreground/50 hover:text-muted-foreground transition-colors"
+              className="text-muted-foreground/30 text-lg font-bold tracking-tight hover:text-muted-foreground/50 transition-colors"
             >
-              <Newspaper className="w-5 h-5" />
-              <span className="text-lg font-semibold tracking-tight">{logo.name}</span>
-            </div>
+              {logo.name}
+            </span>
           ))}
         </div>
-        <p className="text-center text-xs text-muted-foreground/50 mt-4 font-light">
-          Press logos coming soon
-        </p>
       </div>
     </section>
   );
