@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Mail, CheckCircle } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 
 const Subscribe = () => {
   const [email, setEmail] = useState("");
@@ -10,7 +10,6 @@ const Subscribe = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      // Handle subscription logic here
       setIsSubscribed(true);
       setEmail("");
     }
@@ -18,12 +17,12 @@ const Subscribe = () => {
 
   if (isSubscribed) {
     return (
-      <section className="py-16 bg-gradient-primary">
-        <div className="container mx-auto px-6 text-center">
-          <div className="max-w-md mx-auto bg-white/10 backdrop-blur-sm p-8 rounded-xl">
-            <CheckCircle className="w-16 h-16 text-white mx-auto mb-4" />
-            <h3 className="text-2xl font-bold text-white mb-2">Thank You!</h3>
-            <p className="text-white/90">
+      <section id="subscribe" className="py-24 bg-secondary">
+        <div className="container mx-auto px-8 text-center">
+          <div className="max-w-md mx-auto">
+            <CheckCircle className="w-12 h-12 text-orange mx-auto mb-4" />
+            <h3 className="text-2xl font-light text-foreground mb-2">Thank You!</h3>
+            <p className="text-sm text-muted-foreground font-light">
               You're subscribed! Watch for exclusive offers and updates.
             </p>
           </div>
@@ -33,36 +32,37 @@ const Subscribe = () => {
   }
 
   return (
-    <section className="py-16 bg-gradient-primary">
-      <div className="container mx-auto px-6 text-center">
-        <div className="max-w-2xl mx-auto">
-          <Mail className="w-16 h-16 text-white mx-auto mb-6" />
-          <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
+    <section id="subscribe" className="py-24 bg-secondary">
+      <div className="container mx-auto px-8 text-center">
+        <div className="max-w-lg mx-auto">
+          <p className="text-xs font-semibold tracking-[0.25em] uppercase text-orange mb-4">
+            Newsletter
+          </p>
+          <h3 className="text-3xl md:text-4xl font-light text-foreground mb-3 tracking-tight">
             Stay Ahead of the Game
           </h3>
-          <p className="text-xl text-white/90 mb-8">
+          <p className="text-sm text-muted-foreground mb-8 font-light">
             Be the first to access FocusZing updates.
           </p>
-          
-          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+
+          <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <Input
               type="email"
-              placeholder="Enter your email address"
+              placeholder="Enter your email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="flex-1 bg-white/10 backdrop-blur-sm border-white/20 text-white placeholder:text-white/60 focus:border-white/40"
+              className="flex-1 bg-background border-border text-foreground placeholder:text-muted-foreground/60 rounded-full px-5 h-11 text-sm"
               required
             />
-            <Button 
+            <Button
               type="submit"
-              variant="secondary"
-              className="bg-white text-orange hover:bg-white/90 font-semibold px-8"
+              className="bg-orange hover:bg-orange-dark text-orange-foreground rounded-full px-8 h-11 text-sm font-semibold"
             >
               Subscribe
             </Button>
           </form>
-          
-          <p className="text-white/70 text-sm mt-4">
+
+          <p className="text-xs text-muted-foreground mt-4 font-light">
             No spam. Unsubscribe anytime.
           </p>
         </div>
