@@ -24,7 +24,7 @@ const slides = [
     image: heroImage3,
     eyebrow: "Designed for Leaders",
     headline: "For High Performance.\nSimply Press Play.",
-    subline: "Join high performers who use FocusZing to stay sharp, composed, and energised throughout every day.",
+    subline: "Join high performers who use Focus Zing to stay sharp, composed, and energised throughout every day.",
   },
 ];
 
