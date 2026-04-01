@@ -32,8 +32,11 @@ function useProcessedLogo(src: string) {
           d[i + 3] = 0;
           continue;
         }
-        // Orange-ish pixels → keep as-is
-        if (r > 150 && g < 150 && b < 100) continue;
+        // Orange-ish pixels → recolor to brand orange (hsl 28 92% 52% ≈ #E07820)
+        if (r > 150 && g < 150 && b < 100) {
+          d[i] = 224; d[i + 1] = 120; d[i + 2] = 32;
+          continue;
+        }
         // Dark pixels (text) → make white
         if (r < 80 && g < 80 && b < 80) {
           d[i] = 255; d[i + 1] = 255; d[i + 2] = 255;
