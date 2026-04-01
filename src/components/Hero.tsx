@@ -23,7 +23,7 @@ const slides = [
   {
     image: heroImage3,
     eyebrow: "Designed for Leaders",
-    headline: "Press Play.\nFor High Performance.",
+    headline: "For High Performance.\nSimply Press Play.",
     subline: "Join high performers who use FocusZing to stay sharp, composed, and energised throughout every day.",
   },
 ];
