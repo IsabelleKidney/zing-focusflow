@@ -64,7 +64,7 @@ const Products = () => {
             Shop
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 tracking-tight">
-            The FocusZing System
+            The Focus Zing System
           </h2>
           <p className="text-base text-muted-foreground max-w-lg mx-auto font-light">
             Premium neurostimulation technology, thoughtfully designed.
@@ -149,7 +149,7 @@ const Products = () => {
                 <span className="bg-orange text-white text-[10px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full mb-4">
                   Coming Soon
                 </span>
-                <h3 className="text-xl font-bold text-foreground mb-2">FocusZing Device</h3>
+                <h3 className="text-xl font-bold text-foreground mb-2">Focus Zing Device</h3>
                 <p className="text-sm text-muted-foreground font-light mb-4">The complete neurostimulation system</p>
                 <p className="text-3xl font-bold text-foreground">€199</p>
               </motion.div>

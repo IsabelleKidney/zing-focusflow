@@ -11,7 +11,7 @@ const Features = () => {
     {
       icon: <Zap className="w-6 h-6" />,
       title: "Instant Results",
-      description: "Notice your attention improve within minutes of putting FocusZing on."
+      description: "Notice your attention improve within minutes of putting Focus Zing on."
     },
     {
       icon: <Sun className="w-6 h-6" />,
@@ -40,13 +40,13 @@ const Features = () => {
       <div className="container mx-auto px-6 md:px-8 max-w-6xl">
         <div className="text-center mb-16 md:mb-20">
           <span className="text-orange text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">
-            Why FocusZing
+            Why Focus Zing
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 tracking-tight text-balance">
             Where Neuroscience Meets Performance
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto font-light leading-relaxed">
-            Six powerful ways FocusZing transforms your daily performance.
+            Six powerful ways Focus Zing transforms your daily performance.
           </p>
         </div>
         

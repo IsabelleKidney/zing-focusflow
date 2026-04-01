@@ -8,12 +8,12 @@ import {
 const FAQ = () => {
   const leftColumn = [
     {
-      question: "How do I use FocusZing?",
+      question: "How do I use Focus Zing?",
       answer: "Clip the earpiece onto the small flap at the front of your ear canal (the tragus). The earbud should sit in your ear canal, with the stimulation pad resting on the outside surface. Turn on the handheld device and gentle neurostimulation will start automatically. Use daily while working, meditating, doing yoga, or simply while listening to music or podcasts."
     },
     {
       question: "Is it safe to use?",
-      answer: "Yes, FocusZing uses CE-marked taVNS technology that's well-researched and non-invasive. Consult your doctor if you have a pacemaker, are pregnant, or have epilepsy."
+      answer: "Yes, Focus Zing uses CE-marked taVNS technology that's well-researched and non-invasive. Consult your doctor if you have a pacemaker, are pregnant, or have epilepsy."
     },
     {
       question: "How quickly will I notice results?",
@@ -21,7 +21,7 @@ const FAQ = () => {
     },
     {
       question: "Can I use it while working?",
-      answer: "Absolutely! FocusZing is designed for active use. Listen to focus music, take calls, or work at your desk while benefiting from stimulation."
+      answer: "Absolutely! Focus Zing is designed for active use. Listen to focus music, take calls, or work at your desk while benefiting from stimulation."
     }
   ];
 
@@ -55,7 +55,7 @@ const FAQ = () => {
             Questions & Answers
           </h2>
           <p className="text-muted-foreground font-light text-sm">
-            Everything you need to know about FocusZing.
+            Everything you need to know about Focus Zing.
           </p>
         </div>
         

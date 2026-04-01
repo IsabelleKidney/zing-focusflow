@@ -23,7 +23,7 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <ColorKeyedLogo
               src={zingoTrademark}
-              alt="FocusZing"
+              alt="Focus Zing"
               className="h-14 w-auto mb-4 brightness-200"
               tolerance={12}
             />
@@ -80,7 +80,7 @@ const Footer = () => {
         
         <div className="border-t border-white/10 pt-8">
           <p className="text-white/25 text-xs font-light text-center">
-            © 2024 FocusZing. All rights reserved.
+            © 2024 Focus Zing. All rights reserved.
           </p>
         </div>
       </div>
