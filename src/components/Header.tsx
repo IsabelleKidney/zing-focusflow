@@ -24,17 +24,6 @@ const Header = () => {
     { name: "Support", href: "#support" },
   ];
 
-  const renderIcon = (icon: string) => {
-    switch (icon) {
-      case "rotate": return <RotateCcw className="w-3 h-3 text-orange" />;
-      case "ce": return <img src={ceMark} alt="CE" className="w-3.5 h-3.5 brightness-0 invert" />;
-      case "shield": return <Shield className="w-3 h-3 text-orange" />;
-      case "link": return null;
-      default: return null;
-    }
-  };
-
-  const marqueeItems = [...bannerItems, ...bannerItems, ...bannerItems, ...bannerItems];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
