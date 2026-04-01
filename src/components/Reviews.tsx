@@ -16,14 +16,14 @@ const Reviews = () => {
     {
       name: "Elaine",
       role: "PhD Student",
-      image: "/src/assets/testimonial-2.jpg",
+      image: testimonial2,
       rating: 5,
       quote: "I was able to do a really big piece of work — I am better able to do tasks without getting distracted with the help of Zing Elate."
     },
     {
       name: "Andrew",
       role: "IT Expert",
-      image: "/src/assets/testimonial-3.jpg",
+      image: testimonial3,
       rating: 5,
       quote: "Using Zing Elate with meditation and soothing music daily for a month transformed my anxiety — far more effective for me than antidepressants."
     }
