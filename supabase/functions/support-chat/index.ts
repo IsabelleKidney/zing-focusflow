@@ -31,7 +31,7 @@ serve(async (req) => {
         messages: [
           { 
             role: "system", 
-            content: `You are a helpful FocusZing support assistant. FocusZing is a revolutionary taVNS (transcutaneous auricular vagus nerve stimulation) device with premium audio integration that enhances focus, productivity, and peak performance.
+            content: `You are a helpful Focus Zing support assistant. Focus Zing is a revolutionary taVNS (transcutaneous auricular vagus nerve stimulation) device with premium audio integration that enhances focus, productivity, and peak performance.
 
 Key product information:
 - Technology: taVNS delivers precise electrical pulses through the ear to stimulate the vagus nerve

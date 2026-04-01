@@ -86,7 +86,7 @@ const Science = () => {
               {stat.link ? (
                 <a
                   href={stat.link}
-                  download="FocusZing_Clinical_Studies.pdf"
+                  download="Focus Zing_Clinical_Studies.pdf"
                   className="text-sm font-medium text-foreground hover:text-orange transition-colors underline decoration-border hover:decoration-orange"
                 >
                   {stat.label}
@@ -130,7 +130,7 @@ const Science = () => {
                   essential for sustained focus and peak mental performance.
                 </p>
                 <p>
-                  FocusZing's advanced technology combines this proven neuroscience with premium audio integration, creating a
+                  Focus Zing's advanced technology combines this proven neuroscience with premium audio integration, creating a
                   comprehensive enhancement system that integrates seamlessly into your daily routine.
                 </p>
               </div>

@@ -17,7 +17,7 @@ const Support = () => {
             We're Here to Help
           </h2>
           <p className="text-muted-foreground font-light text-sm max-w-md mx-auto">
-            Maximize your FocusZing experience with our dedicated support team.
+            Maximize your Focus Zing experience with our dedicated support team.
           </p>
         </div>
 

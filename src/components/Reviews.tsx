@@ -8,21 +8,21 @@ const Reviews = () => {
       role: "CEO",
       image: "/src/assets/testimonial-1.jpg",
       rating: 5,
-      quote: "FocusZing has been terrific — I'm turbocharged this week! What a joy! I'm resolving lots of stuff I usually put on the long finger."
+      quote: "Focus Zing has been terrific — I'm turbocharged this week! What a joy! I'm resolving lots of stuff I usually put on the long finger."
     },
     {
       name: "Elena",
       role: "PhD Student",
       image: "/src/assets/testimonial-2.jpg",
       rating: 5,
-      quote: "I was able to do a really big piece of work — I am better able to do tasks without getting distracted with the help of FocusZing."
+      quote: "I was able to do a really big piece of work — I am better able to do tasks without getting distracted with the help of Focus Zing."
     },
     {
       name: "Kevin",
       role: "IT Expert",
       image: "/src/assets/testimonial-3.jpg",
       rating: 5,
-      quote: "Using FocusZing with meditation and soothing music daily for a month transformed my anxiety — far more effective for me than antidepressants."
+      quote: "Using Focus Zing with meditation and soothing music daily for a month transformed my anxiety — far more effective for me than antidepressants."
     }
   ];
 
@@ -37,7 +37,7 @@ const Reviews = () => {
             Real Results. Real People.
           </h2>
           <p className="text-base text-muted-foreground max-w-lg mx-auto font-light">
-            Hear from professionals, students, and achievers using FocusZing daily.
+            Hear from professionals, students, and achievers using Focus Zing daily.
           </p>
         </div>
 
