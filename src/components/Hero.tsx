@@ -135,19 +135,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Slide Indicators */}
-        <div className="flex gap-2 mt-8">
-          {slides.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => goToSlide(i)}
-              className={`h-[2px] rounded-full transition-all duration-700 ${
-                i === current ? "w-12 bg-orange" : "w-5 bg-white/25 hover:bg-white/40"
-              }`}
-              aria-label={`Go to slide ${i + 1}`}
-            />
-          ))}
-        </div>
       </div>
     </section>
   );
