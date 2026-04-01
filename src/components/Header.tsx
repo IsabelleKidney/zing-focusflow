@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, Shield, RotateCcw } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
-import focuszingLogo from "@/assets/focuszing-logo-clean.png";
-import ceMark from "@/assets/ce-mark.png";
 import { CartDrawer } from "./CartDrawer";
 
 
