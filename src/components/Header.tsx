@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { CartDrawer } from "./CartDrawer";
+import zingElateLogo from "@/assets/zing-elate-logo.png";
 
 
 const Header = () => {
