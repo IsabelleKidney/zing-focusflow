@@ -1,16 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Menu, X, Shield, RotateCcw } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
-import focuszingLogo from "@/assets/focuszing-logo-clean.png";
-import ceMark from "@/assets/ce-mark.png";
 import { CartDrawer } from "./CartDrawer";
 
-const bannerItems = [
-  { icon: "rotate", text: "30-Day Money-Back Guarantee" },
-  { icon: "ce", text: "CE Certified" },
-  { icon: "shield", text: "1-Year Warranty" },
-  { icon: "link", text: "Wearable Neurostimulation", href: "#how-it-works" },
-];
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,39 +22,9 @@ const Header = () => {
     { name: "Support", href: "#support" },
   ];
 
-  const renderIcon = (icon: string) => {
-    switch (icon) {
-      case "rotate": return <RotateCcw className="w-3 h-3 text-orange" />;
-      case "ce": return <img src={ceMark} alt="CE" className="w-3.5 h-3.5 brightness-0 invert" />;
-      case "shield": return <Shield className="w-3 h-3 text-orange" />;
-      case "link": return null;
-      default: return null;
-    }
-  };
-
-  const marqueeItems = [...bannerItems, ...bannerItems, ...bannerItems, ...bannerItems];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
-      {/* Marquee Banner */}
-      <div className="overflow-hidden">
-        <div className="animate-marquee flex items-center gap-8 py-1.5 whitespace-nowrap w-max">
-          {marqueeItems.map((item, i) => (
-            <span key={i} className="flex items-center gap-1.5 text-[11px] text-white/70 font-light tracking-wide">
-              {renderIcon(item.icon)}
-              {item.href ? (
-                <a href={item.href} className="underline decoration-white/30 hover:decoration-white/60 transition-colors">
-                  {item.text}
-                </a>
-              ) : (
-                <span>{item.text}</span>
-              )}
-              <span className="text-orange/30 ml-4">✦</span>
-            </span>
-          ))}
-        </div>
-      </div>
-
       {/* Navigation */}
       <nav className={`transition-all duration-500 ${scrolled ? "bg-foreground/90 backdrop-blur-xl shadow-premium" : ""}`}>
         <div className="container mx-auto px-6 md:px-8 py-4">
