@@ -11,7 +11,7 @@ const slides = [
   {
     image: heroImage1,
     eyebrow: "Neuroscience-Powered Focus",
-    headline: "Train Your Brain.\nOwn Your Day.",
+    headline: "Fuel Your Focus.\nPower Your Potential.",
     subline: "The world's most advanced wearable neurostimulation device for laser focus, deep calm, and sustained energy.",
   },
   {
