@@ -30,7 +30,9 @@ const Header = () => {
       <nav className={`transition-all duration-500 ${scrolled ? "bg-foreground/90 backdrop-blur-xl shadow-premium" : ""}`}>
         <div className="container mx-auto px-6 md:px-8 py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center" />
+            <a href="/" className="flex items-center">
+              <img src={zingElateLogo} alt="Zing Elate" className="h-7 md:h-8 brightness-0 invert" />
+            </a>
             
             <div className={`flex items-center gap-0 rounded-full px-3 py-2 transition-all duration-300 ${
               scrolled 
