@@ -5,12 +5,6 @@ import focuszingLogo from "@/assets/focuszing-logo-clean.png";
 import ceMark from "@/assets/ce-mark.png";
 import { CartDrawer } from "./CartDrawer";
 
-const bannerItems = [
-  { icon: "rotate", text: "30-Day Money-Back Guarantee" },
-  { icon: "ce", text: "CE Certified" },
-  { icon: "shield", text: "1-Year Warranty" },
-  { icon: "link", text: "Wearable Neurostimulation", href: "#how-it-works" },
-];
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
