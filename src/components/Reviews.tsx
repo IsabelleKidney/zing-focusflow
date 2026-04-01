@@ -25,7 +25,7 @@ const Reviews = () => {
       role: "IT Expert",
       image: testimonialAndrew,
       rating: 5,
-      quote: "Using Zing Elate with meditation and soothing music daily for a month transformed my anxiety — far more effective for me than antidepressants."
+      quote: "Using Zing Elate with meditation and soothing music for 45 minutes daily for a month transformed my anxiety — far more effective for me than antidepressants."
     }
   ];
 
