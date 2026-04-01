@@ -76,7 +76,7 @@ const Header = () => {
         <div className="container mx-auto px-6 md:px-8 py-4">
           <div className="flex items-center justify-between">
             <a href="#" className="flex items-center">
-              <img src={zingElateLogo} alt="Zing Elate" className="h-7 md:h-8 w-auto brightness-0 invert" />
+              <img src={processedLogo ?? zingElateLogo} alt="Zing Elate" className="h-7 md:h-8 w-auto" />
             </a>
             
             <div className={`flex items-center gap-0 rounded-full px-3 py-2 transition-all duration-300 ${
