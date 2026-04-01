@@ -11,7 +11,7 @@ const slides = [
   {
     image: heroImage1,
     eyebrow: "Neuroscience-Powered Focus",
-    headline: "Train Your Brain.\nOwn Your Day.",
+    headline: "Fuel Your Focus.\nPower Your Potential.",
     subline: "The world's most advanced wearable neurostimulation device for laser focus, deep calm, and sustained energy.",
   },
   {
@@ -23,7 +23,7 @@ const slides = [
   {
     image: heroImage3,
     eyebrow: "Designed for Leaders",
-    headline: "Fuel Your Focus.\nPower Your Potential.",
+    headline: "For High Performance Living.\nPress Play.",
     subline: "Join high performers who use FocusZing to stay sharp, composed, and energised throughout every day.",
   },
 ];
