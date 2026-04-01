@@ -1,26 +1,29 @@
 import { Star } from "lucide-react";
 import { motion } from "framer-motion";
+import testimonial1 from "@/assets/testimonial-1.jpg";
+import testimonial2 from "@/assets/testimonial-2.jpg";
+import testimonial3 from "@/assets/testimonial-3.jpg";
 
 const Reviews = () => {
   const testimonials = [
     {
       name: "Paul",
       role: "CEO",
-      image: "/src/assets/testimonial-1.jpg",
+      image: testimonial1,
       rating: 5,
       quote: "Zing Elate has been terrific — I'm turbocharged this week! What a joy! I'm resolving lots of stuff I usually put on the long finger."
     },
     {
       name: "Elaine",
       role: "PhD Student",
-      image: "/src/assets/testimonial-2.jpg",
+      image: testimonial2,
       rating: 5,
       quote: "I was able to do a really big piece of work — I am better able to do tasks without getting distracted with the help of Zing Elate."
     },
     {
       name: "Andrew",
       role: "IT Expert",
-      image: "/src/assets/testimonial-3.jpg",
+      image: testimonial3,
       rating: 5,
       quote: "Using Zing Elate with meditation and soothing music daily for a month transformed my anxiety — far more effective for me than antidepressants."
     }
