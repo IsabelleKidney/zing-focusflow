@@ -18,7 +18,7 @@ const slides = [
     image: heroImage2,
     eyebrow: "Clinically Validated",
     headline: "Elevate Your Vitality.\nFind Your Flow.",
-    subline: "The new happily ever after. Elevate your mood with a 45-minute daily Zingo practice.",
+    subline: "The new happily ever after. Elevate your mood with a 45-minute daily Zing Elate practice.",
   },
   {
     image: heroImage3,
