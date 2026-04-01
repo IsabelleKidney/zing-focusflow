@@ -1,13 +1,58 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { CartDrawer } from "./CartDrawer";
 import zingElateLogo from "@/assets/zing-elate-logo.png";
 
+/** Processes the logo: removes white bg, turns dark pixels white, keeps orange */
+function useProcessedLogo(src: string) {
+  const [processed, setProcessed] = useState<string | null>(null);
+  const ran = useRef(false);
+
+  useEffect(() => {
+    if (ran.current) return;
+    ran.current = true;
+
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = () => {
+      const canvas = document.createElement("canvas");
+      canvas.width = img.naturalWidth;
+      canvas.height = img.naturalHeight;
+      const ctx = canvas.getContext("2d", { willReadFrequently: true })!;
+      ctx.drawImage(img, 0, 0);
+      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+      const d = imageData.data;
+
+      for (let i = 0; i < d.length; i += 4) {
+        const r = d[i], g = d[i + 1], b = d[i + 2], a = d[i + 3];
+        if (a < 10) continue;
+        // White/near-white background → transparent
+        if (r > 220 && g > 220 && b > 220) {
+          d[i + 3] = 0;
+          continue;
+        }
+        // Orange-ish pixels → keep as-is
+        if (r > 150 && g < 150 && b < 100) continue;
+        // Dark pixels (text) → make white
+        if (r < 80 && g < 80 && b < 80) {
+          d[i] = 255; d[i + 1] = 255; d[i + 2] = 255;
+        }
+      }
+
+      ctx.putImageData(imageData, 0, 0);
+      setProcessed(canvas.toDataURL("image/png"));
+    };
+    img.src = src;
+  }, [src]);
+
+  return processed;
+}
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const processedLogo = useProcessedLogo(zingElateLogo);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 60);
@@ -31,7 +76,7 @@ const Header = () => {
         <div className="container mx-auto px-6 md:px-8 py-4">
           <div className="flex items-center justify-between">
             <a href="#" className="flex items-center">
-              <img src={zingElateLogo} alt="Zing Elate" className="h-7 md:h-8 w-auto brightness-0 invert" />
+              <img src={processedLogo ?? zingElateLogo} alt="Zing Elate" className="h-7 md:h-8 w-auto" />
             </a>
             
             <div className={`flex items-center gap-0 rounded-full px-3 py-2 transition-all duration-300 ${
