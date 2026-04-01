@@ -1,4 +1,4 @@
-import { Shield, RotateCcw, Sparkles, Headphones, FlaskConical, Truck } from "lucide-react";
+import { Shield, RotateCcw, Sparkles, Headphones, FlaskConical } from "lucide-react";
 
 const trustItems = [
   { icon: <FlaskConical className="w-4 h-4" />, text: "Science-Backed" },
@@ -6,7 +6,6 @@ const trustItems = [
   { icon: <Sparkles className="w-4 h-4" />, text: "Premium Build" },
   { icon: <Headphones className="w-4 h-4" />, text: "Audio Integration" },
   { icon: <RotateCcw className="w-4 h-4" />, text: "30-Day Guarantee" },
-  { icon: <Truck className="w-4 h-4" />, text: "Free EU Shipping" },
 ];
 
 const TrustStrip = () => {
