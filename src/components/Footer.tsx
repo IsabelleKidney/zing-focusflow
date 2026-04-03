@@ -21,12 +21,6 @@ const Footer = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <ColorKeyedLogo
-              src={zingoTrademark}
-              alt="Focus Zing"
-              className="h-14 w-auto mb-4 brightness-200"
-              tolerance={12}
-            />
             <p className="text-white/40 text-xs font-light leading-relaxed max-w-[200px]">
               Neuroscience-powered wearable technology for focus, calm, and vitality.
             </p>
