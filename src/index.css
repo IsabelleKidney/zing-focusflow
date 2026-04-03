@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=DM+Sans:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,63 +6,80 @@
 
 @layer base {
   :root {
-    --background: 40 20% 98%;
-    --foreground: 20 10% 12%;
+    --background: 38 22% 97%;
+    --foreground: 18 12% 10%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 20 10% 12%;
+    --card: 36 20% 99%;
+    --card-foreground: 18 12% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 20 10% 12%;
+    --popover-foreground: 18 12% 10%;
 
-    --primary: 20 10% 12%;
-    --primary-foreground: 40 20% 98%;
+    --primary: 18 12% 10%;
+    --primary-foreground: 38 22% 97%;
 
-    --secondary: 35 15% 95%;
-    --secondary-foreground: 20 10% 12%;
+    --secondary: 34 18% 94%;
+    --secondary-foreground: 18 12% 10%;
 
-    --muted: 35 12% 93%;
-    --muted-foreground: 20 8% 46%;
+    --muted: 33 14% 91%;
+    --muted-foreground: 18 8% 44%;
 
-    --accent: 30 95% 55%;
+    --accent: 28 95% 53%;
     --accent-foreground: 0 0% 100%;
 
-    /* Premium Warm Accent Colors */
+    /* ── Brand Warm Orange ── */
     --orange: 28 92% 52%;
     --orange-foreground: 0 0% 100%;
     --orange-light: 32 95% 62%;
     --orange-dark: 24 88% 44%;
+
+    /* ── Golden Glow Palette ── */
+    --gold: 40 76% 56%;
+    --gold-light: 42 82% 68%;
+    --gold-muted: 38 40% 78%;
+    --amber: 33 90% 50%;
+    --amber-glow: 35 100% 65%;
+
+    /* ── Premium Warm Neutrals ── */
+    --stone: 33 12% 90%;
+    --cream: 38 35% 96%;
+    --warm-white: 36 30% 98%;
+    --warm-dark: 20 18% 11%;
+    --warm-dark-mid: 22 14% 16%;
+    --warm-dark-soft: 24 10% 22%;
+
     --yellow: 45 100% 70%;
     --yellow-foreground: 0 0% 10%;
     --yellow-light: 50 100% 80%;
     --yellow-dark: 40 95% 60%;
 
-    /* Premium neutrals */
-    --stone: 35 10% 92%;
-    --cream: 40 30% 96%;
-    --warm-white: 38 25% 99%;
-
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 35 12% 90%;
-    --input: 35 12% 90%;
+    --border: 33 14% 88%;
+    --input: 33 14% 88%;
     --ring: 28 92% 52%;
 
-    /* Premium Design Tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(28, 92%, 52%) 0%, hsl(32, 95%, 62%) 100%);
+    /* ── Premium Gradients ── */
+    --gradient-primary: linear-gradient(135deg, hsl(28, 92%, 52%) 0%, hsl(35, 95%, 58%) 100%);
     --gradient-orange: linear-gradient(135deg, hsl(28, 92%, 52%) 0%, hsl(32, 95%, 62%) 100%);
-    --gradient-warm: linear-gradient(180deg, hsl(40, 20%, 98%) 0%, hsl(35, 15%, 95%) 100%);
-    --gradient-hero: linear-gradient(180deg, hsl(40, 20%, 98%) 0%, hsl(35, 12%, 93%) 100%);
-    --gradient-subtle: linear-gradient(180deg, hsl(40, 30%, 96%) 0%, hsl(40, 20%, 98%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(20, 10%, 12%) 0%, hsl(20, 12%, 18%) 100%);
-    
+    --gradient-warm: linear-gradient(180deg, hsl(38, 22%, 97%) 0%, hsl(34, 18%, 94%) 100%);
+    --gradient-hero: linear-gradient(180deg, hsl(38, 22%, 97%) 0%, hsl(33, 14%, 91%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(38, 35%, 96%) 0%, hsl(38, 22%, 97%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(20, 18%, 11%) 0%, hsl(22, 14%, 16%) 100%);
+    --gradient-golden: linear-gradient(135deg, hsl(33, 90%, 50%) 0%, hsl(40, 76%, 56%) 50%, hsl(28, 92%, 52%) 100%);
+    --gradient-warm-section: linear-gradient(180deg, hsl(34, 24%, 95%) 0%, hsl(38, 30%, 97%) 100%);
+    --gradient-divider: linear-gradient(90deg, transparent 0%, hsl(28, 92%, 52%, 0.15) 50%, transparent 100%);
+
     --shadow-elegant: 0 20px 60px -15px rgba(0, 0, 0, 0.06);
-    --shadow-glow: 0 0 60px rgba(225, 120, 40, 0.12);
+    --shadow-glow: 0 0 60px rgba(225, 120, 40, 0.15);
+    --shadow-glow-strong: 0 0 80px rgba(225, 120, 40, 0.25);
     --shadow-card: 0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.03);
-    --shadow-card-hover: 0 4px 16px rgba(0, 0, 0, 0.08), 0 12px 40px rgba(0, 0, 0, 0.04);
+    --shadow-card-hover: 0 8px 24px rgba(0, 0, 0, 0.08), 0 16px 48px rgba(0, 0, 0, 0.04);
     --shadow-premium: 0 8px 32px rgba(0, 0, 0, 0.06);
-    
+    --shadow-warm: 0 4px 20px rgba(180, 100, 30, 0.08);
+    --shadow-warm-lg: 0 12px 40px rgba(180, 100, 30, 0.12);
+
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
@@ -127,4 +144,66 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* ── Premium Section Dividers ── */
+.section-divider {
+  position: relative;
+}
+
+.section-divider::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  max-width: 400px;
+  height: 1px;
+  background: var(--gradient-divider);
+}
+
+/* ── Golden Glow Effects ── */
+.golden-glow {
+  position: relative;
+}
+
+.golden-glow::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  right: -20%;
+  width: 50%;
+  height: 80%;
+  background: radial-gradient(ellipse, hsla(35, 100%, 65%, 0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ── Warm Noise Texture ── */
+.noise-texture {
+  position: relative;
+}
+
+.noise-texture::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+/* ── Testimonial Photo Treatment ── */
+.testimonial-photo {
+  filter: contrast(1.05) saturate(0.92) brightness(1.02);
+}
+
+/* ── Premium Card Hover ── */
+.premium-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
 }

@@ -45,32 +45,43 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-24 md:py-28 bg-secondary">
-      <div className="container mx-auto px-6 md:px-8 max-w-5xl">
-        <div className="text-center mb-14">
-          <span className="text-orange text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">
-            FAQ
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight">
+    <section id="faq" className="relative py-28 md:py-32 overflow-hidden" style={{
+      background: "linear-gradient(180deg, hsl(20, 16%, 12%) 0%, hsl(22, 14%, 14%) 100%)"
+    }}>
+      {/* Warm ambient glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[400px] pointer-events-none"
+        style={{ background: "radial-gradient(ellipse, hsla(30, 80%, 50%, 0.04) 0%, transparent 70%)" }}
+      />
+
+      <div className="container mx-auto px-6 md:px-8 max-w-5xl relative z-10">
+        <div className="text-center mb-16">
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <span className="w-10 h-px bg-gradient-to-r from-transparent to-orange/30" />
+            <span className="text-orange text-xs font-semibold tracking-[0.22em] uppercase">
+              FAQ
+            </span>
+            <span className="w-10 h-px bg-gradient-to-l from-transparent to-orange/30" />
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">
             Questions & Answers
           </h2>
-          <p className="text-muted-foreground font-light text-sm">
+          <p className="text-white/40 font-light text-sm">
             Everything you need to know about Focus Zing.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-4 md:gap-6">
+        <div className="grid md:grid-cols-2 gap-4 md:gap-5">
           <Accordion type="single" collapsible className="space-y-3">
             {leftColumn.map((faq, index) => (
               <AccordionItem 
                 key={index} 
                 value={`left-${index}`}
-                className="bg-card border border-border/40 rounded-xl px-5 data-[state=open]:shadow-card data-[state=open]:border-orange/15 transition-all duration-200"
+                className="border border-white/8 rounded-xl px-5 bg-white/[0.03] data-[state=open]:border-orange/15 data-[state=open]:bg-white/[0.05] transition-all duration-300"
               >
-                <AccordionTrigger className="text-left text-sm font-medium hover:no-underline py-4 hover:text-orange transition-colors">
+                <AccordionTrigger className="text-left text-sm font-medium hover:no-underline py-4 text-white/80 hover:text-orange transition-colors">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-4 font-light">
+                <AccordionContent className="text-white/45 text-sm leading-relaxed pb-4 font-light">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -82,12 +93,12 @@ const FAQ = () => {
               <AccordionItem 
                 key={index} 
                 value={`right-${index}`}
-                className="bg-card border border-border/40 rounded-xl px-5 data-[state=open]:shadow-card data-[state=open]:border-orange/15 transition-all duration-200"
+                className="border border-white/8 rounded-xl px-5 bg-white/[0.03] data-[state=open]:border-orange/15 data-[state=open]:bg-white/[0.05] transition-all duration-300"
               >
-                <AccordionTrigger className="text-left text-sm font-medium hover:no-underline py-4 hover:text-orange transition-colors">
+                <AccordionTrigger className="text-left text-sm font-medium hover:no-underline py-4 text-white/80 hover:text-orange transition-colors">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-sm leading-relaxed pb-4 font-light">
+                <AccordionContent className="text-white/45 text-sm leading-relaxed pb-4 font-light">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

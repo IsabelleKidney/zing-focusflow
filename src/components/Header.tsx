@@ -75,20 +75,24 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50">
       {/* Navigation */}
-      <nav className={`transition-all duration-500 ${scrolled ? "bg-foreground/90 backdrop-blur-xl shadow-premium" : ""}`}>
+      <nav className={`transition-all duration-500 ${
+        scrolled 
+          ? "bg-[hsl(20,18%,11%)]/90 backdrop-blur-xl shadow-premium" 
+          : ""
+      }`}>
         <div className="container mx-auto px-6 md:px-8 py-4">
           <div className="flex items-center justify-between">
             <a href="#" className="flex items-center">
               <img src={processedLogo ?? zingElateLogo} alt="Zing Elate" className="h-7 md:h-8 w-auto" />
             </a>
             
-            <div className={`flex items-center gap-0 rounded-full px-3 py-2 transition-all duration-300 ${
+            <div className={`flex items-center gap-0 rounded-full px-3 py-2 transition-all duration-400 ${
               scrolled 
-                ? "bg-white/10 border border-white/10" 
-                : "bg-white/10 backdrop-blur-xl border border-white/15"
+                ? "bg-white/8 border border-white/8" 
+                : "bg-white/8 backdrop-blur-xl border border-white/12"
             }`}>
               <button
-                className="p-2 text-white hover:text-white/80 transition-colors"
+                className="p-2 text-white/80 hover:text-white transition-colors"
                 onClick={() => setIsOpen(!isOpen)}
                 aria-label="Toggle menu"
               >
@@ -100,20 +104,24 @@ const Header = () => {
           
           {/* Dropdown Menu */}
           {isOpen && (
-            <div className="absolute right-6 md:right-8 top-full mt-2 py-6 px-8 bg-foreground/95 backdrop-blur-xl border border-white/10 rounded-2xl shadow-premium min-w-[220px]">
+            <div className="absolute right-6 md:right-8 top-full mt-2 py-6 px-8 backdrop-blur-xl border border-white/8 rounded-2xl shadow-premium min-w-[220px]"
+              style={{
+                background: "hsla(20, 18%, 11%, 0.95)"
+              }}
+            >
               <div className="flex flex-col space-y-5">
                 {navItems.map((item) => (
                   <a
                     key={item.name}
                     href={item.href}
-                    className="text-white/70 hover:text-white transition-colors text-sm tracking-wide text-right font-light"
+                    className="text-white/60 hover:text-orange transition-colors duration-300 text-sm tracking-wide text-right font-light"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
                   </a>
                 ))}
-                <div className="pt-4 border-t border-white/10">
-                  <Button asChild className="w-full font-medium text-sm bg-orange hover:bg-orange-dark text-white rounded-full transition-all px-6 py-5">
+                <div className="pt-4 border-t border-white/8">
+                  <Button asChild className="w-full font-medium text-sm bg-gradient-to-r from-orange to-amber-500 hover:from-orange-dark hover:to-orange text-white rounded-full transition-all px-6 py-5">
                     <a href="/product/focuszing-device">Order Now</a>
                   </Button>
                 </div>

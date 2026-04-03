@@ -36,21 +36,27 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-24 md:py-32 bg-background">
-      <div className="container mx-auto px-6 md:px-8 max-w-6xl">
-        <div className="text-center mb-16 md:mb-20">
-          <span className="text-orange text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">
-            Why Focus Zing
-          </span>
+    <section id="features" className="relative py-28 md:py-36 section-divider noise-texture" style={{
+      background: "linear-gradient(180deg, hsl(38, 22%, 97%) 0%, hsl(36, 28%, 96%) 50%, hsl(34, 20%, 95%) 100%)"
+    }}>
+      <div className="container mx-auto px-6 md:px-8 max-w-6xl relative z-10">
+        <div className="text-center mb-18 md:mb-24">
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <span className="w-10 h-px bg-gradient-to-r from-transparent to-orange/40" />
+            <span className="text-orange text-xs font-semibold tracking-[0.22em] uppercase">
+              Why Focus Zing
+            </span>
+            <span className="w-10 h-px bg-gradient-to-l from-transparent to-orange/40" />
+          </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 tracking-tight text-balance">
             Where Neuroscience Meets Performance
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto font-light leading-relaxed">
-            Six powerful ways Focus Zing transforms your daily performance.
+            Six powerful ways Focus Zing transforms your daily performance and wellbeing.
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -58,12 +64,12 @@ const Features = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="group p-6 md:p-8 rounded-2xl bg-card border border-border/50 hover:border-orange/20 hover:shadow-card-hover transition-all duration-300"
+              className="group p-7 md:p-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-white/60 hover:border-orange/15 hover:shadow-warm-lg transition-all duration-400 premium-card"
             >
-              <div className="w-12 h-12 rounded-xl bg-orange/10 flex items-center justify-center text-orange mb-5 group-hover:bg-orange group-hover:text-white transition-all duration-300">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange/10 to-orange/5 flex items-center justify-center text-orange mb-5 group-hover:from-orange group-hover:to-orange-dark group-hover:text-white transition-all duration-400">
                 {feature.icon}
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2">
+              <h3 className="text-lg font-semibold text-foreground mb-2.5">
                 {feature.title}
               </h3>
               <p className="text-sm text-muted-foreground leading-relaxed font-light">
