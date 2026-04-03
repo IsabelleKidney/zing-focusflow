@@ -110,7 +110,6 @@ const Hero = () => {
             >
               <a href="/product/focuszing-device">
                 Shop Now — From €199
-                <ArrowRight className="w-4 h-4 ml-2" />
               </a>
             </Button>
             <a
