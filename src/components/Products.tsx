@@ -46,7 +46,9 @@ const Products = () => {
 
   if (loading) {
     return (
-      <section id="products" className="py-24 md:py-32 bg-secondary">
+      <section id="products" className="py-28 md:py-36" style={{
+        background: "linear-gradient(180deg, hsl(22, 14%, 14%) 0%, hsl(20, 16%, 12%) 100%)"
+      }}>
         <div className="container mx-auto px-6 md:px-8">
           <div className="flex justify-center items-center py-20">
             <Loader2 className="w-6 h-6 animate-spin text-orange" />
@@ -57,31 +59,44 @@ const Products = () => {
   }
 
   return (
-    <section id="products" className="py-24 md:py-32 bg-secondary">
-      <div className="container mx-auto px-6 md:px-8 max-w-6xl">
-        <div className="text-center mb-16">
-          <span className="text-orange text-xs font-semibold tracking-[0.2em] uppercase mb-4 block">
-            Shop
-          </span>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 tracking-tight">
+    <section id="products" className="relative py-28 md:py-36 overflow-hidden" style={{
+      background: "linear-gradient(180deg, hsl(22, 14%, 14%) 0%, hsl(20, 16%, 12%) 100%)"
+    }}>
+      {/* Ambient glow */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[250px] pointer-events-none"
+        style={{ background: "radial-gradient(ellipse, hsla(28, 80%, 50%, 0.05) 0%, transparent 70%)" }}
+      />
+
+      <div className="container mx-auto px-6 md:px-8 max-w-6xl relative z-10">
+        <div className="text-center mb-18">
+          <div className="flex items-center justify-center gap-3 mb-5">
+            <span className="w-10 h-px bg-gradient-to-r from-transparent to-orange/30" />
+            <span className="text-orange text-xs font-semibold tracking-[0.22em] uppercase">
+              Shop
+            </span>
+            <span className="w-10 h-px bg-gradient-to-l from-transparent to-orange/30" />
+          </div>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 tracking-tight">
             The Focus Zing System
           </h2>
-          <p className="text-base text-muted-foreground max-w-lg mx-auto font-light">
-            Premium neurostimulation technology, thoughtfully designed.
+          <p className="text-base text-white/45 max-w-lg mx-auto font-light">
+            Premium neurostimulation technology, thoughtfully designed for peak performance.
           </p>
         </div>
 
         <div className="flex justify-center">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 max-w-5xl w-full">
             {/* Left - Handheld */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="bg-card rounded-2xl border border-border/50 overflow-hidden hover:shadow-card-hover transition-all duration-300 group"
+              className="rounded-2xl border border-white/8 overflow-hidden hover:border-orange/15 transition-all duration-400 group bg-white/[0.03]"
             >
-              <div className="aspect-square bg-gradient-warm flex items-center justify-center p-10">
+              <div className="aspect-square flex items-center justify-center p-10" style={{
+                background: "linear-gradient(180deg, hsla(35, 20%, 50%, 0.06) 0%, transparent 100%)"
+              }}>
                 <img
                   src={handheldDevice}
                   alt="Handheld Control Device"
@@ -89,8 +104,8 @@ const Products = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="font-semibold text-foreground mb-1">Handheld Controller</h3>
-                <p className="text-sm text-muted-foreground font-light">
+                <h3 className="font-semibold text-white mb-1">Handheld Controller</h3>
+                <p className="text-sm text-white/40 font-light">
                   Intuitive control with multiple stimulation modes
                 </p>
               </div>
@@ -104,32 +119,32 @@ const Products = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="bg-card rounded-2xl border-2 border-orange/20 overflow-hidden hover:shadow-card-hover transition-all duration-300 flex flex-col group relative"
+                className="rounded-2xl border-2 border-orange/25 overflow-hidden transition-all duration-400 flex flex-col group relative bg-white/[0.04] hover:border-orange/40"
               >
                 {/* Badge */}
                 <div className="absolute top-4 left-4 z-10">
-                  <span className="bg-orange text-white text-[10px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full">
+                  <span className="bg-gradient-to-r from-orange to-amber-500 text-white text-[10px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full">
                     Coming Soon
                   </span>
                 </div>
                 
                 <div className="p-6 pt-14 flex-1 flex flex-col">
                   <Link to={`/product/${product.node.handle}`}>
-                    <h3 className="text-xl font-bold text-foreground hover:text-orange transition-colors mb-2 text-center">
+                    <h3 className="text-xl font-bold text-white hover:text-orange transition-colors mb-2 text-center">
                       {product.node.title}
                     </h3>
                   </Link>
-                  <p className="text-sm text-muted-foreground font-light text-center leading-relaxed mb-6 flex-1">
+                  <p className="text-sm text-white/40 font-light text-center leading-relaxed mb-6 flex-1">
                     {product.node.description}
                   </p>
                   
                   <div className="text-center mb-5">
-                    <span className="text-xs text-muted-foreground font-light uppercase tracking-wider">From</span>
-                    <p className="text-3xl font-bold text-foreground mt-1">€199</p>
+                    <span className="text-xs text-white/30 font-light uppercase tracking-wider">From</span>
+                    <p className="text-3xl font-bold text-white mt-1">€199</p>
                   </div>
                   
                   <Button 
-                    className="w-full bg-orange hover:bg-orange-dark text-white rounded-full font-medium"
+                    className="w-full bg-gradient-to-r from-orange to-amber-500 hover:from-orange-dark hover:to-orange text-white rounded-full font-medium shadow-glow"
                     onClick={() => handleAddToCart(product)}
                     disabled={!product.node.variants.edges[0].node.availableForSale}
                   >
@@ -144,14 +159,14 @@ const Products = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 0.1 }}
-                className="bg-card rounded-2xl border-2 border-orange/20 overflow-hidden flex flex-col p-8 items-center justify-center text-center"
+                className="rounded-2xl border-2 border-orange/25 overflow-hidden flex flex-col p-8 items-center justify-center text-center bg-white/[0.04]"
               >
-                <span className="bg-orange text-white text-[10px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full mb-4">
+                <span className="bg-gradient-to-r from-orange to-amber-500 text-white text-[10px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full mb-4">
                   Coming Soon
                 </span>
-                <h3 className="text-xl font-bold text-foreground mb-2">Focus Zing Device</h3>
-                <p className="text-sm text-muted-foreground font-light mb-4">The complete neurostimulation system</p>
-                <p className="text-3xl font-bold text-foreground">€199</p>
+                <h3 className="text-xl font-bold text-white mb-2">Focus Zing Device</h3>
+                <p className="text-sm text-white/40 font-light mb-4">The complete neurostimulation system</p>
+                <p className="text-3xl font-bold text-white">€199</p>
               </motion.div>
             )}
 
@@ -161,9 +176,11 @@ const Products = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-card rounded-2xl border border-border/50 overflow-hidden hover:shadow-card-hover transition-all duration-300 group"
+              className="rounded-2xl border border-white/8 overflow-hidden hover:border-orange/15 transition-all duration-400 group bg-white/[0.03]"
             >
-              <div className="aspect-square bg-gradient-warm flex items-center justify-center p-10">
+              <div className="aspect-square flex items-center justify-center p-10" style={{
+                background: "linear-gradient(180deg, hsla(35, 20%, 50%, 0.06) 0%, transparent 100%)"
+              }}>
                 <img
                   src={earpiece}
                   alt="Earpiece Device"
@@ -171,8 +188,8 @@ const Products = () => {
                 />
               </div>
               <div className="p-6">
-                <h3 className="font-semibold text-foreground mb-1">Premium Earpiece</h3>
-                <p className="text-sm text-muted-foreground font-light">
+                <h3 className="font-semibold text-white mb-1">Premium Earpiece</h3>
+                <p className="text-sm text-white/40 font-light">
                   Comfortable in-ear design for extended use
                 </p>
               </div>
