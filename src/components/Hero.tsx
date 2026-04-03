@@ -11,19 +11,19 @@ const slides = [
   {
     image: heroImage1,
     eyebrow: "Neuroscience-Powered Focus",
-    headline: "Fuel Your Focus.\nPower Your Potential.",
+    headline: "Fuel Your Focus\nPower Your Potential",
     subline: "The world's most advanced wearable neurostimulation device for laser focus, deep calm, and sustained energy.",
   },
   {
     image: heroImage2,
     eyebrow: "Clinically Validated",
-    headline: "Elevate Your Vitality.\nFind Your Flow.",
+    headline: "Elevate Your Vitality\nFind Your Flow",
     subline: "The New Happily Ever After. Elevate your mood with a 45-minute daily Zing Elate practice.",
   },
   {
     image: heroImage3,
     eyebrow: "Designed for Leaders",
-    headline: "For High Performance.\nSimply Press Play.",
+    headline: "For High Performance\nSimply Press Play",
     subline: "Join high performers who use Focus Zing to stay sharp, composed, and energised throughout every day.",
   },
 ];
