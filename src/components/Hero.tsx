@@ -53,16 +53,33 @@ const Hero = () => {
       {slides.map((slide, i) => (
         <div
           key={i}
-          className="absolute inset-0 bg-cover bg-no-repeat"
+          className="absolute inset-0"
           style={{
-            backgroundImage: `url(${slide.image})`,
-            backgroundPosition: "center center",
             opacity: i === current ? 1 : 0,
             zIndex: i === current ? 1 : 0,
-            transform: i === current ? "scale(1.04)" : "scale(1)",
-            transition: "opacity 1.2s ease-in-out, transform 8s ease-out",
+            transition: "opacity 1.2s ease-in-out",
           }}
-        />
+        >
+          <div
+            className="absolute inset-0 bg-cover bg-no-repeat"
+            style={{
+              backgroundImage: `url(${slide.image})`,
+              backgroundPosition: "center center",
+              transform: i === current ? "scale(1.04)" : "scale(1)",
+              transition: "transform 8s ease-out",
+            }}
+          />
+          {/* Per-slide colour correction overlay for the mature woman */}
+          {i === 2 && (
+            <div
+              className="absolute inset-0"
+              style={{
+                background: "linear-gradient(135deg, hsla(25, 60%, 30%, 0.18) 0%, hsla(30, 50%, 20%, 0.12) 50%, hsla(20, 40%, 15%, 0.08) 100%)",
+                mixBlendMode: "multiply",
+              }}
+            />
+          )}
+        </div>
       ))}
 
       {/* Warm golden-amber cinematic overlay */}
