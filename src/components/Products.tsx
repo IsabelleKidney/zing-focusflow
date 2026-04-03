@@ -47,7 +47,7 @@ const Products = () => {
   if (loading) {
     return (
       <section id="products" className="py-28 md:py-36" style={{
-        background: "linear-gradient(180deg, hsl(22, 14%, 14%) 0%, hsl(20, 16%, 12%) 100%)"
+        background: "linear-gradient(180deg, hsl(22, 8%, 19%) 0%, hsl(24, 10%, 16%) 100%)"
       }}>
         <div className="container mx-auto px-6 md:px-8">
           <div className="flex justify-center items-center py-20">
@@ -60,7 +60,7 @@ const Products = () => {
 
   return (
     <section id="products" className="relative py-28 md:py-36 overflow-hidden" style={{
-      background: "linear-gradient(180deg, hsl(22, 14%, 14%) 0%, hsl(20, 16%, 12%) 100%)"
+      background: "linear-gradient(180deg, hsl(22, 8%, 19%) 0%, hsl(24, 10%, 16%) 100%)"
     }}>
       {/* Ambient glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[500px] h-[250px] pointer-events-none"
@@ -77,7 +77,7 @@ const Products = () => {
             <span className="w-10 h-px bg-gradient-to-l from-transparent to-orange/30" />
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 tracking-tight">
-            The Focus Zing System
+            The Zing Elate System
           </h2>
           <p className="text-base text-white/45 max-w-lg mx-auto font-light">
             Premium neurostimulation technology, thoughtfully designed for peak performance.
@@ -164,7 +164,7 @@ const Products = () => {
                 <span className="bg-gradient-to-r from-orange to-amber-500 text-white text-[10px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full mb-4">
                   Coming Soon
                 </span>
-                <h3 className="text-xl font-bold text-white mb-2">Focus Zing Device</h3>
+                <h3 className="text-xl font-bold text-white mb-2">Zing Elate Device</h3>
                 <p className="text-sm text-white/40 font-light mb-4">The complete neurostimulation system</p>
                 <p className="text-3xl font-bold text-white">€199</p>
               </motion.div>

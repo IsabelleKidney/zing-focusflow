@@ -11,7 +11,7 @@ const Features = () => {
     {
       icon: <Zap className="w-6 h-6" />,
       title: "Instant Results",
-      description: "Notice your attention improve within minutes of putting Focus Zing on."
+      description: "Notice your attention improve within minutes of putting Zing Elate on."
     },
     {
       icon: <Sun className="w-6 h-6" />,
@@ -44,7 +44,7 @@ const Features = () => {
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="w-10 h-px bg-gradient-to-r from-transparent to-orange/40" />
             <span className="text-orange text-xs font-semibold tracking-[0.22em] uppercase">
-              Why Focus Zing
+              Why Zing Elate
             </span>
             <span className="w-10 h-px bg-gradient-to-l from-transparent to-orange/40" />
           </div>
@@ -52,7 +52,7 @@ const Features = () => {
             Where Neuroscience Meets Performance
           </h2>
           <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto font-light leading-relaxed">
-            Six powerful ways Focus Zing transforms your daily performance and wellbeing.
+            Six powerful ways Zing Elate transforms your daily performance and wellbeing.
           </p>
         </div>
         

@@ -18,7 +18,7 @@ const Subscribe = () => {
   if (isSubscribed) {
     return (
       <section className="py-28" style={{
-        background: "linear-gradient(180deg, hsl(20, 18%, 11%) 0%, hsl(22, 14%, 14%) 100%)"
+        background: "linear-gradient(180deg, hsl(24, 10%, 16%) 0%, hsl(22, 8%, 19%) 100%)"
       }}>
         <div className="container mx-auto px-6 text-center">
           <div className="max-w-md mx-auto">
@@ -35,7 +35,7 @@ const Subscribe = () => {
 
   return (
     <section id="subscribe" className="relative py-28 md:py-32 overflow-hidden" style={{
-      background: "linear-gradient(180deg, hsl(20, 18%, 11%) 0%, hsl(22, 14%, 14%) 100%)"
+      background: "linear-gradient(180deg, hsl(24, 10%, 16%) 0%, hsl(22, 8%, 19%) 100%)"
     }}>
       {/* Golden accent glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[200px] pointer-events-none"

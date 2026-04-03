@@ -5,16 +5,18 @@ import Features from "@/components/Features";
 import Science from "@/components/Science";
 import WhatsInTheBox from "@/components/WhatsInTheBox";
 import Products from "@/components/Products";
-import PressLogos from "@/components/PressLogos";
 import Reviews from "@/components/Reviews";
+import Founder from "@/components/Founder";
 import FAQ from "@/components/FAQ";
 import Support from "@/components/Support";
 import Subscribe from "@/components/Subscribe";
 import Footer from "@/components/Footer";
+import CursorEffect from "@/components/CursorEffect";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <CursorEffect />
       <Header />
       <main>
         <Hero />
@@ -23,8 +25,8 @@ const Index = () => {
         <Science />
         <WhatsInTheBox />
         <Products />
-        <PressLogos />
         <Reviews />
+        <Founder />
         <FAQ />
         <Support />
         <Subscribe />
