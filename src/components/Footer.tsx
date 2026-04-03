@@ -17,7 +17,7 @@ const Footer = () => {
 
   return (
     <footer className="py-16 md:py-20" style={{
-      background: "linear-gradient(180deg, hsl(20, 18%, 9%) 0%, hsl(18, 20%, 7%) 100%)"
+      background: "linear-gradient(180deg, hsl(20, 12%, 12%) 0%, hsl(20, 12%, 10%) 100%)"
     }}>
       <div className="container mx-auto px-6 md:px-8 max-w-6xl">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-14">
@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="col-span-2 md:col-span-1">
             <ColorKeyedLogo
               src={zingoTrademark}
-              alt="Focus Zing"
+              alt="Zing Elate"
               className="h-14 w-auto mb-4 brightness-200"
               tolerance={12}
             />
@@ -86,7 +86,7 @@ const Footer = () => {
         }} />
         
         <p className="text-white/20 text-xs font-light text-center">
-          © 2025 Focus Zing. All rights reserved.
+          © 2025 Zing Elate. All rights reserved.
         </p>
       </div>
     </footer>
