@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ceMarkOrange from "@/assets/ce-mark-orange.png";
 
 const Science = () => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -109,13 +110,7 @@ const Science = () => {
           </div>
           <div className="text-center p-8 rounded-2xl" style={{ border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
             <div className="text-4xl md:text-5xl font-bold mb-3 flex items-center justify-center" style={{ color: "#E07820" }}>
-              <svg viewBox="0 0 92 40" className="h-[0.95em] w-auto" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="CE mark">
-                <path d="M30 6 A14 14 0 1 0 30 34" stroke="currentColor" strokeWidth="6" strokeLinecap="square" />
-                <path d="M62 6 A14 14 0 1 0 62 34" stroke="currentColor" strokeWidth="6" strokeLinecap="square" />
-                <line x1="62" y1="6" x2="82" y2="6" stroke="currentColor" strokeWidth="6" strokeLinecap="square" />
-                <line x1="62" y1="20" x2="76" y2="20" stroke="currentColor" strokeWidth="6" strokeLinecap="square" />
-                <line x1="62" y1="34" x2="82" y2="34" stroke="currentColor" strokeWidth="6" strokeLinecap="square" />
-              </svg>
+              <img src={ceMarkOrange} alt="CE mark" className="h-[0.95em] w-auto" />
             </div>
             <div className="text-sm font-medium text-white/80">Certified Device</div>
             <div className="text-xs text-white/40 mt-1.5 font-light">European safety certified</div>
