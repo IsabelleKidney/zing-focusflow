@@ -52,7 +52,7 @@ const Header = () => {
           <div className="container mx-auto px-6 md:px-8 py-4">
             <div className="flex items-center justify-between">
               <a href="#">
-                <img src={logoSrc} alt="Zing Elate" className="h-7 md:h-8 w-auto" />
+                <img src={logoSrc} alt="Zing Elate" className="h-9 md:h-11 w-auto" />
               </a>
               <div className="flex items-center gap-3">
                 {showCta && (
