@@ -108,13 +108,20 @@ const Science = () => {
             <div className="text-xs text-white/40 mt-1.5 font-light">peer-reviewed research</div>
           </div>
           <div className="text-center p-8 rounded-2xl" style={{ border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
-            {/* CE Mark SVG - proper shape */}
-            <svg viewBox="0 0 80 50" className="w-16 h-10 mx-auto mb-3" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M25 5 A20 20 0 1 0 25 45 M25 11 A14 14 0 1 1 25 39" stroke="#E07820" strokeWidth="3.5" fill="none" strokeLinecap="round"/>
-              <path d="M55 5 A20 20 0 1 0 55 45 M55 11 A14 14 0 1 1 55 39" stroke="#E07820" strokeWidth="3.5" fill="none" strokeLinecap="round"/>
-              <line x1="5" y1="25" x2="24" y2="25" stroke="#E07820" strokeWidth="2.5"/>
-              <line x1="35" y1="25" x2="54" y2="25" stroke="#E07820" strokeWidth="2.5"/>
-            </svg>
+            <div className="text-4xl md:text-5xl font-bold mb-3 flex items-center justify-center gap-1" style={{ color: "#E07820" }}>
+              <svg viewBox="0 0 90 48" className="h-[1em]" fill="none" xmlns="http://www.w3.org/2000/svg">
+                {/* C - open circle with horizontal bars */}
+                <path d="M24 4 A20 20 0 1 0 24 44" stroke="#E07820" strokeWidth="4" fill="none"/>
+                <line x1="4" y1="14" x2="24" y2="14" stroke="#E07820" strokeWidth="3"/>
+                <line x1="4" y1="24" x2="24" y2="24" stroke="#E07820" strokeWidth="3"/>
+                <line x1="4" y1="34" x2="24" y2="34" stroke="#E07820" strokeWidth="3"/>
+                {/* E - open circle with extending bars */}
+                <path d="M66 4 A20 20 0 1 0 66 44" stroke="#E07820" strokeWidth="4" fill="none"/>
+                <line x1="46" y1="14" x2="70" y2="14" stroke="#E07820" strokeWidth="3"/>
+                <line x1="46" y1="24" x2="66" y2="24" stroke="#E07820" strokeWidth="3"/>
+                <line x1="46" y1="34" x2="70" y2="34" stroke="#E07820" strokeWidth="3"/>
+              </svg>
+            </div>
             <div className="text-sm font-medium text-white/80">Certified Device</div>
             <div className="text-xs text-white/40 mt-1.5 font-light">European safety certified</div>
           </div>
