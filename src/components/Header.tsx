@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
-import logoSrc from "@/assets/zing-elate-logo.png";
+import logoSrc from "@/assets/zing-logo-header.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
