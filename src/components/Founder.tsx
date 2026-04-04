@@ -1,46 +1,27 @@
-import { motion } from "framer-motion";
 import founderPhoto from "@/assets/founder-isabelle.jpg";
 
-const Founder = () => {
-  return (
-    <section className="relative py-24 md:py-28 overflow-hidden" style={{ background: "linear-gradient(135deg, hsl(20,12%,12%) 0%, hsl(24,10%,16%) 100%)" }}>
-      <div className="max-w-[900px] mx-auto px-6 md:px-8">
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="flex-shrink-0 relative"
-          >
-            <img
-              src={founderPhoto}
-              alt="Isabelle Kidney, Founder"
-              className="w-44 h-44 rounded-2xl object-cover object-top shadow-warm-lg"
-            />
-            <div className="absolute inset-[-4px] rounded-[20px] border-2 border-orange/15 pointer-events-none" />
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="flex-1 text-center md:text-left"
-          >
-            <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
-              <span className="w-6 h-px bg-orange" />
-              <span className="text-orange text-xs font-semibold tracking-[0.2em] uppercase">Founder's Story</span>
-            </div>
-            <p className="text-white/75 text-base md:text-lg leading-relaxed font-light italic mb-4">
-              "I use Zing Elate to elevate my mood, boost my energy and sharpen my focus. I have more energy than when I was 20. It is great for when I need to do assignments I don't want to do. Honestly, if I had to choose between the Euro Millions or Zing Elate, it would be Zing Elate every day."
-            </p>
-            <div className="font-semibold text-white text-sm">Isabelle Kidney</div>
-            <div className="text-white/40 text-xs font-light">Founder, Zing Elate</div>
-          </motion.div>
+const Founder = () => (
+  <section className="relative py-24 md:py-28 overflow-hidden" style={{ background: "linear-gradient(135deg, #3D3935, #45413D)" }}>
+    <div className="max-w-[900px] mx-auto px-6 md:px-8">
+      <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+        <div className="flex-shrink-0 relative">
+          <img src={founderPhoto} alt="Isabelle Kidney, Founder" className="w-44 h-44 rounded-2xl object-cover object-top shadow-lg" />
+          <div className="absolute inset-[-4px] rounded-[20px] pointer-events-none" style={{ border: "2px solid rgba(224,120,32,0.15)" }} />
+        </div>
+        <div className="flex-1 text-center md:text-left">
+          <div className="flex items-center gap-3 mb-4 justify-center md:justify-start">
+            <span className="w-6 h-px" style={{ background: "#E07820" }} />
+            <span className="text-xs font-semibold tracking-[0.2em] uppercase" style={{ color: "#E07820" }}>Founder's Story</span>
+          </div>
+          <p className="text-white/75 text-base md:text-lg leading-relaxed font-light italic mb-4">
+            {"\u201C"}Zing Elate lifts my mood, boosts my energy, and sharpens my focus. I feel more energised now than I did in my twenties, and it is an lifesaver for powering through assignments I would rather avoid. Forget the Lotto; Zing Elate is the real prize.{"\u201D"}
+          </p>
+          <div className="font-semibold text-white text-sm">Isabelle Kidney</div>
+          <div className="text-white/40 text-xs font-light">Founder, Zing Elate</div>
         </div>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default Founder;
