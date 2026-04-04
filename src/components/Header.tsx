@@ -1,8 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
-import { CartDrawer } from "./CartDrawer";
-import zingElateLogo from "@/assets/zing-elate-logo.png";
+import logoSrc from "@/assets/focuszing-logo-clean.png";
 
 function useProcessedLogo(src: string) {
   const [processed, setProcessed] = useState<string | null>(null);
@@ -13,22 +12,20 @@ function useProcessedLogo(src: string) {
     const img = new Image();
     img.crossOrigin = "anonymous";
     img.onload = () => {
-      const canvas = document.createElement("canvas");
-      canvas.width = img.naturalWidth;
-      canvas.height = img.naturalHeight;
-      const ctx = canvas.getContext("2d", { willReadFrequently: true })!;
+      const c = document.createElement("canvas");
+      c.width = img.naturalWidth; c.height = img.naturalHeight;
+      const ctx = c.getContext("2d", { willReadFrequently: true })!;
       ctx.drawImage(img, 0, 0);
-      const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
-      const d = imageData.data;
-      for (let i = 0; i < d.length; i += 4) {
-        const r = d[i], g = d[i + 1], b = d[i + 2], a = d[i + 3];
-        if (a < 10) continue;
-        if (r > 220 && g > 220 && b > 220) { d[i + 3] = 0; continue; }
-        if (r > 150 && g < 150 && b < 100) { d[i] = 224; d[i+1] = 120; d[i+2] = 32; continue; }
-        if (r < 80 && g < 80 && b < 80) { d[i] = 255; d[i+1] = 255; d[i+2] = 255; }
+      const d = ctx.getImageData(0, 0, c.width, c.height);
+      const p = d.data;
+      for (let i = 0; i < p.length; i += 4) {
+        if (p[i+3] < 10) continue;
+        if (p[i] > 220 && p[i+1] > 220 && p[i+2] > 220) { p[i+3] = 0; continue; }
+        if (p[i] > 150 && p[i+1] < 150 && p[i+2] < 100) { p[i]=224; p[i+1]=120; p[i+2]=32; continue; }
+        if (p[i] < 80 && p[i+1] < 80 && p[i+2] < 80) { p[i]=255; p[i+1]=255; p[i+2]=255; }
       }
-      ctx.putImageData(imageData, 0, 0);
-      setProcessed(canvas.toDataURL("image/png"));
+      ctx.putImageData(d, 0, 0);
+      setProcessed(c.toDataURL("image/png"));
     };
     img.src = src;
   }, [src]);
@@ -39,22 +36,15 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [showCta, setShowCta] = useState(false);
-  const processedLogo = useProcessedLogo(zingElateLogo);
+  const logo = useProcessedLogo(logoSrc);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 60);
-      setShowCta(window.scrollY > window.innerHeight * 0.5);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const h = () => { setScrolled(window.scrollY > 60); setShowCta(window.scrollY > window.innerHeight * 0.5); };
+    window.addEventListener("scroll", h);
+    return () => window.removeEventListener("scroll", h);
   }, []);
 
-  const toggleNav = () => {
-    setIsOpen(!isOpen);
-    document.body.style.overflow = !isOpen ? "hidden" : "";
-  };
-
+  const toggle = () => { setIsOpen(!isOpen); document.body.style.overflow = !isOpen ? "hidden" : ""; };
   const navItems = [
     { name: "Features", href: "#features", num: "01" },
     { name: "How It Works", href: "#how-it-works", num: "02" },
@@ -65,48 +55,44 @@ const Header = () => {
 
   return (
     <>
-      {/* Full-screen nav overlay */}
-      <div className={`nav-overlay ${isOpen ? "open" : ""}`}>
-        <button
-          className="absolute top-6 right-6 w-12 h-12 flex items-center justify-center border border-white/10 rounded-full hover:border-orange transition-colors"
-          onClick={toggleNav}
-        >
-          <X className="w-5 h-5 text-white/70" />
-        </button>
-        <div className="text-center">
-          {navItems.map((item) => (
-            <a key={item.name} href={item.href} onClick={toggleNav}>
-              <span className="text-xs font-normal text-white/15 tracking-widest mr-4 align-middle">{item.num}</span>
-              {item.name}
-            </a>
-          ))}
-          <div className="mt-10" style={{ transform: isOpen ? "translateY(0)" : "translateY(20px)", opacity: isOpen ? 1 : 0, transition: "all .4s .5s" }}>
-            <Button asChild className="bg-gradient-to-r from-orange to-amber-500 text-white rounded-full px-11 py-5 text-base font-medium">
-              <a href="/product/focuszing-device" onClick={toggleNav}>Order Now — €199</a>
-            </Button>
+      {/* Full-screen overlay nav */}
+      {isOpen && (
+        <div className="fixed inset-0 z-[95] flex items-center justify-center" style={{ background: "rgba(36,32,22,0.97)", backdropFilter: "blur(30px)" }}>
+          <button className="absolute top-6 right-6 w-12 h-12 flex items-center justify-center border border-white/10 rounded-full" onClick={toggle}>
+            <X className="w-5 h-5 text-white/70" />
+          </button>
+          <div className="text-center">
+            {navItems.map((item) => (
+              <a key={item.name} href={item.href} onClick={toggle}
+                className="block text-3xl md:text-5xl font-light text-white/50 hover:text-white py-3 transition-all hover:translate-x-2">
+                <span className="text-xs text-white/15 tracking-widest mr-4 align-middle">{item.num}</span>{item.name}
+              </a>
+            ))}
+            <div className="mt-10">
+              <Button asChild className="bg-gradient-to-r from-orange-500 to-amber-500 text-white rounded-full px-11 py-5 text-base font-medium">
+                <a href="#products" onClick={toggle}>Order Now \u2014 \u20ac199</a>
+              </Button>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       <header className="fixed top-0 left-0 right-0 z-50">
-        <nav className={`transition-all duration-500 ${scrolled ? "bg-[rgba(50,46,40,0.94)] backdrop-blur-xl shadow-premium" : ""}`}>
+        <nav className={`transition-all duration-500 ${scrolled ? "shadow-lg" : ""}`}
+          style={scrolled ? { background: "rgba(69,65,61,0.94)", backdropFilter: "blur(24px)" } : {}}>
           <div className="container mx-auto px-6 md:px-8 py-4">
             <div className="flex items-center justify-between">
-              <a href="#" className="flex items-center">
-                <img src={processedLogo ?? zingElateLogo} alt="Zing Elate" className="h-7 md:h-8 w-auto" />
+              <a href="#">
+                {logo ? <img src={logo} alt="Zing Elate" className="h-7 md:h-8 w-auto" />
+                  : <span className="text-white font-bold text-lg">Zing Elate</span>}
               </a>
               <div className="flex items-center gap-3">
                 {showCta && (
-                  <a href="#products" className="hidden sm:inline-flex px-5 py-2 rounded-full bg-gradient-to-r from-orange to-amber-500 text-white text-xs font-semibold transition-all">
-                    Shop Now
-                  </a>
+                  <a href="#products" className="hidden sm:inline-flex px-5 py-2 rounded-full text-white text-xs font-semibold"
+                    style={{ background: "linear-gradient(135deg, #E07820, #E8962A)" }}>Shop Now</a>
                 )}
-                <div className={`flex items-center gap-0 rounded-full px-3 py-2 transition-all duration-400 ${scrolled ? "bg-white/8 border border-white/8" : "bg-white/8 backdrop-blur-xl border border-white/12"}`}>
-                  <button className="p-2 text-white/80 hover:text-white transition-colors" onClick={toggleNav}>
-                    <Menu className="w-5 h-5" />
-                  </button>
-                  <CartDrawer />
-                </div>
+                <button className="p-2 text-white/80 hover:text-white transition-colors rounded-full border border-white/12 bg-white/8 backdrop-blur-xl px-4 py-2"
+                  onClick={toggle}><Menu className="w-5 h-5" /></button>
               </div>
             </div>
           </div>

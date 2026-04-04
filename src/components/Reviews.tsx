@@ -1,49 +1,39 @@
-import { Star, Quote } from "lucide-react";
-import { motion } from "framer-motion";
-import testimonialPaul from "@/assets/testimonial-paul.jpg";
-import testimonialElena from "@/assets/testimonial-elena.jpg";
-import testimonialAndrew from "@/assets/testimonial-andrew.jpg";
+import { Star } from "lucide-react";
+import testimonial1 from "@/assets/testimonial-1.jpg";
+import testimonial2 from "@/assets/testimonial-2.jpg";
+import testimonial3 from "@/assets/testimonial-3.jpg";
 
 const Reviews = () => {
   const testimonials = [
-    { name: "Paul", role: "CEO", image: testimonialPaul, deAi: true, quote: "Zing Elate has been terrific — I'm turbocharged this week! What a joy! I'm resolving lots of stuff I usually put on the long finger." },
-    { name: "Elaine", role: "PhD Student", image: testimonialElena, deAi: false, quote: "I was able to do a really big piece of work — I am better able to do tasks without getting distracted with the help of Zing Elate." },
-    { name: "Andrew", role: "IT Expert", image: testimonialAndrew, deAi: true, quote: "Using Zing Elate with meditation and the soothing music for 45 minutes daily for a month transformed my anxiety — far more effective for me than antidepressants." },
+    { name: "Paul", role: "CEO", image: testimonial1, deAi: true, quote: "Zing Elate has been terrific \u2014 I'm turbocharged this week! What a joy! I'm resolving lots of stuff I usually put on the long finger." },
+    { name: "Elaine", role: "PhD Student", image: testimonial2, deAi: false, quote: "I was able to do a really big piece of work \u2014 I am better able to do tasks without getting distracted with the help of Zing Elate." },
+    { name: "Andrew", role: "IT Expert", image: testimonial3, deAi: true, quote: "Using Zing Elate with meditation and the soothing music for 45 minutes daily for a month transformed my anxiety \u2014 far more effective for me than antidepressants." },
   ];
 
   return (
-    <section id="reviews" className="relative py-28 md:py-36 noise-texture" style={{ background: "linear-gradient(180deg, hsl(36,26%,96%) 0%, hsl(38,30%,97%) 50%, hsl(36,24%,95%) 100%)" }}>
-      <div className="container mx-auto px-6 md:px-8 max-w-6xl relative z-10">
-        <div className="text-center mb-18 md:mb-24">
+    <section id="reviews" className="relative py-28 md:py-36" style={{ background: "linear-gradient(180deg, #F5F0EA, #F8F4EF)" }}>
+      <div className="container mx-auto px-6 md:px-8 max-w-6xl">
+        <div className="text-center mb-20">
           <div className="flex items-center justify-center gap-3 mb-5">
-            <span className="w-10 h-px bg-gradient-to-r from-transparent to-orange/40" />
-            <span className="text-orange text-xs font-semibold tracking-[0.22em] uppercase">Testimonials</span>
-            <span className="w-10 h-px bg-gradient-to-l from-transparent to-orange/40" />
+            <span className="w-10 h-px" style={{ background: "linear-gradient(to right, transparent, rgba(224,120,32,0.4))" }} />
+            <span className="text-xs font-semibold tracking-[0.22em] uppercase" style={{ color: "#E07820" }}>Testimonials</span>
+            <span className="w-10 h-px" style={{ background: "linear-gradient(to left, transparent, rgba(224,120,32,0.4))" }} />
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 tracking-tight">Real Results. Real People.</h2>
-          <p className="text-base text-muted-foreground max-w-lg mx-auto font-light">Hear from professionals, students, and achievers using Zing Elate daily.</p>
         </div>
         <div className="grid md:grid-cols-3 gap-5 md:gap-6">
           {testimonials.map((t, i) => (
-            <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative bg-white/80 backdrop-blur-sm p-7 pb-6 rounded-2xl border border-white/60 hover:border-orange/12 hover:shadow-warm-lg transition-all duration-400 premium-card flex flex-col">
-              <div className="absolute top-5 right-6 opacity-[0.06]"><Quote className="w-10 h-10 text-orange" /></div>
-              <div className="flex gap-0.5 mb-5">
-                {[...Array(5)].map((_, j) => <Star key={j} className="w-4 h-4 fill-orange text-orange" />)}
-              </div>
-              <blockquote className="text-foreground/75 leading-relaxed text-sm font-light mb-6 relative z-10 flex-1">"{t.quote}"</blockquote>
-              <div className="flex items-center gap-3.5 pt-4 border-t border-border/30">
-                <div className="relative">
-                  <img src={t.image} alt={t.name} loading="lazy" width={512} height={512}
-                    className={`w-12 h-12 rounded-full object-cover shadow-sm ${t.deAi ? "testimonial-photo-deai" : ""}`} />
-                  <div className="absolute inset-0 rounded-full border-2 border-orange/15" />
-                </div>
+            <div key={i} className="bg-white/80 p-7 pb-6 rounded-2xl border border-white/60 hover:shadow-lg transition-all flex flex-col">
+              <div className="flex gap-0.5 mb-5">{[...Array(5)].map((_, j) => <Star key={j} className="w-4 h-4 fill-orange-500 text-orange-500" />)}</div>
+              <blockquote className="text-foreground/75 leading-relaxed text-sm font-light mb-6 flex-1">"{t.quote}"</blockquote>
+              <div className="flex items-center gap-3.5 pt-4" style={{ borderTop: "1px solid rgba(0,0,0,0.05)" }}>
+                <img src={t.image} alt={t.name} className="w-12 h-12 rounded-full object-cover" style={t.deAi ? { filter: "contrast(1.08) saturate(0.80) brightness(0.98) sepia(0.04)" } : {}} />
                 <div>
                   <div className="font-semibold text-foreground text-sm">{t.name}</div>
                   <div className="text-muted-foreground text-xs font-light">{t.role}</div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

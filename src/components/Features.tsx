@@ -1,81 +1,38 @@
-import { Zap, Brain, Headphones, Target, Trophy, Sun } from "lucide-react";
-import { motion } from "framer-motion";
+import { Brain, Headphones, Target, Trophy, Heart, Sparkles } from "lucide-react";
 
 const Features = () => {
   const features = [
-    {
-      icon: <Target className="w-6 h-6" />,
-      title: "Laser Focus",
-      description: "Stay locked in on what matters most with enhanced concentration and serenity."
-    },
-    {
-      icon: <Zap className="w-6 h-6" />,
-      title: "Instant Results",
-      description: "Notice your attention improve within minutes of putting Zing Elate on."
-    },
-    {
-      icon: <Sun className="w-6 h-6" />,
-      title: "Charge Your Vitality",
-      description: "Generate amazing energy, emotional resilience, and elevated mood with daily 45-minute sessions — even while working."
-    },
-    {
-      icon: <Brain className="w-6 h-6" />,
-      title: "Neurostimulation",
-      description: "Precision-engineered microcurrent stimulates your vagus nerve — the cranial nerve of calm — for enhanced performance."
-    },
-    {
-      icon: <Headphones className="w-6 h-6" />,
-      title: "Premium Audio",
-      description: "Listen to music, soundbaths, podcasts, or focus tracks to amplify your brain performance."
-    },
-    {
-      icon: <Trophy className="w-6 h-6" />,
-      title: "Own Your Day",
-      description: "Finish tasks that drive your ambition, and free up time for more of what really matters."
-    }
+    { icon: <Target className="w-8 h-8" />, title: "Instant Laser Focus Mode", description: "Notice your attention improve within minutes of putting Zing Elate on. Stay locked in on what matters most with enhanced concentration and serenity." },
+    { icon: <Heart className="w-8 h-8" />, title: "Deeper Relaxation Mode", description: "Sink into deep relaxation while reading, watching your favourite programme, or simply taking a moment to rest. By gently improving your heart rate variability (HRV), the Zing Elate relaxation mode encourages a lasting sense of calm and better overall recovery." },
+    { icon: <Sparkles className="w-8 h-8" />, title: "Charge Your Vitality Mode", description: "Generate amazing energy, emotional resilience, and elevated mood with daily 45-minute sessions \u2014 even while working!" },
+    { icon: <Brain className="w-8 h-8" />, title: "Neurostimulation", description: "Precision-engineered microcurrent stimulates your vagus nerve \u2014 the cranial nerve of calm \u2014 for enhanced attentional performance." },
+    { icon: <Headphones className="w-8 h-8" />, title: "Premium Audio Integration", description: "Listen to music, soundbaths, podcasts, or focus tracks to amplify your brain performance." },
+    { icon: <Trophy className="w-8 h-8" />, title: "Own Your Day", description: "Finish tasks that drive your ambition, and free up time for more of what really matters." },
   ];
 
   return (
-    <section id="features" className="relative py-28 md:py-36 section-divider noise-texture" style={{
-      background: "linear-gradient(180deg, hsl(38, 22%, 97%) 0%, hsl(36, 28%, 96%) 50%, hsl(34, 20%, 95%) 100%)"
-    }}>
-      <div className="container mx-auto px-6 md:px-8 max-w-6xl relative z-10">
-        <div className="text-center mb-18 md:mb-24">
+    <section id="features" className="py-28 md:py-36 relative" style={{ background: "linear-gradient(180deg, #FAF7F3, #F7F3EE 50%, #F3EDE6)" }}>
+      <div className="container mx-auto px-6 md:px-8 max-w-6xl">
+        <div className="text-center mb-20">
           <div className="flex items-center justify-center gap-3 mb-5">
-            <span className="w-10 h-px bg-gradient-to-r from-transparent to-orange/40" />
-            <span className="text-orange text-xs font-semibold tracking-[0.22em] uppercase">
-              Why Zing Elate
-            </span>
-            <span className="w-10 h-px bg-gradient-to-l from-transparent to-orange/40" />
+            <span className="w-10 h-px" style={{ background: "linear-gradient(to right, transparent, rgba(224,120,32,0.4))" }} />
+            <span className="text-xs font-semibold tracking-[0.22em] uppercase" style={{ color: "#E07820" }}>Why Zing Elate</span>
+            <span className="w-10 h-px" style={{ background: "linear-gradient(to left, transparent, rgba(224,120,32,0.4))" }} />
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 tracking-tight text-balance">
-            Where Neuroscience Meets Performance
-          </h2>
-          <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto font-light leading-relaxed">
-            Six powerful ways Zing Elate transforms your daily performance and wellbeing.
-          </p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 tracking-tight">Where Neuroscience Meets Performance</h2>
+          <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto font-light">Three powerful ways Zing Elate transforms your daily performance and wellbeing.</p>
         </div>
-        
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-          {features.map((feature, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.5, delay: index * 0.08 }}
-              className="group p-7 md:p-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-white/60 hover:border-orange/15 hover:shadow-warm-lg transition-all duration-400 premium-card"
-            >
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-orange/10 to-orange/5 flex items-center justify-center text-orange mb-5 group-hover:from-orange group-hover:to-orange-dark group-hover:text-white transition-all duration-400">
-                {feature.icon}
+          {features.map((f, i) => (
+            <div key={i} className="group p-7 md:p-8 rounded-2xl bg-white/80 border border-white/60 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
+              style={{ borderColor: "rgba(255,255,255,0.6)" }}>
+              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-all duration-300"
+                style={{ background: "linear-gradient(135deg, rgba(224,120,32,0.1), rgba(224,120,32,0.05))", color: "#E07820" }}>
+                {f.icon}
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-2.5">
-                {feature.title}
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed font-light">
-                {feature.description}
-              </p>
-            </motion.div>
+              <h3 className="text-lg font-semibold text-foreground mb-2.5">{f.title}</h3>
+              <p className="text-sm text-muted-foreground leading-relaxed font-light">{f.description}</p>
+            </div>
           ))}
         </div>
       </div>
