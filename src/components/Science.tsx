@@ -98,17 +98,17 @@ const Science = () => {
 
         {/* Stats */}
         <div className="grid md:grid-cols-3 gap-5 mb-12">
-          <div className="text-center p-8 rounded-2xl" style={{ border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
+          <div className="text-center p-8 rounded-2xl flex flex-col items-center justify-center" style={{ border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
             <div className="text-4xl md:text-5xl font-bold mb-3" style={{ color: "#E07820" }}>83%</div>
             <div className="text-sm font-medium text-white/80">Found it helpful</div>
             <div className="text-xs text-white/40 mt-1.5 font-light">of trial participants</div>
           </div>
-          <div className="text-center p-8 rounded-2xl" style={{ border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
+          <div className="text-center p-8 rounded-2xl flex flex-col items-center justify-center" style={{ border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
             <div className="text-4xl md:text-5xl font-bold mb-3" style={{ color: "#E07820" }}>20+</div>
             <a href="/Enhanced_Attention_Clinical_Studies.pdf" download className="text-sm font-medium text-white/80 hover:underline">Clinical Studies</a>
             <div className="text-xs text-white/40 mt-1.5 font-light">peer-reviewed research</div>
           </div>
-          <div className="text-center p-8 rounded-2xl" style={{ border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
+          <div className="text-center p-8 rounded-2xl flex flex-col items-center justify-center" style={{ border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
             <div className="text-4xl md:text-5xl font-bold mb-3 flex items-center justify-center" style={{ color: "#E07820" }}>
               <img src={ceMarkOrange} alt="CE mark" className="h-[2.2em] w-auto" />
             </div>
