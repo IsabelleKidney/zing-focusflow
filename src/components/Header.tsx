@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
-import logoSrc from "@/assets/zing-elate-logo.png";
+import logoSrc from "@/assets/zing-logo-header.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -52,10 +52,7 @@ const Header = () => {
           <div className="container mx-auto px-6 md:px-8 py-4">
             <div className="flex items-center justify-between">
               <a href="#">
-                <div className="flex items-center gap-2">
-                  <img src={logoSrc} alt="Zing Elate" className="h-7 md:h-8 w-auto" />
-                  <span className="text-white font-bold text-base md:text-lg tracking-tight">Zing Elate</span>
-                </div>
+                <img src={logoSrc} alt="Zing Elate" className="h-7 md:h-8 w-auto" />
               </a>
               <div className="flex items-center gap-3">
                 {showCta && (
