@@ -108,18 +108,25 @@ const Science = () => {
             <div className="text-xs text-white/40 mt-1.5 font-light">peer-reviewed research</div>
           </div>
           <div className="text-center p-8 rounded-2xl" style={{ border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
-            <div className="text-4xl md:text-5xl font-bold mb-3 flex items-center justify-center gap-1" style={{ color: "#E07820" }}>
-              <svg viewBox="0 0 90 48" className="h-[1em]" fill="none" xmlns="http://www.w3.org/2000/svg">
-                {/* C - open circle with horizontal bars */}
-                <path d="M24 4 A20 20 0 1 0 24 44" stroke="#E07820" strokeWidth="4" fill="none"/>
-                <line x1="4" y1="14" x2="24" y2="14" stroke="#E07820" strokeWidth="3"/>
-                <line x1="4" y1="24" x2="24" y2="24" stroke="#E07820" strokeWidth="3"/>
-                <line x1="4" y1="34" x2="24" y2="34" stroke="#E07820" strokeWidth="3"/>
-                {/* E - open circle with extending bars */}
-                <path d="M66 4 A20 20 0 1 0 66 44" stroke="#E07820" strokeWidth="4" fill="none"/>
-                <line x1="46" y1="14" x2="70" y2="14" stroke="#E07820" strokeWidth="3"/>
-                <line x1="46" y1="24" x2="66" y2="24" stroke="#E07820" strokeWidth="3"/>
-                <line x1="46" y1="34" x2="70" y2="34" stroke="#E07820" strokeWidth="3"/>
+            <div className="text-4xl md:text-5xl font-bold mb-3 flex items-center justify-center" style={{ color: "#E07820" }}>
+              <svg viewBox="0 0 84 42" className="h-[1em]" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="CE mark">
+                <path
+                  d="M31 4C26.9 0.8 21.8 -1 16.5 -1C6.8 -1 -1 6.8 -1 16.5S6.8 34 16.5 34C21.8 34 26.9 32.2 31 29"
+                  transform="translate(1 4)"
+                  stroke="currentColor"
+                  strokeWidth="6"
+                  strokeLinecap="square"
+                />
+                <path
+                  d="M53 4C48.9 0.8 43.8 -1 38.5 -1C28.8 -1 21 6.8 21 16.5S28.8 34 38.5 34C43.8 34 48.9 32.2 53 29"
+                  transform="matrix(-1 0 0 1 106 4)"
+                  stroke="currentColor"
+                  strokeWidth="6"
+                  strokeLinecap="square"
+                />
+                <line x1="50" y1="7" x2="72" y2="7" stroke="currentColor" strokeWidth="6" strokeLinecap="square" />
+                <line x1="50" y1="21" x2="66" y2="21" stroke="currentColor" strokeWidth="6" strokeLinecap="square" />
+                <line x1="50" y1="35" x2="72" y2="35" stroke="currentColor" strokeWidth="6" strokeLinecap="square" />
               </svg>
             </div>
             <div className="text-sm font-medium text-white/80">Certified Device</div>
