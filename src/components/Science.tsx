@@ -110,7 +110,7 @@ const Science = () => {
           </div>
           <div className="text-center p-8 rounded-2xl" style={{ border: "1px solid rgba(255,255,255,0.1)", background: "rgba(255,255,255,0.04)" }}>
             <div className="text-4xl md:text-5xl font-bold mb-3 flex items-center justify-center" style={{ color: "#E07820" }}>
-              <img src={ceMarkOrange} alt="CE mark" className="h-[1.6em] w-auto" />
+              <img src={ceMarkOrange} alt="CE mark" className="h-[2.2em] w-auto" />
             </div>
             <div className="text-sm font-medium text-white/80">Certified Device</div>
             <div className="text-xs text-white/40 mt-1.5 font-light">European safety certified</div>
