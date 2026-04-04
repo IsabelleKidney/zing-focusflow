@@ -1,45 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import { useState, useEffect, useRef } from "react";
-import logoSrc from "@/assets/focuszing-logo-clean.png";
-
-function useProcessedLogo(src: string) {
-  const [processed, setProcessed] = useState<string | null>(null);
-  const ran = useRef(false);
-  useEffect(() => {
-    if (ran.current) return;
-    ran.current = true;
-    const img = new Image();
-    img.crossOrigin = "anonymous";
-    img.onload = () => {
-      const c = document.createElement("canvas");
-      c.width = img.naturalWidth; c.height = img.naturalHeight;
-      const ctx = c.getContext("2d", { willReadFrequently: true })!;
-      ctx.drawImage(img, 0, 0);
-      const d = ctx.getImageData(0, 0, c.width, c.height);
-      const p = d.data;
-      for (let i = 0; i < p.length; i += 4) {
-        if (p[i+3] < 10) continue;
-        // Remove light/white background
-        if (p[i] > 210 && p[i+1] > 210 && p[i+2] > 210) { p[i+3] = 0; continue; }
-        // Orange/red tones -> brand orange
-        if (p[i] > 150 && p[i+1] < 150 && p[i+2] < 100) { p[i]=224; p[i+1]=120; p[i+2]=32; continue; }
-        // Dark tones -> white (for text)
-        if (p[i] < 80 && p[i+1] < 80 && p[i+2] < 80) { p[i]=255; p[i+1]=255; p[i+2]=255; }
-      }
-      ctx.putImageData(d, 0, 0);
-      setProcessed(c.toDataURL("image/png"));
-    };
-    img.src = src;
-  }, [src]);
-  return processed;
-}
+import { useState, useEffect } from "react";
+import logoSrc from "@/assets/zing-elate-logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [showCta, setShowCta] = useState(false);
-  const logo = useProcessedLogo(logoSrc);
 
   useEffect(() => {
     const h = () => { setScrolled(window.scrollY > 60); setShowCta(window.scrollY > window.innerHeight * 0.5); };
