@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ceMarkOrange from "@/assets/ce-mark-orange.png";
 
 const Science = () => {
   const [isExpanded, setIsExpanded] = useState(false);
