@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, ChevronUp, Zap, Heart, Target } from "lucide-react";
+import { ChevronDown, ChevronUp, Sparkles, Heart, Target } from "lucide-react";
 
 const Products = () => {
   const [showFeatures, setShowFeatures] = useState(false);
@@ -31,14 +31,14 @@ const Products = () => {
             <p className="text-white/40 text-xs font-light">Deep calm while reading or watching TV</p>
           </div>
           <div className="text-center p-6 rounded-2xl" style={{ border: "1px solid rgba(224,120,32,0.15)", background: "rgba(224,120,32,0.04)" }}>
-            <Zap className="w-8 h-8 mx-auto mb-3" style={{ color: "#E07820" }} />
+            <Sparkles className="w-8 h-8 mx-auto mb-3" style={{ color: "#E07820" }} />
             <h4 className="text-white font-semibold mb-1">Vitality Mode</h4>
             <p className="text-white/40 text-xs font-light">Energy and mood boost with daily practice</p>
           </div>
         </div>
 
         {/* Main Product Card */}
-        <div className="max-w-md mx-auto rounded-2xl overflow-hidden" style={{ border: "2px solid rgba(224,120,32,0.25)", background: "rgba(255,255,255,0.04)" }}>
+        <div className="max-w-md mx-auto rounded-2xl overflow-hidden relative" style={{ border: "2px solid rgba(224,120,32,0.25)", background: "rgba(255,255,255,0.04)" }}>
           <div className="absolute top-4 left-4 z-10">
             <span className="text-white text-[10px] font-semibold tracking-wider uppercase px-3 py-1 rounded-full" style={{ background: "linear-gradient(135deg, #E07820, #E8962A)" }}>Coming Soon</span>
           </div>
@@ -47,25 +47,24 @@ const Products = () => {
             <p className="text-sm text-white/40 font-light mb-6 leading-relaxed">The complete neurostimulation system for laser focus, deep calm, and sustained energy.</p>
             <div className="mb-5">
               <span className="text-xs text-white/30 uppercase tracking-wider font-light">From</span>
-              <p className="text-3xl font-bold text-white mt-1">{"\u20AC"}199</p>
+              <p className="text-3xl font-bold text-white mt-1">€199</p>
             </div>
             <Button className="w-full rounded-full font-medium text-white" style={{ background: "linear-gradient(135deg, #E07820, #E8962A)" }}>
               Launching Soon
             </Button>
 
-            {/* Collapsible features */}
             <button onClick={() => setShowFeatures(!showFeatures)} className="mt-4 text-xs text-white/40 hover:text-white/60 transition-colors flex items-center gap-1 mx-auto">
               {showFeatures ? "Hide" : "View"} Features {showFeatures ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
             </button>
             {showFeatures && (
               <div className="mt-4 text-left text-xs text-white/40 font-light space-y-2 pt-4" style={{ borderTop: "1px solid rgba(255,255,255,0.08)" }}>
-                <p>{"\u2022"} Advanced taVNS technology for enhanced focus and productivity</p>
-                <p>{"\u2022"} Premium audio integration for immersive sound experience</p>
-                <p>{"\u2022"} Wireless Bluetooth connectivity</p>
-                <p>{"\u2022"} Up to 12 hours of battery life</p>
-                <p>{"\u2022"} Ergonomic, discreet design</p>
-                <p>{"\u2022"} CE marked and clinically tested</p>
-                <p>{"\u2022"} Includes charging case and USB-C cable</p>
+                <p>• Advanced taVNS technology for enhanced focus and productivity</p>
+                <p>• Premium audio integration for immersive sound experience</p>
+                <p>• Wireless Bluetooth connectivity</p>
+                <p>• Up to 12 hours of battery life</p>
+                <p>• Ergonomic, discreet design</p>
+                <p>• CE marked and clinically tested</p>
+                <p>• Includes charging case and USB-C cable</p>
               </div>
             )}
           </div>

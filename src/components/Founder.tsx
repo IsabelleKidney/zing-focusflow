@@ -14,7 +14,7 @@ const Founder = () => (
             <span className="text-xs font-semibold tracking-[0.2em] uppercase" style={{ color: "#E07820" }}>Founder's Story</span>
           </div>
           <p className="text-white/75 text-base md:text-lg leading-relaxed font-light italic mb-4">
-            {"\u201C"}Zing Elate lifts my mood, boosts my energy, and sharpens my focus. I feel more energised now than I did in my twenties, and it is an lifesaver for powering through assignments I would rather avoid. Forget the Lotto; Zing Elate is the real prize.{"\u201D"}
+            {"\u201C"}Zing Elate lifts my mood, boosts my energy, and sharpens my focus. I feel more energised now than I did in my twenties, and it is a lifesaver for powering through assignments I would rather avoid. Forget the Lotto; Zing Elate is the real prize.{"\u201D"}
           </p>
           <div className="font-semibold text-white text-sm">Isabelle Kidney</div>
           <div className="text-white/40 text-xs font-light">Founder, Zing Elate</div>

@@ -4,8 +4,8 @@ const Features = () => {
   const features = [
     { icon: <Target className="w-8 h-8" />, title: "Instant Laser Focus Mode", description: "Notice your attention improve within minutes of putting Zing Elate on. Stay locked in on what matters most with enhanced concentration and serenity." },
     { icon: <Heart className="w-8 h-8" />, title: "Deeper Relaxation Mode", description: "Sink into deep relaxation while reading, watching your favourite programme, or simply taking a moment to rest. By gently improving your heart rate variability (HRV), the Zing Elate relaxation mode encourages a lasting sense of calm and better overall recovery." },
-    { icon: <Sparkles className="w-8 h-8" />, title: "Charge Your Vitality Mode", description: "Generate amazing energy, emotional resilience, and elevated mood with daily 45-minute sessions \u2014 even while working!" },
-    { icon: <Brain className="w-8 h-8" />, title: "Neurostimulation", description: "Precision-engineered microcurrent stimulates your vagus nerve \u2014 the cranial nerve of calm \u2014 for enhanced attentional performance." },
+    { icon: <Sparkles className="w-8 h-8" />, title: "Charge Your Vitality Mode", description: "Generate amazing energy, emotional resilience, and elevated mood with daily 45-minute sessions – even while working!" },
+    { icon: <Brain className="w-8 h-8" />, title: "Neurostimulation", description: "Precision-engineered microcurrent stimulates your vagus nerve – the cranial nerve of calm – for enhanced attentional performance." },
     { icon: <Headphones className="w-8 h-8" />, title: "Premium Audio Integration", description: "Listen to music, soundbaths, podcasts, or focus tracks to amplify your brain performance." },
     { icon: <Trophy className="w-8 h-8" />, title: "Own Your Day", description: "Finish tasks that drive your ambition, and free up time for more of what really matters." },
   ];

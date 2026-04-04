@@ -12,23 +12,33 @@ const slides = [
 
 const Hero = () => {
   const [current, setCurrent] = useState(0);
-  const [transitioning, setTransitioning] = useState(false);
+  const [textVisible, setTextVisible] = useState(true);
   const contentRef = useRef<HTMLDivElement>(null);
 
   const goTo = useCallback((i: number) => {
-    if (transitioning) return;
-    setTransitioning(true); setCurrent(i);
-    setTimeout(() => setTransitioning(false), 1200);
-  }, [transitioning]);
-
-  useEffect(() => { const t = setInterval(() => goTo((current + 1) % 3), 6000); return () => clearInterval(t); }, [current, goTo]);
+    if (i === current) return;
+    setTextVisible(false);
+    setTimeout(() => {
+      setCurrent(i);
+      setTimeout(() => setTextVisible(true), 100);
+    }, 500);
+  }, [current]);
 
   useEffect(() => {
-    const h = () => { const s = window.scrollY; if (s < window.innerHeight && contentRef.current) {
-      contentRef.current.style.transform = `translateY(${-s * 0.35}px)`;
-      contentRef.current.style.opacity = `${Math.max(0, 1 - s / (window.innerHeight * 0.6))}`;
-    }};
-    window.addEventListener("scroll", h); return () => window.removeEventListener("scroll", h);
+    const t = setInterval(() => goTo((current + 1) % 3), 6000);
+    return () => clearInterval(t);
+  }, [current, goTo]);
+
+  useEffect(() => {
+    const h = () => {
+      const s = window.scrollY;
+      if (s < window.innerHeight && contentRef.current) {
+        contentRef.current.style.transform = `translateY(${-s * 0.35}px)`;
+        contentRef.current.style.opacity = `${Math.max(0, 1 - s / (window.innerHeight * 0.6))}`;
+      }
+    };
+    window.addEventListener("scroll", h);
+    return () => window.removeEventListener("scroll", h);
   }, []);
 
   return (
@@ -45,16 +55,18 @@ const Hero = () => {
       <div className="absolute inset-0 z-[2] pointer-events-none" style={{ background: "radial-gradient(ellipse 60% 50% at 80% 20%, hsla(35,100%,55%,0.07), transparent 70%)" }} />
       <div ref={contentRef} className="relative w-full px-6 md:px-12 lg:px-20 pb-16 md:pb-24" style={{ zIndex: 3 }}>
         <div className="max-w-3xl">
-          <div className="flex items-center gap-3 mb-5">
-            <span className="w-8 h-px" style={{ background: "linear-gradient(to right, #E07820, #F0993A)" }} />
-            <span className="text-xs font-semibold tracking-[0.22em] uppercase" style={{ color: "#F0993A" }}>{slides[current].eyebrow}</span>
+          <div className={`transition-all duration-500 ${textVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
+            <div className="flex items-center gap-3 mb-5">
+              <span className="w-8 h-px" style={{ background: "linear-gradient(to right, #E07820, #F0993A)" }} />
+              <span className="text-xs font-semibold tracking-[0.22em] uppercase" style={{ color: "#F0993A" }}>{slides[current].eyebrow}</span>
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-[3.6rem] font-extrabold text-white mb-5 leading-[1.06] tracking-tight whitespace-pre-line">{slides[current].headline}</h1>
+            <p className="text-white/65 text-base md:text-lg leading-relaxed max-w-xl mb-9 font-light">{slides[current].subline}</p>
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-[3.6rem] font-extrabold text-white mb-5 leading-[1.06] tracking-tight whitespace-pre-line">{slides[current].headline}</h1>
-          <p className="text-white/65 text-base md:text-lg leading-relaxed max-w-xl mb-9 font-light">{slides[current].subline}</p>
           <div className="flex flex-col sm:flex-row items-start gap-4 mb-10">
             <Button asChild className="rounded-full px-7 py-3 text-sm font-semibold text-white shadow-lg"
               style={{ background: "linear-gradient(135deg, #E07820, #E8962A)" }}>
-              <a href="#products">Shop Now \u2014 From \u20ac199</a>
+              <a href="#products">Shop Now – €199</a>
             </Button>
             <a href="#how-it-works" className="text-sm text-white/50 hover:text-white transition-all border border-white/15 rounded-full px-7 py-3.5 hover:border-white/30">How It Works</a>
           </div>
