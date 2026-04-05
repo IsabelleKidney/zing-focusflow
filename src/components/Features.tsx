@@ -1,4 +1,4 @@
-import { Brain, Headphones, Target, Heart, Sparkles } from "lucide-react";
+import { Brain, Headphones, Target, Trophy, Heart, Sparkles } from "lucide-react";
 
 const Features = () => {
   const mainModes = [
@@ -8,9 +8,9 @@ const Features = () => {
   ];
 
   const subFeatures = [
-    { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E07820" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>, title: "Ergonomic Design", description: "Lightweight, discreet daily wear" },
-    { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E07820" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg>, title: "12hr Battery", description: "All-day power, fast USB-C charge" },
-    { icon: <Headphones className="w-5 h-5" style={{ color: "#E07820" }} />, title: "Bluetooth 5.3", description: "Premium audio integration" },
+    { icon: <Brain className="w-5 h-5" style={{ color: "#E07820" }} />, title: "Neurostimulation", description: "Precision microcurrent stimulates your vagus nerve – the cranial nerve of calm." },
+    { icon: <Headphones className="w-5 h-5" style={{ color: "#E07820" }} />, title: "Premium Audio", description: "Listen to music, soundbaths, or focus tracks to amplify brain performance." },
+    { icon: <Trophy className="w-5 h-5" style={{ color: "#E07820" }} />, title: "Own Your Day", description: "Finish tasks that drive your ambition, free up time for what matters." },
   ];
 
   return (
