@@ -3,7 +3,7 @@ import { Brain, Headphones, Target, Heart, Sparkles } from "lucide-react";
 const Features = () => {
   const mainModes = [
     { icon: <Target className="w-8 h-8" />, title: "Instant Laser Focus Mode", description: "Notice your attention improve within minutes of putting Zing Elate on. Stay locked in on what matters most with enhanced concentration and serenity." },
-    { icon: <Heart className="w-8 h-8" />, title: "Deeper Relaxation Mode", description: "Sink into deep relaxation while reading, watching your favourite programme, or simply taking a moment to rest. By gently improving your heart rate variability (HRV), the Zing Elate relaxation mode encourages a lasting sense of calm and better overall recovery." },
+    { icon: <Heart className="w-8 h-8" />, title: "Deeper Relaxation Mode", description: "Sink into deep relaxation while reading, watching your favourite programme, or simply taking a moment to rest." },
     { icon: <Sparkles className="w-8 h-8" />, title: "Charge Your Vitality Mode", description: "Generate amazing energy, emotional resilience, and elevated mood with daily 45-minute sessions – even while working!" },
   ];
 
