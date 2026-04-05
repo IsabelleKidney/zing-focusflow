@@ -27,7 +27,7 @@ const Science = () => {
         </div>
 
         {/* Anatomy SVG */}
-        <svg viewBox="0 0 620 290" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-[600px] mx-auto mb-16">
+        <svg viewBox="0 0 620 290" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-[520px] mx-auto mb-10">
           <path d="M210 32 C185 35 158 50 142 80 C128 106 126 138 135 166 C142 186 155 198 168 206 L168 240 C168 243 171 245 174 245 L246 245 C249 245 252 243 252 240 L252 206 C265 198 278 186 285 166 C294 138 292 106 278 80 C262 50 240 35 210 32Z" fill="rgba(100,190,220,0.12)" stroke="rgba(100,190,220,0.38)" strokeWidth="1.5"/>
           {/* PFC bubble - centered at top of head */}
           <ellipse cx="210" cy="45" rx="22" ry="15" fill="rgba(224,120,32,0.05)" stroke="rgba(224,120,32,0.18)" strokeWidth="0.8"/>
