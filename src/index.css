@@ -54,3 +54,45 @@
 @layer utilities {
   .text-balance { text-wrap: balance; }
 }
+
+/* Custom cursor */
+* { cursor: none !important; }
+
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: hsl(28, 92%, 52%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 0.3s, transform 0.2s;
+}
+
+.cursor-ring {
+  position: fixed;
+  width: 32px;
+  height: 32px;
+  border: 2px solid hsl(28, 92%, 52%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99998;
+  opacity: 0;
+  transition: opacity 0.3s, width 0.3s, height 0.3s, border-color 0.3s;
+}
+
+.cursor-dot.visible { opacity: 1; }
+.cursor-ring.visible { opacity: 0.6; }
+
+.cursor-dot.hover {
+  transform: scale(1.5);
+  background: hsl(32, 95%, 62%);
+}
+
+.cursor-ring.hover {
+  width: 48px;
+  height: 48px;
+  border-color: hsl(32, 95%, 62%);
+  opacity: 0.4;
+}
