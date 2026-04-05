@@ -7,7 +7,7 @@ import heroImage3 from "@/assets/hero-leader-office.jpg";
 const slides = [
   { image: heroImage1, position: "60% 15%", eyebrow: "Neuroscience-Powered Focus", headline: "Fuel Your Focus\nPower Your Potential", subline: "The world\u2019s most advanced wearable neurostimulation device for laser focus, deep calm, and sustained energy." },
   { image: heroImage2, position: "center 20%", eyebrow: "Clinically Validated", headline: "Elevate Your Vitality\nFind Your Flow", subline: "The New Happily Ever After. Elevate your mood with a 45-minute daily Zing Elate practice." },
-  { image: heroImage3, position: "center 15%", eyebrow: "Designed for Leaders", headline: "For High Performance\nSimply Press Play", subline: "Join high performers who use Zing Elate to stay sharp, composed, and energised throughout every day." },
+  { image: heroImage3, position: "center 10%", size: "115%", eyebrow: "Designed for Leaders", headline: "For High Performance\nSimply Press Play", subline: "Join high performers who use Zing Elate to stay sharp, composed, and energised throughout every day." },
 ];
 
 const Hero = () => {
@@ -44,8 +44,9 @@ const Hero = () => {
   return (
     <section className="relative h-screen flex items-end overflow-hidden">
       {slides.map((s, i) => (
-        <div key={i} className="absolute inset-0 bg-cover bg-no-repeat" style={{
+        <div key={i} className="absolute inset-0 bg-no-repeat" style={{
           backgroundImage: `url(${s.image})`, backgroundPosition: s.position,
+          backgroundSize: s.size || "cover",
           opacity: i === current ? 1 : 0, zIndex: i === current ? 1 : 0,
           transform: i === current ? "scale(1.04)" : "scale(1)",
           transition: "opacity 2s cubic-bezier(0.25, 0.1, 0.25, 1), transform 12s cubic-bezier(0.25, 0.1, 0.25, 1)",
