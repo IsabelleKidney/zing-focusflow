@@ -23,7 +23,7 @@ const Science = () => {
             <span className="w-10 h-px" style={{ background: "linear-gradient(to left, transparent, rgba(224,120,32,0.3))" }} />
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 tracking-tight">Three Steps to Peak Performance</h2>
-          <p className="text-base md:text-lg text-white/50 max-w-xl mx-auto font-light">Experience the power of Vagus Nerve Stimulation – backed by decades of clinical research.</p>
+          <p className="text-base md:text-lg text-white/50 max-w-2xl mx-auto font-light">Stimulation of the vagus nerve at the outer ear projects neural impulses to the brainstem, producing therapeutic effects throughout other regions of the brain.</p>
         </div>
 
         {/* Anatomy SVG */}
