@@ -13,21 +13,21 @@ const Science = () => {
   ];
 
   return (
-    <section id="how-it-works" className="relative py-28 md:py-36 overflow-hidden" style={{ background: "linear-gradient(180deg, #45413D, #4D4944)" }}>
+    <section id="how-it-works" className="relative py-16 md:py-20 overflow-hidden" style={{ background: "linear-gradient(180deg, #45413D, #4D4944)" }}>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] pointer-events-none" style={{ background: "radial-gradient(ellipse, hsla(30,80%,50%,0.05), transparent 70%)" }} />
       <div className="container mx-auto px-6 md:px-8 max-w-6xl relative z-10">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="w-10 h-px" style={{ background: "linear-gradient(to right, transparent, rgba(224,120,32,0.3))" }} />
             <span className="text-xs font-semibold tracking-[0.22em] uppercase" style={{ color: "#E07820" }}>How It Works</span>
             <span className="w-10 h-px" style={{ background: "linear-gradient(to left, transparent, rgba(224,120,32,0.3))" }} />
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-5 tracking-tight">Three Steps to Peak Performance</h2>
-          <p className="text-base md:text-lg text-white/50 max-w-xl mx-auto font-light">Experience the power of Vagus Nerve Stimulation – backed by decades of clinical research.</p>
+          <p className="text-base md:text-lg text-white/50 max-w-2xl mx-auto font-light">Stimulation of the vagus nerve at the outer ear projects neural impulses to the brainstem, producing therapeutic effects throughout other regions of the brain.</p>
         </div>
 
         {/* Anatomy SVG */}
-        <svg viewBox="0 0 620 290" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-[600px] mx-auto mb-16">
+        <svg viewBox="0 0 620 290" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full max-w-[520px] mx-auto mb-10">
           <path d="M210 32 C185 35 158 50 142 80 C128 106 126 138 135 166 C142 186 155 198 168 206 L168 240 C168 243 171 245 174 245 L246 245 C249 245 252 243 252 240 L252 206 C265 198 278 186 285 166 C294 138 292 106 278 80 C262 50 240 35 210 32Z" fill="rgba(100,190,220,0.12)" stroke="rgba(100,190,220,0.38)" strokeWidth="1.5"/>
           {/* PFC bubble - centered at top of head */}
           <ellipse cx="210" cy="45" rx="22" ry="15" fill="rgba(224,120,32,0.05)" stroke="rgba(224,120,32,0.18)" strokeWidth="0.8"/>
@@ -87,7 +87,7 @@ const Science = () => {
         </svg>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-3 gap-10 md:gap-12 mb-24 relative">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-10 mb-16 relative">
           <div className="hidden md:block absolute top-8 left-[16.67%] right-[16.67%] h-px" style={{ background: "linear-gradient(90deg, rgba(224,120,32,0.1), rgba(224,120,32,0.2), rgba(224,120,32,0.1))" }} />
           {steps.map((s, i) => (
             <div key={i} className="text-center relative">
