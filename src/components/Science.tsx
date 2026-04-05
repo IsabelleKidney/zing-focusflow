@@ -87,7 +87,7 @@ const Science = () => {
         </svg>
 
         {/* Steps */}
-        <div className="grid md:grid-cols-3 gap-10 md:gap-12 mb-24 relative">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-10 mb-16 relative">
           <div className="hidden md:block absolute top-8 left-[16.67%] right-[16.67%] h-px" style={{ background: "linear-gradient(90deg, rgba(224,120,32,0.1), rgba(224,120,32,0.2), rgba(224,120,32,0.1))" }} />
           {steps.map((s, i) => (
             <div key={i} className="text-center relative">
