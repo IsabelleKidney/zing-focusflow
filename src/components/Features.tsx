@@ -1,4 +1,4 @@
-import { Brain, Headphones, Target, Heart, Sparkles } from "lucide-react";
+import { Brain, Headphones, Target, Trophy, Heart, Sparkles } from "lucide-react";
 
 const Features = () => {
   const mainModes = [
