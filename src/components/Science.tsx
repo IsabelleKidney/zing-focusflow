@@ -13,7 +13,7 @@ const Science = () => {
   ];
 
   return (
-    <section id="how-it-works" className="relative py-28 md:py-36 overflow-hidden" style={{ background: "linear-gradient(180deg, #45413D, #4D4944)" }}>
+    <section id="how-it-works" className="relative py-16 md:py-20 overflow-hidden" style={{ background: "linear-gradient(180deg, #45413D, #4D4944)" }}>
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] pointer-events-none" style={{ background: "radial-gradient(ellipse, hsla(30,80%,50%,0.05), transparent 70%)" }} />
       <div className="container mx-auto px-6 md:px-8 max-w-6xl relative z-10">
         <div className="text-center mb-20">
