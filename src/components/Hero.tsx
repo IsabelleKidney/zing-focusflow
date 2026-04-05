@@ -44,8 +44,9 @@ const Hero = () => {
   return (
     <section className="relative h-screen flex items-end overflow-hidden">
       {slides.map((s, i) => (
-        <div key={i} className="absolute inset-0 bg-cover bg-no-repeat" style={{
+        <div key={i} className="absolute inset-0 bg-no-repeat" style={{
           backgroundImage: `url(${s.image})`, backgroundPosition: s.position,
+          backgroundSize: s.size || "cover",
           opacity: i === current ? 1 : 0, zIndex: i === current ? 1 : 0,
           transform: i === current ? "scale(1.04)" : "scale(1)",
           transition: "opacity 2s cubic-bezier(0.25, 0.1, 0.25, 1), transform 12s cubic-bezier(0.25, 0.1, 0.25, 1)",
