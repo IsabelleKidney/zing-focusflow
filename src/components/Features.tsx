@@ -1,13 +1,16 @@
-import { Brain, Headphones, Target, Trophy, Heart, Sparkles } from "lucide-react";
+import { Brain, Headphones, Target, Heart, Sparkles } from "lucide-react";
 
 const Features = () => {
-  const features = [
+  const mainModes = [
     { icon: <Target className="w-8 h-8" />, title: "Instant Laser Focus Mode", description: "Notice your attention improve within minutes of putting Zing Elate on. Stay locked in on what matters most with enhanced concentration and serenity." },
     { icon: <Heart className="w-8 h-8" />, title: "Deeper Relaxation Mode", description: "Sink into deep relaxation while reading, watching your favourite programme, or simply taking a moment to rest. By gently improving your heart rate variability (HRV), the Zing Elate relaxation mode encourages a lasting sense of calm and better overall recovery." },
     { icon: <Sparkles className="w-8 h-8" />, title: "Charge Your Vitality Mode", description: "Generate amazing energy, emotional resilience, and elevated mood with daily 45-minute sessions – even while working!" },
-    { icon: <Brain className="w-8 h-8" />, title: "Neurostimulation", description: "Precision-engineered microcurrent stimulates your vagus nerve – the cranial nerve of calm – for enhanced attentional performance." },
-    { icon: <Headphones className="w-8 h-8" />, title: "Premium Audio Integration", description: "Listen to music, soundbaths, podcasts, or focus tracks to amplify your brain performance." },
-    { icon: <Trophy className="w-8 h-8" />, title: "Own Your Day", description: "Finish tasks that drive your ambition, and free up time for more of what really matters." },
+  ];
+
+  const subFeatures = [
+    { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E07820" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>, title: "Ergonomic Design", description: "Lightweight, discreet daily wear" },
+    { icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E07820" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="6" width="18" height="12" rx="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg>, title: "12hr Battery", description: "All-day power, fast USB-C charge" },
+    { icon: <Headphones className="w-5 h-5" style={{ color: "#E07820" }} />, title: "Bluetooth 5.3", description: "Premium audio integration" },
   ];
 
   return (
@@ -19,19 +22,33 @@ const Features = () => {
             <span className="text-xs font-semibold tracking-[0.22em] uppercase" style={{ color: "#E07820" }}>Why Zing Elate</span>
             <span className="w-10 h-px" style={{ background: "linear-gradient(to left, transparent, rgba(224,120,32,0.4))" }} />
           </div>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 tracking-tight">Where Neuroscience Meets Performance</h2>
-          <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto font-light">Three powerful ways Zing Elate transforms your daily performance and wellbeing.</p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-5 tracking-tight">Three Powerful Modes</h2>
+          <p className="text-base md:text-lg text-muted-foreground max-w-xl mx-auto font-light">Where neuroscience meets performance. Choose your mode and transform your day.</p>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
-          {features.map((f, i) => (
+        <div className="grid md:grid-cols-3 gap-5 md:gap-6 mb-12">
+          {mainModes.map((f, i) => (
             <div key={i} className="group p-7 md:p-8 rounded-2xl bg-white/80 border border-white/60 hover:shadow-lg transition-all duration-300 hover:-translate-y-0.5"
               style={{ borderColor: "rgba(255,255,255,0.6)" }}>
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-5 transition-all duration-300"
-                style={{ background: "linear-gradient(135deg, rgba(224,120,32,0.1), rgba(224,120,32,0.05))", color: "#E07820" }}>
+              <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-5 transition-all duration-300"
+                style={{ background: "linear-gradient(135deg, rgba(224,120,32,0.12), rgba(224,120,32,0.05))", color: "#E07820" }}>
                 {f.icon}
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-2.5">{f.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed font-light">{f.description}</p>
+            </div>
+          ))}
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {subFeatures.map((f, i) => (
+            <div key={i} className="flex items-start gap-4 p-5 rounded-xl bg-white/50 border border-white/40">
+              <div className="w-10 h-10 rounded-[10px] flex items-center justify-center flex-shrink-0"
+                style={{ background: "rgba(224,120,32,0.08)" }}>
+                {f.icon}
+              </div>
+              <div>
+                <h4 className="text-[13px] font-semibold text-foreground mb-1">{f.title}</h4>
+                <p className="text-xs text-muted-foreground font-light">{f.description}</p>
+              </div>
             </div>
           ))}
         </div>

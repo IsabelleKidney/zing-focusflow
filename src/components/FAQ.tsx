@@ -5,13 +5,15 @@ const FAQ = () => {
   const [open, setOpen] = useState<number | null>(0);
   const faqs = [
     { q: "How do I use Zing Elate?", a: "Clip the earpiece onto the small flap at the front of your ear canal (the tragus). Turn on the handheld device and gentle neurostimulation will start automatically. You can also play soothing soundbaths to intensify your relaxation and focus." },
-    { q: "Is it safe to use?", a: "Yes, Zing Elate uses CE-marked taVNS technology that\u2019s well-researched and non-invasive. Consult your doctor if you have a pacemaker, are pregnant, or have epilepsy.", link: { text: "Read the clinical research \u2192", href: "/Enhanced_Attention_Clinical_Studies.pdf" } },
-    { q: "How quickly will I notice results?", a: "Many users notice improved focus within minutes. You can also use the relaxation mode while you read or watch TV \u2014 this can help you unwind more quickly. For mood boosting and energy generation, integrate into a daily routine of 45 minutes meditation (after a while you can do this while doing other tasks like housework or emails!) \u2014 after 4\u20136 weeks, you should feel like a new person!", link: { text: "See how taVNS works \u2192", href: "#how-it-works" } },
-    { q: "Can I use it while working?", a: "Absolutely! Zing Elate is designed for active use. Listen to focus music, take calls, or work at your desk while benefiting from stimulation." },
-    { q: "What\u2019s included in my order?", a: "The earpiece, USB-C charging cable, carrying case, quick-start guide, and access to our companion app with guided sessions." },
-    { q: "How long does shipping take?", a: "Ireland: 2\u20133 business days. UK & Europe: 5\u20137 business days. International: 7\u201314 business days." },
-    { q: "What\u2019s the return policy?", a: "30-day money-back guarantee. Return in original packaging for a full refund \u2014 no questions asked." },
-    { q: "How long does the battery last?", a: "Up to 8 hours continuous use. Full recharge in 1.5 hours via USB-C." },
+    { q: "Can I use it while working or studying?", a: "Absolutely! Zing Elate is designed for active use. Listen to focus music, take calls, or work at your desk while benefiting from stimulation." },
+    { q: "How quickly will I notice results?", a: "Many users notice improved focus within minutes. Use relaxation mode while reading or watching TV to unwind more quickly.", link: { text: "See how it works →", href: "#how-it-works" } },
+    { q: "How do I use Boost Mode?", a: "Integrate into a daily 45-minute meditation with the Boost mode and soothing soundbath. After 4–6 weeks of daily practice, you should feel like a new person!" },
+    { q: "Is it safe to use?", a: "Yes, CE-marked taVNS technology, well-researched and non-invasive.", link: { text: "Read the clinical research →", href: "/Enhanced_Attention_Clinical_Studies.pdf" } },
+    { q: "What's included?", a: "Earpiece, USB-C cable, carrying case, quick-start guide, and companion app." },
+    { q: "Shipping time?", a: "Ireland: 2–3 days. UK & Europe: 5–7 days. International: 7–14 days." },
+    { q: "Return policy?", a: "30-day money-back guarantee — no questions asked." },
+    { q: "Battery life?", a: "Up to 8 hours continuous use. Full recharge in 1.5 hours via USB-C." },
+    { q: "Is Zing Elate environmentally sustainable?", a: "Yes. Zing Elate is designed for long-term daily use, reducing the need for disposable alternatives. We use recyclable packaging and are committed to minimising our environmental footprint." },
   ];
 
   return (
