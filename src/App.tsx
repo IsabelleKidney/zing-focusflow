@@ -7,12 +7,14 @@ import Index from "./pages/Index";
 import ProductDetail from "./pages/ProductDetail";
 import NotFound from "./pages/NotFound";
 import ChatTest from "./pages/ChatTest";
+import CursorEffect from "./components/CursorEffect";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <CursorEffect />
       <Toaster />
       <Sonner />
       <BrowserRouter>
