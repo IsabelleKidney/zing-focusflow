@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import heroImage1 from "@/assets/hero-student-library.jpg";
 import heroImage2 from "@/assets/hero-woman-social.jpg";
 import heroImage3 from "@/assets/hero-leader-office.jpg";
@@ -81,6 +82,16 @@ const Hero = () => {
             <span>30-Day Guarantee</span>
           </div>
         </div>
+      </div>
+      <div className="absolute inset-y-0 left-4 md:left-8 z-10 flex items-center">
+        <button onClick={() => goTo((current - 1 + 3) % 3)} className="w-10 h-10 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-black/50 transition-all">
+          <ChevronLeft className="w-5 h-5" />
+        </button>
+      </div>
+      <div className="absolute inset-y-0 right-4 md:right-8 z-10 flex items-center">
+        <button onClick={() => goTo((current + 1) % 3)} className="w-10 h-10 rounded-full bg-black/30 backdrop-blur-sm border border-white/10 flex items-center justify-center text-white/60 hover:text-white hover:bg-black/50 transition-all">
+          <ChevronRight className="w-5 h-5" />
+        </button>
       </div>
       <div className="absolute bottom-6 right-6 md:right-12 z-10 flex gap-2" style={{ zIndex: 4 }}>
         {slides.map((_, i) => (
