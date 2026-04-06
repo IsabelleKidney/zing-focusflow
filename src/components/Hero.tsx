@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { Button } from "@/components/ui/button";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import heroImage1 from "@/assets/hero-student-library.jpg";
 import heroImage2 from "@/assets/hero-woman-social.jpg";
 import heroImage3 from "@/assets/hero-leader-office.jpg";
