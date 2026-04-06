@@ -7,7 +7,7 @@ import heroImage3 from "@/assets/hero-leader-office.jpg";
 const slides = [
   { image: heroImage1, position: "60% 15%", eyebrow: "Neuroscience-Powered Focus", headline: "Fuel Your Focus\nPower Your Potential", subline: "The world\u2019s most advanced wearable neurostimulation device for laser focus, deep calm, and sustained energy." },
   { image: heroImage2, position: "center 20%", eyebrow: "Clinically Validated", headline: "Elevate Your Vitality\nFind Your Flow", subline: "The New Happily Ever After. Elevate your mood with a 45-minute daily Zing Elate practice." },
-  { image: heroImage3, position: "center 10%", size: "130%", eyebrow: "Designed for Leaders", headline: "For High Performance\nSimply Press Play", subline: "Join high performers who use Zing Elate to stay sharp, composed, and energised throughout every day." },
+  { image: heroImage3, position: "55% 5%", size: "140%", eyebrow: "Designed for Leaders", headline: "For High Performance\nSimply Press Play", subline: "Join high performers who use Zing Elate to stay sharp, composed, and energised throughout every day." },
 ];
 
 const Hero = () => {
